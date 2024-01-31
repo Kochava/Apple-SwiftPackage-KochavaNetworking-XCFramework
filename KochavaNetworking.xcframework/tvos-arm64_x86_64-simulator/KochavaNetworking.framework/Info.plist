@@ -16,6 +16,8 @@
 	<string>KochavaNetworking</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.0.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>AppleTVSimulator</string>
@@ -39,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>15C500b</string>
 	<key>KVABuildDateString</key>
-	<string>2024-01-30T09:16:21-0800</string>
+	<string>2024-01-31T12:06:40-0800</string>
 	<key>MinimumOSVersion</key>
 	<string>13.0</string>
 	<key>UIDeviceFamily</key>
