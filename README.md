@@ -43,10 +43,6 @@ In 2024, with version 8.0.0, this framework's name was clarified **KochavaNetwor
 
 * None
 
-## Documentation
-
-KochavaNetworking's Swift-DocC documentation is [available here](https://kochava.github.io/Apple-SwiftPackage-KochavaNetworking/documentation/kochavanetworking).
-
 ## Integration
 
 KochavaNetworking is a Swift package.  To install it, simply add this package as a dependency.
@@ -54,6 +50,10 @@ KochavaNetworking is a Swift package.  To install it, simply add this package as
 In Xcode, see File > Swift Packages > Add Package Dependency ... > and enter the URL for this package repository.
 
 [Kochava Apple SDK Integration](https://support.kochava.com/sdk-integration/ios-sdk-integration/)
+
+## Documentation
+
+KochavaNetworking's Swift-DocC documentation is [available here](https://kochava.github.io/Apple-SwiftPackage-KochavaNetworking/documentation/kochavanetworking).
 
 ## Author
 
