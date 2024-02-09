@@ -16,15 +16,17 @@ The KochavaNetworking framework is an SDK providing advanced networking with run
 
 Born in the highly sensitive area of advertising measurement and tracking, Kochava developed the world's most advanced networking framework:  **KochavaNetworking, with Dynamic Runtime Command and Control**.  
 
-At its foundation this includes the ability to adapt network transactions for user privacy, consent, and tracking transparency.  This starts with the ability to redact transactions or elements within the payloads of transactions.  Moving forward transactions are defined declaratively rather than as logic expressed in code, enabling all of their parameters to be configured at runtime.  This includes the ability to change defaults and to specify overrides.  The contents of a payload can be altered or amended, the structure of a payload can be changed, and the URL can be redirected or given new query parameters.  Also behavior such as prerequisites, rate, retry waterfall, and persistence can be altered.  New network transactions (as well as certain other previously coded tasks) can also be described at the server and then instructed to be executed on-device.
+At its foundation this includes the ability to adapt network transactions for user privacy, consent, and tracking transparency.  This starts with the conditional on-device ability to redact transactions or elements within the payloads of transactions.  Transactions are defined declaratively, rather than as logic expressed in code, enabling all of their parameters to be configured at runtime.  This includes the ability to change defaults and to specify overrides.  The contents of a payload can be amended or expanded, the structure of a payload can be refactored, and the URL can be redirected or given new query parameters.  Also behavior such as prerequisites, rate, retry waterfall, and persistence can be adjusted.  New network transactions (along with certain other previously coded tasks) can also be described at the server with parameters and then instructed to be executed on-device.
 
-This can all be done at runtime through the use of integrated dynamic runtime configuration, which means that this support can be applied to versions of applications after they have been deployed.  This enables server APIs to be modernized— and legacy software to be adapted on-device without a software update— in real time.  We believe it is the world's most advanced networking framework.
+All of this can all be done at runtime through the use of integrated dynamic runtime configuration, which means that these improvements can be applied to versions of applications after they have been deployed— retroactively.  This enables server APIs to be continuously modernized, and legacy software to be adapted on-device without a software update— in real time.  We believe it is the world's most advanced networking framework.
+
+*Runtime Dynamic Command and Control* is currently an undocumented feature which is integrated and leveraged within various Kochava products.  If you are interested in using this feature for your own projects, please let us know by reaching out to your client success manager.  We are currently collecting feedback.
+
+## Background
 
 In 2019, with version 3.1.0, this framework had been initially closed-source and distributed under the generic name **KochavaCore**, where it served as a foundational module for the Kochava Measurement SDK.
 
 In 2024, with version 8.0.0, this framework's name was clarified **KochavaNetworking** and open-sourced with the intention of positioning it for wider use.  We welcome you to see how you may use it for your own projects!  If you are already using Kochava's Measurement SDK (for the Apple platform) then it is already installed in your application and ready for your personal use.  It is available as Swift Package in two forms— the first with an xcframework pre-compiled for performance, and a second alternatively with source code.
-
-*Runtime Dynamic Command and Control* is currently an undocumented feature which is integrated and used within various Kochava products.  If you are interested in using this feature for your own projects, please let us know by reaching out to your client success manager.  We are currently collecting feedback.
 
 ## Built on
 
