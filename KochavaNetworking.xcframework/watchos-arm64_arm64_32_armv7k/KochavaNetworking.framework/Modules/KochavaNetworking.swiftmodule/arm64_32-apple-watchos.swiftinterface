@@ -1816,16 +1816,16 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     get
     set(watchValueRawObject)
   }
-  public static let closure_serverObject_boolNumber: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_default: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_dataHexString: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_fourDecimal: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_nil: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_unixTime: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_unixTimeMilliseconds: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_unixTimeWithDecimalPrecision: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_timeInterval: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
-  public static let closure_serverObject_utf8EncodedString: (_ adapter: KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_boolNumber: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_default: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_dataHexString: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_fourDecimal: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_nil: (KochavaNetworking.Adapter, Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_unixTime: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_unixTimeMilliseconds: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_unixTimeWithDecimalPrecision: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_timeInterval: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
+  public static let closure_serverObject_utf8EncodedString: (KochavaNetworking.Adapter, _ valueObject: Swift.AnyObject?) -> Swift.AnyObject?
   public static let stalenessNeverTimeInterval: Foundation.TimeInterval?
   public static let stalenessImmediateTimeInterval: Swift.Double
 }
