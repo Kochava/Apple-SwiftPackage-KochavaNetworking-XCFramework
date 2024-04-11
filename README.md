@@ -30,7 +30,7 @@ In 2024, with version 8.0.0, this framework's name was clarified **KochavaNetwor
 
 ## Built on
 
-* Xcode 15.2
+* Xcode 15.3
 
 ## Platforms
 
@@ -39,7 +39,7 @@ In 2024, with version 8.0.0, this framework's name was clarified **KochavaNetwor
 * macOS 10.15
 * tvOS 13.0
 * visionOS 1.0
-* watchOS 6.0
+* watchOS 7.0
 
 ## Dependencies
 
