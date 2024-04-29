@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>8.1.1</string>
+	<string>8.1.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>15E204a</string>
 	<key>KVABuildDateString</key>
-	<string>2024-04-10T14:10:26-0700</string>
+	<string>2024-04-26T14:06:44-0700</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.15</string>
 </dict>

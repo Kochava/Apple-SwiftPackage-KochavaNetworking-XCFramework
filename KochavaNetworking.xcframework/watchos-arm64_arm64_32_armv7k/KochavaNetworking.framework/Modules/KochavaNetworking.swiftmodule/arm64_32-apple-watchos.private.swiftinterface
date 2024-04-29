@@ -488,6 +488,7 @@ final public class Execution : KochavaNetworking.Logger_Provider, KochavaNetwork
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public func invalidate()
+  final public func synchronize_and_default<T>(preregisterAllKnownProductsBool: Swift.Bool? = nil, closure_pre: (() -> Swift.Void)? = nil, closure_default: () -> T, closure_get: () -> T?, closure_set: (_ new: T) -> Swift.Void, closure_did: ((_ new: T) -> Swift.Void)? = nil) -> T
   final public func async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
   final public func async_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
   final public func async_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
@@ -1841,7 +1842,9 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   public typealias ID = Swift.String
 }
 @objc(KochavaNetworking_Product) open class Product : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Logger_Provider, KochavaNetworking.Registerable, KochavaNetworking.SharedInstanceProvider {
-  @objc public static let shared: KochavaNetworking.Product
+  @objc public static var shared: KochavaNetworking.Product {
+    @objc get
+  }
   public static var sharedInstance: Any {
     get
   }
@@ -1885,6 +1888,7 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   public var actor: KochavaNetworking.Actor {
     get
   }
+  public static let defaultActor: KochavaNetworking.Actor
   final public let apiVersionString: Swift.String?
   final public let buildDateString: Swift.String?
   final public let bundleIdentifier: KochavaNetworking.Product.BundleIdentifier?
