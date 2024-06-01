@@ -2200,6 +2200,7 @@ final public class Collection : Foundation.NSCopying, KochavaNetworking.Configur
   public typealias Closure_Enumerate_Element = (_ element: KochavaNetworking.Collection.Element, _ stopBool: Swift.UnsafeMutablePointer<Swift.Bool>?) -> Swift.Void?
   final public func adapter(withIdentifier identifier: KochavaNetworking.Adapter.Identifier? = nil, withUniversalIdentifier universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil) -> KochavaNetworking.Adapter?
   final public func collection(withIdentifier identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection?
+  final public func first(where predicate: (KochavaNetworking.Collection.Element) throws -> Swift.Bool) rethrows -> Any?
   final public func transaction(withIdentifier identifier: KochavaNetworking.Transaction.Identifier? = nil, withUniversalIdentifier universalIdentifier: KochavaNetworking.Transaction.UniversalIdentifier? = nil) -> KochavaNetworking.Transaction?
   final public func object(withIdentifier identifier: KochavaNetworking.Collection.ElementIdentifier?, excludeIdentifierArray: [KochavaNetworking.Collection.ElementIdentifier]? = nil) -> Any?
   final public func objectArray(withIdentifierArray identifierArray: [KochavaNetworking.Collection.ElementIdentifier]?) -> [Any]?
