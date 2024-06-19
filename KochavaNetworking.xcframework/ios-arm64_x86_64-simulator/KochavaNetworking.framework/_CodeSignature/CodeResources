@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		Q0oczc99aMNIp3Z1ArU13GUofwI=
+		g/mQ7OH0UYVO4zuWmjjdfRrLnlU=
 		</data>
 		<key>Headers/KochavaNetworking.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z21IO1xw4PoPsZpT7i+5BqJzRfc=
+		DzNd+0BpTa+2FQeN3sPy3KgfX1Q=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GJF+vI4Nej4CgLRryUatZ7XwQJs=
+		hOx3ymXXrmYqaFaH7EluSVOWjug=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oOQy1S4gGD04q0TkQ/qpK2DCue4=
+		ONEpyXcVIjgYgg02fAzjASCztqs=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JT2SXQCg6izIU3emxFzdZ32a1W4=
+		2yXbYxtbJP6G6ln5xGkruq13/7g=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oOQy1S4gGD04q0TkQ/qpK2DCue4=
+		ONEpyXcVIjgYgg02fAzjASCztqs=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cQ26E0Y13LS79FVqKV5RNbBPw8k=
+		o02qCW94eLrbnDtf09lO3oX0iSI=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GJF+vI4Nej4CgLRryUatZ7XwQJs=
+		hOx3ymXXrmYqaFaH7EluSVOWjug=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		V8WfglFxYtP++WGQ5oLGb/vwZUY=
+		hl4OTJYw8tELUFog5DbciBEwMjo=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gN44/HUHCaSh4CzP9iQzmMazOd8=
+		pP3P2Bxv47DOKsUKW+QN7sEpwJY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		V8WfglFxYtP++WGQ5oLGb/vwZUY=
+		hl4OTJYw8tELUFog5DbciBEwMjo=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oRl+x0UmocIQqD5IOCY35jgv7to=
+		XGnN08/ox2AN1ctfDbqPRXpzI1Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C/0O2nt7QBSwRIBcIrL0pQrf0VGUTXmvTxRcEjkmK0k=
+			tA+OvLxuN9UG9ozbCjZaD3kH1p70i1FwHVponBY49m8=
 			</data>
 		</dict>
 		<key>Headers/KochavaNetworking.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6UQiJ69tNNBjqzUpPVfboavZP5ZCMl4CtvSE7KLEXGc=
+			+xctugTsxColNJFrrlCWMnd0sDGDdLy56E4ZhD1uG3Q=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1qoEVmdp2jm+R7EpyV45ol1UXFRCad5xMr8rr4ZXorQ=
+			XOPLeyHzTNXqvIFyW8AEpgMu30P7MZEBQziVyab3fto=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4QnkGO6n6hebzLCi7Zs9G0gRMhxFxD6dA+vgUZ40hS0=
+			FgGs5ckpQwcZAROPIKUhbihS271rcOWvd2PXlVfdejk=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1qoEVmdp2jm+R7EpyV45ol1UXFRCad5xMr8rr4ZXorQ=
+			XOPLeyHzTNXqvIFyW8AEpgMu30P7MZEBQziVyab3fto=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0v3ZTUeuSbkHBeQshhg9LHu61MjqmNrAUeV1FAAN+Jo=
+			VrJ4WX7g8Yfx3GZpX5NlD5f/eji0eky3wq5m+eEGs8M=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6UQiJ69tNNBjqzUpPVfboavZP5ZCMl4CtvSE7KLEXGc=
+			+xctugTsxColNJFrrlCWMnd0sDGDdLy56E4ZhD1uG3Q=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SVSp2gyHVFE2queH7N+Lc6ie0jt+c6f8ltb0gK4RpXM=
+			WQKoIrbiS5QymaVGGlZmN939eq/D+PnyGL4izhP+FMI=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p87oEsdkh+dD9UoHZbDT2YBpaQtEtx0AJmYgKpbe1uQ=
+			GOwSCvxAqjrrowJu2DqUNQXo2mFL3xkFMicgXgeJT2I=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SVSp2gyHVFE2queH7N+Lc6ie0jt+c6f8ltb0gK4RpXM=
+			WQKoIrbiS5QymaVGGlZmN939eq/D+PnyGL4izhP+FMI=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsoEn+1FtUxNvNIqFZryyYkfWW6b5FWRAB7FfxxI1Y0=
+			NfvU7weRZjrncqe/nW/Uv0syxZRMUGKJOOV1XqKBu3Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

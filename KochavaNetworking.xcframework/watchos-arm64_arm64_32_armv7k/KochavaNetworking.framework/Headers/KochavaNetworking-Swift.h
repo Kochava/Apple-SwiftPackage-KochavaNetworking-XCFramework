@@ -791,7 +791,7 @@ SWIFT_CLASS_NAMED("Config")
 /// \param closure_didComplete A completion handler to call once the result has been retrieved.
 ///
 - (void)retrieveWithClosure_didComplete:(void (^ _Nonnull)(KVANetworking_Config * _Nonnull))closure_didComplete;
-/// A closure which is called when attribution is retrieved.
+/// A closure which is called when the config is retrieved.
 @property (nonatomic, copy) void (^ _Nullable closure_didComplete)(KVANetworking_Config * _Nonnull);
 @property (nonatomic, readonly) BOOL consentGDPRAppliesBool;
 /// A boolean indicating if this feature is enabled.
@@ -1867,7 +1867,7 @@ SWIFT_CLASS_NAMED("Config")
 /// \param closure_didComplete A completion handler to call once the result has been retrieved.
 ///
 - (void)retrieveWithClosure_didComplete:(void (^ _Nonnull)(KVANetworking_Config * _Nonnull))closure_didComplete;
-/// A closure which is called when attribution is retrieved.
+/// A closure which is called when the config is retrieved.
 @property (nonatomic, copy) void (^ _Nullable closure_didComplete)(KVANetworking_Config * _Nonnull);
 @property (nonatomic, readonly) BOOL consentGDPRAppliesBool;
 /// A boolean indicating if this feature is enabled.
@@ -2943,7 +2943,7 @@ SWIFT_CLASS_NAMED("Config")
 /// \param closure_didComplete A completion handler to call once the result has been retrieved.
 ///
 - (void)retrieveWithClosure_didComplete:(void (^ _Nonnull)(KVANetworking_Config * _Nonnull))closure_didComplete;
-/// A closure which is called when attribution is retrieved.
+/// A closure which is called when the config is retrieved.
 @property (nonatomic, copy) void (^ _Nullable closure_didComplete)(KVANetworking_Config * _Nonnull);
 @property (nonatomic, readonly) BOOL consentGDPRAppliesBool;
 /// A boolean indicating if this feature is enabled.

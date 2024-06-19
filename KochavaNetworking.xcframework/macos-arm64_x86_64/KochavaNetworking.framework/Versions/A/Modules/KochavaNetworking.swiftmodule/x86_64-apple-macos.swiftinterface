@@ -1567,6 +1567,8 @@ final public class TransactionType : KochavaNetworking.DecodableFrom, KochavaNet
   final public var appExtensionBool: Swift.Bool {
     get
   }
+  final public var appExtensionBool_sf_memory: Swift.Bool?
+  final public var appExtensionBool_lock: Foundation.NSLock
   @objc final public func stateActiveDidBecome()
   @objc(stateActiveDidBecomeWithSourceIdentifier:) final public func stateActiveDidBecome(sourceIdentifier: KochavaNetworking.System.SourceIdentifier)
   @objc final public func stateActiveWillResign()
@@ -1575,6 +1577,7 @@ final public class TransactionType : KochavaNetworking.DecodableFrom, KochavaNet
   final public func nameString() -> Swift.String
   final public var stateActiveBool: Swift.Bool {
     get
+    set(stateActiveBool)
   }
   @objc public static let messagesAppViewControllerDidBecomeActiveSourceIdentifier: KochavaNetworking.System.SourceIdentifier
   @objc public static let messagesAppViewControllerDidResignActiveSourceIdentifier: KochavaNetworking.System.SourceIdentifier
