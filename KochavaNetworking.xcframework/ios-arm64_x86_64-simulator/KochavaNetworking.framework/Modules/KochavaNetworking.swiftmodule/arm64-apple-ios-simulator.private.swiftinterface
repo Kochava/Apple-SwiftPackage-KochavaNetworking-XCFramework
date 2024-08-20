@@ -828,14 +828,16 @@ extension Foundation.Date : KochavaNetworking.DecodableFrom, KochavaNetworking.E
 }
 extension Foundation.UserDefaults {
   public class Resource : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Logger_Provider, KochavaNetworking.PersistAgent_Getter, KochavaNetworking.PersistAgent_Setter {
-    required public init(suite: Foundation.UserDefaults.Suite? = nil, suiteName: Swift.String? = nil, prefixString: Swift.String? = nil, identifier: Swift.String? = nil, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, key: Swift.String? = nil)
+    required public init(suite: Foundation.UserDefaults.Suite? = nil, suiteName: Foundation.UserDefaults.SuiteName? = nil, prefixString: Swift.String? = nil, identifier: Swift.String? = nil, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, key: Swift.String? = nil)
     public static func from(_ object: Any?) -> Self?
     public func to(context: KochavaNetworking.Context?) -> Any?
     public static let type_kochava: KochavaNetworking.Kochava_Type
     public func get(networking: KochavaNetworking.Networking? = nil, product: KochavaNetworking.Product? = nil, identifier_default: Swift.String? = nil, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier? = nil) -> Any?
-    public func set(any: Any?, networking: KochavaNetworking.Networking? = nil, product: KochavaNetworking.Product? = nil, identifier_default: Swift.String? = nil, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier? = nil)
+    public func set(any: Any?, networking: KochavaNetworking.Networking? = nil, product: KochavaNetworking.Product? = nil, identifier_default: Swift.String? = nil, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier? = nil, aggressiveBool: Swift.Bool = false)
     @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
     public static let logger: os.Logger
+    public static var interfaceStandardBool: Swift.Bool?
+    public static var interfaceStandardDispatchBool: Swift.Bool
     @objc deinit
   }
   public enum Suite : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
@@ -853,6 +855,7 @@ extension Foundation.UserDefaults {
     }
   }
   public typealias SuiteIdentifier = Swift.String
+  public typealias SuiteName = Swift.String
 }
 @_hasMissingDesignatedInitializers @objc(KVANetworking) final public class Networking : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.ConfigurableWithWithOptions, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.InvalidatableWithOptions, KochavaNetworking.Keyable, KochavaNetworking.Logger_Provider, KochavaNetworking.PrivacyProfile_RegistrarProvider, KochavaNetworking.SharedInstanceProvider, KochavaNetworking.Startable, KochavaNetworking.StartableWithOptions, KochavaNetworking.Stoppable, KochavaNetworking.StoppableWithOptions {
   public static var shared: KochavaNetworking.Networking {
@@ -1916,7 +1919,7 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   final public let capabilities_parameter: KochavaNetworking.Capabilities?
   public typealias Closure_DidRegister = (_ product: KochavaNetworking.Product) -> Swift.Void
   public typealias Closure_ResetClasses = (_ deleteLocalDataBool: Swift.Bool, _ includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
-  public typealias Closure_ResetVariables = (_ deleteLocalDataBool: Swift.Bool, _ includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
+  public typealias Closure_ResetVariables = (_ product: KochavaNetworking.Product, _ deleteLocalDataBool: Swift.Bool, _ includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
   final public let relationshipArray: [KochavaNetworking.Product.Relationship]?
   public class Relationship : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
     required public init(external: KochavaNetworking.Product.Relationship.External? = nil, local: KochavaNetworking.Product.Relationship.Local? = nil, networkingRelationshipArray: [KochavaNetworking.Product.Relationship.NetworkingRelationship]? = nil)
@@ -1975,6 +1978,7 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     get
   }
   public func userDefaults(suite: Foundation.UserDefaults.Suite?, appGroupsGeneralAppGroupIdentifier: KochavaNetworking.AppGroups.Identifier? = nil) -> Foundation.UserDefaults?
+  public func userDefaultsSuiteName(suite: Foundation.UserDefaults.Suite?, appGroupsGeneralAppGroupIdentifier: KochavaNetworking.AppGroups.Identifier? = nil) -> Foundation.UserDefaults.SuiteName?
   public var wrapperProduct: KochavaNetworking.Product? {
     get
     set(wrapperProduct)
@@ -2241,7 +2245,7 @@ public protocol PersistAgent_Getter : KochavaNetworking.PersistAgent {
   func get(networking: KochavaNetworking.Networking?, product: KochavaNetworking.Product?, identifier_default: Swift.String?, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier?) -> Any?
 }
 public protocol PersistAgent_Setter : KochavaNetworking.PersistAgent {
-  func set(any: Any?, networking: KochavaNetworking.Networking?, product: KochavaNetworking.Product?, identifier_default: Swift.String?, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier?)
+  func set(any: Any?, networking: KochavaNetworking.Networking?, product: KochavaNetworking.Product?, identifier_default: Swift.String?, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier?, aggressiveBool: Swift.Bool)
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers @objc(KVANetworking_Privacy) final public class Privacy : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, KochavaNetworking.Logger_Provider, KochavaNetworking.Networking_Provider, KochavaNetworking.PrivacyProfile_Registrar {

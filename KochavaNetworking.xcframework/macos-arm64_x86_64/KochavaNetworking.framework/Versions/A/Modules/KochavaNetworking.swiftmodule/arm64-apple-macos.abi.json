@@ -62208,12 +62208,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Bool, Swift.Bool) -> [Swift.AnyHashable : Any]?)?",
+                "printedName": "((KochavaNetworking.Product, Swift.Bool, Swift.Bool) -> [Swift.AnyHashable : Any]?)?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Bool, Swift.Bool) -> [Swift.AnyHashable : Any]?",
+                    "printedName": "(KochavaNetworking.Product, Swift.Bool, Swift.Bool) -> [Swift.AnyHashable : Any]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -62245,8 +62245,14 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.Bool, Swift.Bool)",
+                        "printedName": "(KochavaNetworking.Product, Swift.Bool, Swift.Bool)",
                         "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Product",
+                            "printedName": "KochavaNetworking.Product",
+                            "usr": "c:@M@KochavaNetworking@objc(cs)KochavaNetworking_Product"
+                          },
                           {
                             "kind": "TypeNominal",
                             "name": "Bool",
@@ -62296,8 +62302,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17KochavaNetworking7ProductC4name16organizationName013reverseDomainF007versionF00I6String010apiVersionJ016bundleIdentifier0M4Type12capabilities5actor9typeArray21valueSourceCollection012relationshipS009buildDateJ018closure_resetTypes0Z15_resetVariables0Z12_didRegisterACSS_S2SSgSSA3uC06BundleO0OAA12CapabilitiesCSgAA5ActorCSgSayAA0a1_O0CGSgAA0V0CSgSayAC12RelationshipCGSgAUSDys11AnyHashableVypGSgSb_SbtcSgA17_yACcSgtcfc",
-            "mangledName": "$s17KochavaNetworking7ProductC4name16organizationName013reverseDomainF007versionF00I6String010apiVersionJ016bundleIdentifier0M4Type12capabilities5actor9typeArray21valueSourceCollection012relationshipS009buildDateJ018closure_resetTypes0Z15_resetVariables0Z12_didRegisterACSS_S2SSgSSA3uC06BundleO0OAA12CapabilitiesCSgAA5ActorCSgSayAA0a1_O0CGSgAA0V0CSgSayAC12RelationshipCGSgAUSDys11AnyHashableVypGSgSb_SbtcSgA17_yACcSgtcfc",
+            "usr": "s:17KochavaNetworking7ProductC4name16organizationName013reverseDomainF007versionF00I6String010apiVersionJ016bundleIdentifier0M4Type12capabilities5actor9typeArray21valueSourceCollection012relationshipS009buildDateJ018closure_resetTypes0Z15_resetVariables0Z12_didRegisterACSS_S2SSgSSA3uC06BundleO0OAA12CapabilitiesCSgAA5ActorCSgSayAA0a1_O0CGSgAA0V0CSgSayAC12RelationshipCGSgAUSDys11AnyHashableVypGSgSb_SbtcSgA16_AC_S2btcSgyACcSgtcfc",
+            "mangledName": "$s17KochavaNetworking7ProductC4name16organizationName013reverseDomainF007versionF00I6String010apiVersionJ016bundleIdentifier0M4Type12capabilities5actor9typeArray21valueSourceCollection012relationshipS009buildDateJ018closure_resetTypes0Z15_resetVariables0Z12_didRegisterACSS_S2SSgSSA3uC06BundleO0OAA12CapabilitiesCSgAA5ActorCSgSayAA0a1_O0CGSgAA0V0CSgSayAC12RelationshipCGSgAUSDys11AnyHashableVypGSgSb_SbtcSgA16_AC_S2btcSgyACcSgtcfc",
             "moduleName": "KochavaNetworking",
             "declAttributes": [
               "Required",
@@ -66025,6 +66031,65 @@
             "declKind": "Func",
             "usr": "s:17KochavaNetworking7ProductC12userDefaults5suite34appGroupsGeneralAppGroupIdentifierSo06NSUserE0CSgAhAE5SuiteOSg_SSSgtF",
             "mangledName": "$s17KochavaNetworking7ProductC12userDefaults5suite34appGroupsGeneralAppGroupIdentifierSo06NSUserE0CSgAhAE5SuiteOSg_SSSgtF",
+            "moduleName": "KochavaNetworking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userDefaultsSuiteName",
+            "printedName": "userDefaultsSuiteName(suite:appGroupsGeneralAppGroupIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UserDefaults.Suite?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Suite",
+                    "printedName": "Foundation.UserDefaults.Suite",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE5SuiteO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KochavaNetworking7ProductC21userDefaultsSuiteName5suite34appGroupsGeneralAppGroupIdentifierSSSgSo06NSUserE0CAAE0F0OSg_AGtF",
+            "mangledName": "$s17KochavaNetworking7ProductC21userDefaultsSuiteName5suite34appGroupsGeneralAppGroupIdentifierSSSgSo06NSUserE0CAAE0F0OSg_AGtF",
             "moduleName": "KochavaNetworking",
             "declAttributes": [
               "AccessControl",
@@ -70376,7 +70441,7 @@
           {
             "kind": "Function",
             "name": "set",
-            "printedName": "set(any:networking:product:identifier_default:storageIdentifier_default:)",
+            "printedName": "set(any:networking:product:identifier_default:storageIdentifier_default:aggressiveBool:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -70451,11 +70516,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17KochavaNetworking19PersistAgent_SetterP3set3any10networking7product18identifier_default018storageIdentifier_K0yypSg_AA0B0CSgAA7ProductCSgSSSgAQtF",
-            "mangledName": "$s17KochavaNetworking19PersistAgent_SetterP3set3any10networking7product18identifier_default018storageIdentifier_K0yypSg_AA0B0CSgAA7ProductCSgSSSgAQtF",
+            "usr": "s:17KochavaNetworking19PersistAgent_SetterP3set3any10networking7product18identifier_default018storageIdentifier_K014aggressiveBoolyypSg_AA0B0CSgAA7ProductCSgSSSgARSbtF",
+            "mangledName": "$s17KochavaNetworking19PersistAgent_SetterP3set3any10networking7product18identifier_default018storageIdentifier_K014aggressiveBoolyypSg_AA0B0CSgAA7ProductCSgSSSgARSbtF",
             "moduleName": "KochavaNetworking",
             "genericSig": "<τ_0_0 where τ_0_0 : KochavaNetworking.PersistAgent_Setter>",
             "sugared_genericSig": "<Self where Self : KochavaNetworking.PersistAgent_Setter>",
@@ -70966,7 +71037,7 @@
               {
                 "kind": "Function",
                 "name": "set",
-                "printedName": "set(any:networking:product:identifier_default:storageIdentifier_default:)",
+                "printedName": "set(any:networking:product:identifier_default:storageIdentifier_default:aggressiveBool:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -71045,11 +71116,18 @@
                     ],
                     "hasDefaultArg": true,
                     "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC3set3any10networking7product18identifier_default018storageIdentifier_K0yypSg_AC0D0CSgAC7ProductCSgSSSgAStF",
-                "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC3set3any10networking7product18identifier_default018storageIdentifier_K0yypSg_AC0D0CSgAC7ProductCSgSSSgAStF",
+                "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC3set3any10networking7product18identifier_default018storageIdentifier_K014aggressiveBoolyypSg_AC0D0CSgAC7ProductCSgSSSgATSbtF",
+                "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC3set3any10networking7product18identifier_default018storageIdentifier_K014aggressiveBoolyypSg_AC0D0CSgAC7ProductCSgSSSgATSbtF",
                 "moduleName": "KochavaNetworking",
                 "declAttributes": [
                   "AccessControl",
@@ -71117,6 +71195,232 @@
                       "Final"
                     ],
                     "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "interfaceStandardBool",
+                "printedName": "interfaceStandardBool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvpZ",
+                "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvpZ",
+                "moduleName": "KochavaNetworking",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvgZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvgZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvsZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvsZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvMZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC21interfaceStandardBoolSbSgvMZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "interfaceStandardDispatchBool",
+                "printedName": "interfaceStandardDispatchBool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvpZ",
+                "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvpZ",
+                "moduleName": "KochavaNetworking",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvgZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvgZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvsZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvsZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:So14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvMZ",
+                    "mangledName": "$sSo14NSUserDefaultsC17KochavaNetworkingE8ResourceC29interfaceStandardDispatchBoolSbvMZ",
+                    "moduleName": "KochavaNetworking",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "_modify"
                   }
                 ]
               }
@@ -82307,1358 +82611,1358 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Linking.swift",
       "kind": "StringLiteral",
-      "offset": 1831,
+      "offset": 1830,
       "length": 9,
       "value": "\"linking\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Linking.swift",
       "kind": "StringLiteral",
-      "offset": 1986,
+      "offset": 1985,
       "length": 38,
       "value": "\"KochavaNetworking.Networking.Linking\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Linking.swift",
       "kind": "StringLiteral",
-      "offset": 2521,
+      "offset": 2520,
       "length": 41,
       "value": "\"Networking.Linking.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Linking.swift",
       "kind": "BooleanLiteral",
-      "offset": 23315,
+      "offset": 23314,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 771,
+      "offset": 770,
       "length": 17,
       "value": "\"Log.Level.never\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 819,
+      "offset": 818,
       "length": 7,
       "value": "\"never\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 845,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1122,
       "length": 17,
       "value": "\"Log.Level.error\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1171,
+      "offset": 1170,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1197,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1477,
+      "offset": 1476,
       "length": 16,
       "value": "\"Log.Level.warn\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1524,
+      "offset": 1523,
       "length": 6,
       "value": "\"warn\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 1550,
+      "offset": 1549,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1836,
       "length": 16,
       "value": "\"Log.Level.info\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 1883,
       "length": 6,
       "value": "\"info\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 1910,
+      "offset": 1909,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 2639,
+      "offset": 2638,
       "length": 17,
       "value": "\"Log.Level.debug\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 2687,
+      "offset": 2686,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 2714,
+      "offset": 2713,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 2905,
       "length": 17,
       "value": "\"Log.Level.trace\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 2954,
+      "offset": 2953,
       "length": 7,
       "value": "\"trace\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 2981,
+      "offset": 2980,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 3296,
+      "offset": 3295,
       "length": 18,
       "value": "\"Log.Level.always\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 3345,
+      "offset": 3344,
       "length": 8,
       "value": "\"always\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "IntegerLiteral",
-      "offset": 3373,
+      "offset": 3372,
       "length": 3,
       "value": "999"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4363,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 7885,
+      "offset": 7884,
       "length": 29,
       "value": "\"KochavaNetworking.Log.Level\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.swift",
       "kind": "StringLiteral",
-      "offset": 317,
+      "offset": 316,
       "length": 5,
       "value": "\"KochavaNetworking.Level\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 18369,
+      "offset": 18367,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 18523,
+      "offset": 18521,
       "length": 37,
       "value": "\"KochavaNetworking.Networking.Config\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 25277,
+      "offset": 25275,
       "length": 37,
       "value": "\"Networking.Config.dictionaryAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 25397,
+      "offset": 25395,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 25424,
+      "offset": 25422,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 25989,
+      "offset": 25987,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 26147,
+      "offset": 26145,
       "length": 38,
       "value": "\"d779849f-fe1d-4690-8edd-e3179914defa\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 27470,
+      "offset": 27468,
       "length": 31,
       "value": "\"Networking.Config.enabledTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 27532,
+      "offset": 27530,
       "length": 27,
       "value": "\"networking_config_enabled\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 27847,
+      "offset": 27845,
       "length": 16,
       "value": "\"baseIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 27934,
+      "offset": 27932,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 27948,
+      "offset": 27946,
       "length": 39,
       "value": "\"Networking.Config.retrieveTransaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28001,
+      "offset": 27999,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28024,
+      "offset": 28022,
       "length": 6,
       "value": "\"init\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28044,
+      "offset": 28042,
       "length": 9,
       "value": "\"context\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28055,
+      "offset": 28053,
       "length": 20,
       "value": "\"serverUnrestricted\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28089,
+      "offset": 28087,
       "length": 33,
       "value": "\"prerequisiteTaskIdentifierArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 28136,
+      "offset": 28134,
       "length": 15,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28165,
+      "offset": 28163,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28206,
+      "offset": 28204,
       "length": 12,
       "value": "\"httpMethod\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28220,
+      "offset": 28218,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28244,
+      "offset": 28242,
       "length": 33,
       "value": "\"privacyRedactionKeySuffixString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28279,
+      "offset": 28277,
       "length": 9,
       "value": "\" (init)\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28306,
+      "offset": 28304,
       "length": 11,
       "value": "\"retryBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 28319,
+      "offset": 28317,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28341,
+      "offset": 28339,
       "length": 11,
       "value": "\"urlString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28354,
+      "offset": 28352,
       "length": 50,
       "value": "\"https:\/\/kvinit-prod.api.kochava.com\/track\/kvinit\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28422,
+      "offset": 28420,
       "length": 14,
       "value": "\"_2_urlString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 28438,
+      "offset": 28436,
       "length": 197,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"i\", \"t\", \"-\", \"t\", \"e\", \"s\", \"t\", \"i\", \"n\", \"g\", \".\", \"a\", \"p\", \"i\", \".\", \"k\", \"o\", \"c\", \"h\", \"a\", \"v\", \"a\", \".\", \"c\", \"o\", \"m\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28653,
+      "offset": 28651,
       "length": 14,
       "value": "\"_3_urlString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 28669,
+      "offset": 28667,
       "length": 137,
       "value": "[\"h\", \"t\", \"t\", \"p\", \":\", \"\/\", \"\/\", \"l\", \"o\", \"c\", \"a\", \"l\", \"h\", \"o\", \"s\", \"t\", \":\", \"8\", \"3\", \"1\", \"5\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 28824,
+      "offset": 28822,
       "length": 24,
       "value": "\"headerDictionaryFormat\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Dictionary",
-      "offset": 28866,
+      "offset": 28864,
       "length": 424,
       "value": "[(\"adapterArray\", [[(\"key\", \"Accept\"), (\"valueObject\", \"application\/json\")], [(\"key\", \"Content-Type\"), (\"valueObject\", \"application\/json\")]])]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29308,
+      "offset": 29306,
       "length": 22,
       "value": "\"bodyDictionaryFormat\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29370,
+      "offset": 29368,
       "length": 14,
       "value": "\"adapterArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29462,
+      "offset": 29460,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29509,
+      "offset": 29507,
       "length": 31,
       "value": "\"Transaction.uuidStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29622,
+      "offset": 29620,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29645,
+      "offset": 29643,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29683,
+      "offset": 29681,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29698,
+      "offset": 29696,
       "length": 6,
       "value": "\"init\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29786,
+      "offset": 29784,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29809,
+      "offset": 29807,
       "length": 14,
       "value": "\"sdk_protocol\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29853,
+      "offset": 29851,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29868,
+      "offset": 29866,
       "length": 4,
       "value": "\"20\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 29954,
+      "offset": 29952,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30001,
+      "offset": 29999,
       "length": 39,
       "value": "\"ProductController.productArrayAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30122,
+      "offset": 30120,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30169,
+      "offset": 30167,
       "length": 68,
       "value": "\"KochavaNetworking.Product.capabilitiesBitwiseIntegersStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30319,
+      "offset": 30317,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30366,
+      "offset": 30364,
       "length": 60,
       "value": "\"KochavaNetworking.Product.standardVersionInfoStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30508,
+      "offset": 30506,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30555,
+      "offset": 30553,
       "length": 38,
       "value": "\"Networking.Config.tokenStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30675,
+      "offset": 30673,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30722,
+      "offset": 30720,
       "length": 45,
       "value": "\"KochavaNetworking.Product.bundleTypeAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 30850,
+      "offset": 30848,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31033,
+      "offset": 31031,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31216,
+      "offset": 31214,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31239,
+      "offset": 31237,
       "length": 12,
       "value": "\"storage_id\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31333,
+      "offset": 31331,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31511,
+      "offset": 31509,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31693,
+      "offset": 31691,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31740,
+      "offset": 31738,
       "length": 46,
       "value": "\"Networking.Datapoints.ipAddressStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31816,
+      "offset": 31814,
       "length": 14,
       "value": "\"pathKeyArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 31832,
+      "offset": 31830,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31916,
+      "offset": 31914,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 31963,
+      "offset": 31961,
       "length": 44,
       "value": "\"Networking.Sessions.stateActiveBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32037,
+      "offset": 32035,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 32071,
+      "offset": 32069,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32157,
+      "offset": 32155,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32204,
+      "offset": 32202,
       "length": 32,
       "value": "\"System.appExtensionBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32318,
+      "offset": 32316,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32500,
+      "offset": 32498,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32547,
+      "offset": 32545,
       "length": 49,
       "value": "\"Networking.Datapoints.platformNameStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32678,
+      "offset": 32676,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32802,
+      "offset": 32800,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 32836,
+      "offset": 32834,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32922,
+      "offset": 32920,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 32969,
+      "offset": 32967,
       "length": 42,
       "value": "\"Networking.Datapoints.currentDateAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33041,
+      "offset": 33039,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 33075,
+      "offset": 33073,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33161,
+      "offset": 33159,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33208,
+      "offset": 33206,
       "length": 47,
       "value": "\"Networking.Datapoints.systemNameStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33337,
+      "offset": 33335,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33384,
+      "offset": 33382,
       "length": 60,
       "value": "\"Networking.Datapoints.appMainBundleIdentifierStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33526,
+      "offset": 33524,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33573,
+      "offset": 33571,
       "length": 53,
       "value": "\"Networking.Datapoints.minimumOSVersionStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33708,
+      "offset": 33706,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33755,
+      "offset": 33753,
       "length": 30,
       "value": "\"Transaction.urlStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33867,
+      "offset": 33865,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 33914,
+      "offset": 33912,
       "length": 46,
       "value": "\"Networking.Datapoints.osVersionStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34042,
+      "offset": 34040,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34089,
+      "offset": 34087,
       "length": 46,
       "value": "\"Networking.Datapoints.macCatalystBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34217,
+      "offset": 34215,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34264,
+      "offset": 34262,
       "length": 44,
       "value": "\"Networking.Datapoints.simulatorBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34402,
+      "offset": 34400,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34444,
+      "offset": 34442,
       "length": 18,
       "value": "\"localAllowedBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 34464,
+      "offset": 34462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34487,
+      "offset": 34485,
       "length": 17,
       "value": "\"bodyLocalObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34544,
+      "offset": 34542,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34555,
+      "offset": 34553,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34580,
+      "offset": 34578,
       "length": 9,
       "value": "\"general\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Dictionary",
-      "offset": 34611,
+      "offset": 34609,
       "length": 68,
       "value": "[(\"sdk_disabled\", true)]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34725,
+      "offset": 34723,
       "length": 30,
       "value": "\"sendTaskLogMessagesPrintBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 34757,
+      "offset": 34755,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34775,
+      "offset": 34773,
       "length": 22,
       "value": "\"sessionConfiguration\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Dictionary",
-      "offset": 34811,
+      "offset": 34809,
       "length": 71,
       "value": "[(\"networkServiceType\", \"responsiveData\")]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34896,
+      "offset": 34894,
       "length": 16,
       "value": "\"variationArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 34966,
+      "offset": 34964,
       "length": 6,
       "value": "\"urls\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 35020,
+      "offset": 35018,
       "length": 50,
       "value": "\"https:\/\/kvinit-prod.api.kochava.com\/track\/kvinit\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35096,
+      "offset": 35094,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"k\", \"v\", \"a\", \"e\", \"d\", \"i\", \"t\", \".\", \"s\", \"i\", \"t\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35271,
+      "offset": 35269,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"d\", \"e\", \"w\", \"r\", \"a\", \"i\", \"n\", \".\", \"l\", \"i\", \"f\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35446,
+      "offset": 35444,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"v\", \"a\", \"i\", \"c\", \"o\", \"r\", \"e\", \".\", \"s\", \"i\", \"t\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35621,
+      "offset": 35619,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"a\", \"k\", \"i\", \"s\", \"i\", \"n\", \"n\", \".\", \"i\", \"n\", \"f\", \"o\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35796,
+      "offset": 35794,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"d\", \"e\", \"w\", \"r\", \"a\", \"i\", \"n\", \".\", \"s\", \"i\", \"t\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 35971,
+      "offset": 35969,
       "length": 149,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"a\", \"k\", \"i\", \"s\", \"i\", \"n\", \"n\", \".\", \"s\", \"i\", \"t\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 36146,
+      "offset": 36144,
       "length": 145,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"v\", \"a\", \"i\", \"c\", \"o\", \"r\", \"e\", \".\", \"x\", \"y\", \"z\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 36317,
+      "offset": 36315,
       "length": 153,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"v\", \"a\", \"i\", \"c\", \"o\", \"r\", \"e\", \".\", \"s\", \"t\", \"o\", \"r\", \"e\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 36496,
+      "offset": 36494,
       "length": 153,
       "value": "[\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"\/\", \"\/\", \"i\", \"n\", \"t\", \".\", \"d\", \"e\", \"w\", \"r\", \"a\", \"i\", \"n\", \".\", \"w\", \"o\", \"r\", \"l\", \"d\", \"\/\", \"t\", \"r\", \"a\", \"c\", \"k\", \"\/\", \"k\", \"v\", \"i\", \"n\", \"i\", \"t\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 37384,
+      "offset": 37382,
       "length": 87,
       "value": "\"Sending kvinit at \""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 37445,
+      "offset": 37443,
       "length": 7,
       "value": "\" seconds to \""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 37469,
+      "offset": 37467,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 37652,
+      "offset": 37650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 37768,
+      "offset": 37766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 37995,
+      "offset": 37993,
       "length": 61,
       "value": "\"Networking.Config.retrieveTransaction.didSucceedBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 38094,
+      "offset": 38092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 38149,
+      "offset": 38147,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 38261,
+      "offset": 38259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 38503,
+      "offset": 38501,
       "length": 32,
       "value": "\"Networking.Config.retrieveTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 38566,
+      "offset": 38564,
       "length": 17,
       "value": "\"config_retrieve\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "Array",
-      "offset": 38634,
+      "offset": 38632,
       "length": 55,
       "value": "[\"Networking.Config.enabledTask\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 39233,
+      "offset": 39231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 39631,
+      "offset": 39629,
       "length": 38,
       "value": "\"13783265-a6db-4d2e-885d-a36435446793\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 39751,
+      "offset": 39749,
       "length": 38,
       "value": "\"85248e1d-5821-4bc4-93ef-a01c57e357bc\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 40764,
+      "offset": 40762,
       "length": 38,
       "value": "\"Networking.Config.tokenStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 40833,
+      "offset": 40831,
       "length": 12,
       "value": "\"init_token\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 52399,
+      "offset": 52397,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 53583,
+      "offset": 53581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 55170,
+      "offset": 55168,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Config.swift",
       "kind": "StringLiteral",
-      "offset": 431,
+      "offset": 430,
       "length": 6,
       "value": "\"KochavaNetworking.Config\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 637,
       "length": 14,
       "value": "\"Context.host\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 683,
+      "offset": 682,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 711,
+      "offset": 710,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 836,
+      "offset": 835,
       "length": 13,
       "value": "\"Context.log\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 879,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 906,
+      "offset": 905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1058,
       "length": 27,
       "value": "\"Context.persistentStorage\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1117,
+      "offset": 1116,
       "length": 19,
       "value": "\"persistentStorage\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 1171,
+      "offset": 1170,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 1295,
       "length": 13,
       "value": "\"Context.sdk\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1339,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 1366,
+      "offset": 1365,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 1500,
       "length": 16,
       "value": "\"Context.server\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1547,
       "length": 8,
       "value": "\"server\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 1580,
+      "offset": 1579,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 1971,
       "length": 28,
       "value": "\"Context.serverUnrestricted\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2030,
       "length": 20,
       "value": "\"serverUnrestricted\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 2075,
+      "offset": 2074,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3531,
+      "offset": 3530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3564,
+      "offset": 3563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3611,
+      "offset": 3610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3644,
+      "offset": 3643,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3680,
+      "offset": 3679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 6422,
+      "offset": 6421,
       "length": 27,
       "value": "\"KochavaNetworking.Context\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "Array",
-      "offset": 6494,
+      "offset": 6493,
       "length": 82,
       "value": "[\"KVAContext\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 406,
+      "offset": 405,
       "length": 7,
       "value": "\"KochavaNetworking.Context\""
     },
@@ -83686,147 +83990,147 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSString+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 1612,
+      "offset": 1609,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSString+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 1653,
+      "offset": 1650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSString+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 2228,
+      "offset": 2225,
       "length": 10,
       "value": "\"NSString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSString+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 2582,
+      "offset": 2578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Diagnostic.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 1978,
       "length": 30,
       "value": "\"KochavaNetworking.Diagnostic\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "BooleanLiteral",
-      "offset": 1682,
+      "offset": 1681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "BooleanLiteral",
-      "offset": 1714,
+      "offset": 1713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3293,
+      "offset": 3292,
       "length": 23,
       "value": "\"KochavaNetworking.Log\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 4541,
+      "offset": 4540,
       "length": 25,
       "value": "\"Log.wrapperLevelSetTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 4597,
+      "offset": 4596,
       "length": 21,
       "value": "\"wrapper_setLogLevel\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "BooleanLiteral",
-      "offset": 4652,
+      "offset": 4651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 4991,
+      "offset": 4990,
       "length": 16,
       "value": "\"task.parameter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "BooleanLiteral",
-      "offset": 5099,
+      "offset": 5098,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 5222,
+      "offset": 5221,
       "length": 10,
       "value": "\"logLevel\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "Dictionary",
-      "offset": 6439,
+      "offset": 6438,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6555,
+      "offset": 6554,
       "length": 7,
       "value": "\"level\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6681,
+      "offset": 6680,
       "length": 6,
       "value": "\"note\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6691,
+      "offset": 6690,
       "length": 92,
       "value": "\"Please be advised that the log level is set higher than is recommended for a released app.\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6989,
+      "offset": 6988,
       "length": 17,
       "value": "\"level - did set\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 7155,
+      "offset": 7154,
       "length": 59,
       "value": "\"Set Log Level \""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 7213,
+      "offset": 7212,
       "length": 2,
       "value": "\"\""
     },
@@ -84225,28 +84529,28 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/AppGroups.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 1878,
       "length": 29,
       "value": "\"KochavaNetworking.AppGroups\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/AppGroups.swift",
       "kind": "StringLiteral",
-      "offset": 2399,
+      "offset": 2398,
       "length": 32,
       "value": "\"AppGroups.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/AppGroups.swift",
       "kind": "BooleanLiteral",
-      "offset": 7425,
+      "offset": 7423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/AppGroups.swift",
       "kind": "StringLiteral",
-      "offset": 7753,
+      "offset": 7751,
       "length": 58,
       "value": "\"com.kochava.AppGroups.generalAppGroupIdentifierDidMutate\""
     },
@@ -84323,336 +84627,336 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 16563,
+      "offset": 16562,
       "length": 14,
       "value": "\"transactions\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 16723,
+      "offset": 16722,
       "length": 43,
       "value": "\"KochavaNetworking.Networking.Transactions\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 35014,
+      "offset": 35013,
       "length": 38,
       "value": "\"49c76947-aa75-4a9a-9d4b-b1dcc84aeb5c\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 35280,
+      "offset": 35279,
       "length": 37,
       "value": "\".Networking.Transactions.collection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 36463,
+      "offset": 36462,
       "length": 38,
       "value": "\"192a66e2-1619-4ee2-9aea-7a3734663502\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 36729,
+      "offset": 36728,
       "length": 42,
       "value": "\"Networking.Transactions.collection_local\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 37710,
+      "offset": 37709,
       "length": 74,
       "value": "\"Networking.Transactions.attemptInProgressConcurrentMaximumRegulationTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 38169,
+      "offset": 38168,
       "length": 51,
       "value": "\"attempt_in_progress_concurrent_maximum_regulation\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 38249,
+      "offset": 38248,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 41242,
+      "offset": 41241,
       "length": 38,
       "value": "\"Networking.Transactions.queueAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 41311,
+      "offset": 41310,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 41360,
+      "offset": 41359,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "FloatLiteral",
-      "offset": 41405,
+      "offset": 41404,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 42129,
+      "offset": 42128,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 42814,
+      "offset": 42813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 44167,
+      "offset": 44166,
       "length": 15,
       "value": "\"rate_limiting\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 44207,
+      "offset": 44206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 44232,
+      "offset": 44231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "FloatLiteral",
-      "offset": 44649,
+      "offset": 44648,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "FloatLiteral",
-      "offset": 44727,
+      "offset": 44726,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "FloatLiteral",
-      "offset": 44997,
+      "offset": 44996,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "FloatLiteral",
-      "offset": 45050,
+      "offset": 45049,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 45170,
+      "offset": 45169,
       "length": 38,
       "value": "\"054d3571-2dd2-4307-bdce-7d7f8d5ce37d\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 45638,
+      "offset": 45637,
       "length": 102,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 45665,
+      "offset": 45664,
       "length": 1,
       "value": "\" - Rate limiting window request count was relieved.  Will lift regulation.\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 45902,
+      "offset": 45901,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 48931,
+      "offset": 48930,
       "length": 70,
       "value": "\"Networking.Transactions.rateLimitingWindowRequestCountRegulationTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 56494,
+      "offset": 56493,
       "length": 56,
       "value": "\"Networking.overrideTransactionArrayDictionaryDidMutate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 62118,
+      "offset": 62117,
       "length": 65,
       "value": "\"Networking.processingOrderResequencingWaitTimeIntervalDidMutate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 65453,
+      "offset": 65452,
       "length": 48,
       "value": "\"Networking.processingWaitTimeIntervalDidMutate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 71034,
+      "offset": 71033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 72125,
+      "offset": 72124,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 72419,
+      "offset": 72418,
       "length": 59,
       "value": "\"Networking.Transactions.errorRetryGroupWaitTask [groupId]\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "Dictionary",
-      "offset": 73046,
+      "offset": 73045,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 83842,
+      "offset": 83841,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 84351,
+      "offset": 84350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "Dictionary",
-      "offset": 84556,
+      "offset": 84555,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 99085,
+      "offset": 99084,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 99188,
+      "offset": 99187,
       "length": 61,
       "value": "\"Networking.Transactions.processingOrderResequencingWaitTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 109681,
+      "offset": 109680,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 109877,
+      "offset": 109876,
       "length": 27,
       "value": "\"processing_wait_completed\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 109934,
+      "offset": 109933,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 109962,
+      "offset": 109961,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "StringLiteral",
-      "offset": 110053,
+      "offset": 110052,
       "length": 44,
       "value": "\"Networking.Transactions.processingWaitTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "IntegerLiteral",
-      "offset": 110417,
+      "offset": 110416,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 113418,
+      "offset": 113417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "Array",
-      "offset": 115944,
+      "offset": 115943,
       "length": 84,
       "value": "[7.0, 30.0, 300.0, 1800.0]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Transactions.swift",
       "kind": "BooleanLiteral",
-      "offset": 116067,
+      "offset": 116066,
       "length": 4,
       "value": "true"
     },
@@ -84918,21 +85222,21 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSDictionary+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 901,
+      "offset": 899,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSDictionary+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 942,
+      "offset": 940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSDictionary+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 1539,
+      "offset": 1537,
       "length": 14,
       "value": "\"NSDictionary\""
     },
@@ -85940,161 +86244,161 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "StringLiteral",
-      "offset": 6046,
+      "offset": 6035,
       "length": 37,
       "value": "\"KochavaNetworking.ProductController\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17461,
+      "offset": 16749,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17503,
+      "offset": 16791,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17541,
+      "offset": 16829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17578,
+      "offset": 16866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17623,
+      "offset": 16911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "StringLiteral",
-      "offset": 23122,
+      "offset": 22408,
       "length": 34,
       "value": "\"ProductController.typeCollection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25107,
+      "offset": 22767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "Array",
-      "offset": 28038,
+      "offset": 25698,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "StringLiteral",
-      "offset": 28433,
+      "offset": 26093,
       "length": 39,
       "value": "\"ProductController.productArrayAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/ProductController.swift",
       "kind": "StringLiteral",
-      "offset": 28504,
+      "offset": 26164,
       "length": 10,
       "value": "\"products\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSDate+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 799,
       "length": 8,
       "value": "\"NSDate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 7655,
+      "offset": 7654,
       "length": 7,
       "value": "\"tasks\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 7808,
+      "offset": 7807,
       "length": 36,
       "value": "\"KochavaNetworking.Networking.Tasks\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 15066,
+      "offset": 15065,
       "length": 38,
       "value": "\"362d9755-3a11-4722-8536-6a6bde731552\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 15332,
+      "offset": 15331,
       "length": 30,
       "value": "\".Networking.Tasks.collection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 16486,
+      "offset": 16485,
       "length": 38,
       "value": "\"cad11d1c-f3d7-4593-abb8-e5814b7171c4\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 16752,
+      "offset": 16751,
       "length": 35,
       "value": "\"Networking.Tasks.collection_local\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "IntegerLiteral",
-      "offset": 17838,
+      "offset": 17837,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "IntegerLiteral",
-      "offset": 17918,
+      "offset": 17917,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "StringLiteral",
-      "offset": 24479,
+      "offset": 24478,
       "length": 49,
       "value": "\"Networking.overrideTaskArrayDictionaryDidMutate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "BooleanLiteral",
-      "offset": 24784,
+      "offset": 24783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Tasks.swift",
       "kind": "BooleanLiteral",
-      "offset": 26819,
+      "offset": 26818,
       "length": 5,
       "value": "false"
     },
@@ -86178,189 +86482,203 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.UserDefaults.Resource.swift",
       "kind": "StringLiteral",
-      "offset": 3444,
+      "offset": 3450,
       "length": 23,
       "value": "\"UserDefaults.Resource\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.UserDefaults.Resource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8510,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.UserDefaults.Resource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17103,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.UserDefaults.Resource.swift",
       "kind": "StringLiteral",
-      "offset": 11239,
+      "offset": 18181,
       "length": 20,
       "value": "\"UserDefaults.Suite\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 7271,
+      "offset": 7270,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 7312,
+      "offset": 7311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 7360,
+      "offset": 7359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 19232,
+      "offset": 19231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 35483,
+      "offset": 35482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 47567,
+      "offset": 47566,
       "length": 12,
       "value": "\"networking\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 47725,
+      "offset": 47724,
       "length": 30,
       "value": "\"KochavaNetworking.Networking\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 48255,
+      "offset": 48254,
       "length": 33,
       "value": "\"Networking.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 55998,
+      "offset": 55996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 56344,
+      "offset": 56342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 56378,
+      "offset": 56376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 64261,
+      "offset": 64259,
       "length": 20,
       "value": "\"Networking.adapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 64312,
+      "offset": 64310,
       "length": 12,
       "value": "\"networking\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 64492,
+      "offset": 64490,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "FloatLiteral",
-      "offset": 64537,
+      "offset": 64535,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 64595,
+      "offset": 64593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 67776,
+      "offset": 67774,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 71284,
+      "offset": 71282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 72644,
+      "offset": 72642,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 72913,
+      "offset": 72911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "Array",
-      "offset": 73214,
+      "offset": 73212,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 75581,
+      "offset": 75579,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 78863,
+      "offset": 78861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 79123,
+      "offset": 79121,
       "length": 24,
       "value": "\"Networking.willDealloc\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 1663,
+      "offset": 1662,
       "length": 10,
       "value": "\"KochavaNetworking.Networking\""
     },
@@ -86388,77 +86706,77 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/PrivacyProfile.swift",
       "kind": "StringLiteral",
-      "offset": 11706,
+      "offset": 11702,
       "length": 34,
       "value": "\"KochavaNetworking.PrivacyProfile\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/PrivacyProfile.swift",
       "kind": "Array",
-      "offset": 11785,
+      "offset": 11781,
       "length": 89,
       "value": "[\"KVAPrivacyProfile\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/PrivacyProfile.swift",
       "kind": "StringLiteral",
-      "offset": 268,
+      "offset": 267,
       "length": 14,
       "value": "\"KochavaNetworking.PrivacyProfile\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 7674,
+      "offset": 7673,
       "length": 15,
       "value": "\"value_sources\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 7835,
+      "offset": 7834,
       "length": 43,
       "value": "\"KochavaNetworking.Networking.ValueSources\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 13424,
+      "offset": 13423,
       "length": 38,
       "value": "\"7b62be9f-4375-478a-9a44-f1e32a33c700\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 13690,
+      "offset": 13689,
       "length": 37,
       "value": "\".Networking.ValueSources.collection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 15035,
+      "offset": 15034,
       "length": 38,
       "value": "\"1fa7b3ea-dece-494c-8c4a-4aa15ebbf239\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 15301,
+      "offset": 15300,
       "length": 42,
       "value": "\"Networking.ValueSources.collection_local\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "StringLiteral",
-      "offset": 19607,
+      "offset": 19606,
       "length": 52,
       "value": "\"Networking.overrideAdapterArrayDictionaryDidMutate\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.ValueSources.swift",
       "kind": "BooleanLiteral",
-      "offset": 19924,
+      "offset": 19923,
       "length": 5,
       "value": "false"
     },
@@ -87039,28 +87357,28 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSData+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 796,
+      "offset": 795,
       "length": 8,
       "value": "\"NSData\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSNumber+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 2693,
+      "offset": 2691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSNumber+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 3323,
+      "offset": 3320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSNumber+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 3854,
+      "offset": 3851,
       "length": 10,
       "value": "\"NSNumber\""
     },
@@ -87207,182 +87525,182 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "BooleanLiteral",
-      "offset": 892,
+      "offset": 891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "StringLiteral",
-      "offset": 12181,
+      "offset": 12178,
       "length": 27,
       "value": "\"KochavaNetworking.Consent\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "Array",
-      "offset": 12253,
+      "offset": 12250,
       "length": 82,
       "value": "[\"KVAConsent\"]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "StringLiteral",
-      "offset": 19351,
+      "offset": 19348,
       "length": 17,
       "value": "\"Consent.adapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "BooleanLiteral",
-      "offset": 23447,
+      "offset": 23444,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "BooleanLiteral",
-      "offset": 25549,
+      "offset": 25546,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "BooleanLiteral",
-      "offset": 27520,
+      "offset": 27517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Consent.swift",
       "kind": "BooleanLiteral",
-      "offset": 28397,
+      "offset": 28394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 754,
+      "offset": 753,
       "length": 28,
       "value": "\"Log.Level.OSLevel.critical\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 817,
+      "offset": 816,
       "length": 10,
       "value": "\"critical\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1088,
+      "offset": 1087,
       "length": 25,
       "value": "\"Log.Level.OSLevel.fault\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1148,
+      "offset": 1147,
       "length": 7,
       "value": "\"fault\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1384,
       "length": 25,
       "value": "\"Log.Level.OSLevel.error\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1445,
+      "offset": 1444,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1683,
+      "offset": 1682,
       "length": 24,
       "value": "\"Log.Level.OSLevel.warn\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1741,
       "length": 6,
       "value": "\"warn\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 1972,
       "length": 24,
       "value": "\"Log.Level.OSLevel.info\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2032,
+      "offset": 2031,
       "length": 6,
       "value": "\"info\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2248,
+      "offset": 2247,
       "length": 25,
       "value": "\"Log.Level.OSLevel.debug\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 2307,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2535,
+      "offset": 2534,
       "length": 25,
       "value": "\"Log.Level.OSLevel.trace\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2595,
+      "offset": 2594,
       "length": 7,
       "value": "\"trace\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2793,
+      "offset": 2792,
       "length": 26,
       "value": "\"Log.Level.OSLevel.notice\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2853,
       "length": 8,
       "value": "\"notice\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 6323,
+      "offset": 6322,
       "length": 37,
       "value": "\"KochavaNetworking.Log.Level.OSLevel\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Level.OSLogLevel.swift",
       "kind": "StringLiteral",
-      "offset": 365,
+      "offset": 364,
       "length": 7,
       "value": "\"KochavaNetworking.OSLevel\""
     },
@@ -87431,168 +87749,168 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 3106,
+      "offset": 3242,
       "length": 26,
       "value": "\"KochavaNetworking.System\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 3623,
+      "offset": 3759,
       "length": 21,
       "value": "\"System.shared_actor\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 3679,
+      "offset": 3815,
       "length": 15,
       "value": "\"system_shared\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 3763,
+      "offset": 3899,
       "length": 45,
       "value": "\"com.kochava.KochavaNetworking.System.shared\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 4468,
+      "offset": 4604,
       "length": 29,
       "value": "\"System.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 4726,
+      "offset": 4862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 24171,
+      "offset": 24305,
       "length": 32,
       "value": "\"System.appExtensionBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 24235,
+      "offset": 24369,
       "length": 11,
       "value": "\"extension\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 24280,
+      "offset": 24414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 24422,
+      "offset": 24556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 27795,
+      "offset": 27929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 32139,
+      "offset": 32273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "BooleanLiteral",
-      "offset": 32338,
+      "offset": 32472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 32576,
+      "offset": 32872,
       "length": 30,
       "value": "\"System.valueSourceCollection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 33072,
+      "offset": 33368,
       "length": 40,
       "value": "\"MessagesViewController.didBecomeActive\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 33436,
+      "offset": 33732,
       "length": 40,
       "value": "\"MessagesViewController.didResignActive\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 33745,
+      "offset": 34041,
       "length": 29,
       "value": "\"System.stateActiveDidBecome\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/System.swift",
       "kind": "StringLiteral",
-      "offset": 34022,
+      "offset": 34318,
       "length": 30,
       "value": "\"System.stateActiveWillResign\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/TimeIntervalSeries.swift",
       "kind": "StringLiteral",
-      "offset": 10747,
+      "offset": 10746,
       "length": 38,
       "value": "\"KochavaNetworking.TimeIntervalSeries\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/TimeIntervalSeries.swift",
       "kind": "IntegerLiteral",
-      "offset": 20010,
+      "offset": 20009,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/TimeIntervalSeries.swift",
       "kind": "IntegerLiteral",
-      "offset": 21221,
+      "offset": 21220,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSURL+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 658,
+      "offset": 657,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSURL+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 699,
+      "offset": 698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/@Apple.Foundation.NSArray+Networking.swift",
       "kind": "StringLiteral",
-      "offset": 1476,
+      "offset": 1475,
       "length": 9,
       "value": "\"NSArray\""
     },
@@ -87781,847 +88099,847 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 103666,
+      "offset": 101735,
       "length": 50,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 103688,
+      "offset": 101757,
       "length": 1,
       "value": "\".asynchronousCollectionTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 103748,
+      "offset": 101817,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 105740,
+      "offset": 103809,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 105889,
+      "offset": 103958,
       "length": 38,
       "value": "\"72003b57-afc0-44fa-93e8-1c9cd4e71502\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 106038,
+      "offset": 104107,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "FloatLiteral",
-      "offset": 106825,
+      "offset": 104894,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 106967,
+      "offset": 105036,
       "length": 38,
       "value": "\"97b55c83-94b8-4acd-9b81-4a17cf39c7f1\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 107094,
+      "offset": 105163,
       "length": 110,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 107116,
+      "offset": 105185,
       "length": 1,
       "value": "\" - Asynchronous collection process - Did complete after substantial elapsedTimeInterval\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 107296,
+      "offset": 105365,
       "length": 21,
       "value": "\"elapsedTimeInterval\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 107490,
+      "offset": 105559,
       "length": 38,
       "value": "\"26ab73dc-8e6c-4bba-873e-b0dafba0d4ea\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 108037,
+      "offset": 106106,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 108497,
+      "offset": 106566,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 108894,
+      "offset": 106963,
       "length": 9,
       "value": "\"KVAAA-U\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 109624,
+      "offset": 107693,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 110235,
+      "offset": 108304,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 154890,
+      "offset": 152959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 162299,
+      "offset": 160368,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 172603,
+      "offset": 170672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 172734,
+      "offset": 170803,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 174170,
+      "offset": 172239,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 181090,
+      "offset": 179159,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 181328,
+      "offset": 179397,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 189651,
+      "offset": 187720,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 190183,
+      "offset": 188252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "StringLiteral",
-      "offset": 190387,
+      "offset": 188456,
       "length": 34,
       "value": "\".persistentStorageWriteWaitTimer\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 190656,
+      "offset": 188725,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 208184,
+      "offset": 206253,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 208236,
+      "offset": 206305,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 208252,
+      "offset": 206321,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 211029,
+      "offset": 209098,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 211515,
+      "offset": 209584,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Adapter.swift",
       "kind": "FloatLiteral",
-      "offset": 213414,
+      "offset": 211483,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 41813,
+      "offset": 43935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 42750,
+      "offset": 44871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 44442,
+      "offset": 46562,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 44484,
+      "offset": 46604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 52631,
+      "offset": 54751,
       "length": 27,
       "value": "\"KochavaNetworking.Product\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 53163,
+      "offset": 55283,
       "length": 41,
       "value": "\"Networking.Product.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 53922,
+      "offset": 56041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 54753,
+      "offset": 56871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 59078,
+      "offset": 61196,
       "length": 64,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 59103,
+      "offset": 61221,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 59115,
+      "offset": 61233,
       "length": 1,
       "value": "\".Product.bundleTypeAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 59174,
+      "offset": 61292,
       "length": 13,
       "value": "\"bundle_type\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 59221,
+      "offset": 61339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 60650,
+      "offset": 62768,
       "length": 87,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 60675,
+      "offset": 62793,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 60687,
+      "offset": 62805,
       "length": 1,
       "value": "\".Product.capabilitiesBitwiseIntegersStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 60769,
+      "offset": 62887,
       "length": 18,
       "value": "\"sdk_capabilities\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 61589,
+      "offset": 63707,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 61614,
+      "offset": 63732,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 61626,
+      "offset": 63744,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 62070,
+      "offset": 64188,
       "length": 79,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 62095,
+      "offset": 64213,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 62107,
+      "offset": 64225,
       "length": 1,
       "value": "\".Product.standardVersionInfoStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 62181,
+      "offset": 64299,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 65243,
+      "offset": 67361,
       "length": 30,
       "value": "\"KochavaNetworking.BundleType\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 68289,
+      "offset": 70435,
       "length": 40,
       "value": "\"KochavaNetworking.Product.Relationship\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 72002,
+      "offset": 74148,
       "length": 53,
       "value": "\"KochavaNetworking.Product.Relationship.OneDirection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 73820,
+      "offset": 75966,
       "length": 63,
       "value": "\"KochavaNetworking.Product.Relationship.NetworkingRelationship\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 79917,
+      "offset": 82063,
       "length": 76,
       "value": "\"KochavaNetworking.Product.Relationship.NetworkingRelationship.OneDirection\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 86054,
+      "offset": 88200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 91367,
+      "offset": 93512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 91554,
+      "offset": 93699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 472,
       "length": 7,
       "value": "\"KochavaNetworking.Product\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 14855,
+      "offset": 14854,
       "length": 9,
       "value": "\"general\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 15010,
+      "offset": 15009,
       "length": 38,
       "value": "\"KochavaNetworking.Networking.General\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 30795,
+      "offset": 30794,
       "length": 16,
       "value": "\"kochava_app_id\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 30845,
+      "offset": 30844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 30891,
+      "offset": 30890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 31621,
+      "offset": 31620,
       "length": 41,
       "value": "\"Networking.General.appGUIDStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32059,
+      "offset": 32058,
       "length": 7,
       "value": "\"block\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32337,
+      "offset": 32336,
       "length": 30,
       "value": "\"Networking.General.blockTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32591,
+      "offset": 32590,
       "length": 17,
       "value": "\"(no networking)\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32858,
+      "offset": 32857,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32881,
+      "offset": 32880,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32949,
+      "offset": 32948,
       "length": 70,
       "value": "\"KI\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 32988,
+      "offset": 32987,
       "length": 1,
       "value": "\"T\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 33018,
+      "offset": 33017,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 33301,
+      "offset": 33300,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 33347,
+      "offset": 33346,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 34055,
+      "offset": 34054,
       "length": 45,
       "value": "\"Networking.General.installIdentifierAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 34542,
+      "offset": 34541,
       "length": 13,
       "value": "\"instance_id\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 34597,
+      "offset": 34596,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 34978,
+      "offset": 34977,
       "length": 46,
       "value": "\"Networking.General.instanceIdentifierAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 35471,
+      "offset": 35470,
       "length": 14,
       "value": "\"partner_name\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 35510,
+      "offset": 35509,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 35551,
+      "offset": 35550,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 35597,
+      "offset": 35596,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 36041,
+      "offset": 36040,
       "length": 45,
       "value": "\"Networking.General.partnerNameStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 36466,
+      "offset": 36465,
       "length": 17,
       "value": "\"shared_instance\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 36517,
+      "offset": 36516,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 37038,
+      "offset": 37037,
       "length": 46,
       "value": "\"Networking.General.sharedInstanceBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 37509,
+      "offset": 37508,
       "length": 7,
       "value": "\"sleep\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 37906,
+      "offset": 37905,
       "length": 30,
       "value": "\"Networking.General.sleepTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 38246,
+      "offset": 38245,
       "length": 11,
       "value": "\"starttime\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 38282,
+      "offset": 38281,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 38323,
+      "offset": 38322,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 38822,
+      "offset": 38821,
       "length": 39,
       "value": "\"Networking.General.startedDateAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 39313,
+      "offset": 39312,
       "length": 9,
       "value": "\"started\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 39354,
+      "offset": 39353,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 39707,
+      "offset": 39706,
       "length": 32,
       "value": "\"Networking.General.startedTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 40194,
+      "offset": 40193,
       "length": 103,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 40248,
+      "offset": 40247,
       "length": 1,
       "value": "\".Networking.General.startSequenceDidCompleteTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 40328,
+      "offset": 40327,
       "length": 16,
       "value": "\"start_sequence\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 40853,
+      "offset": 40852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 40935,
+      "offset": 40934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 40973,
+      "offset": 40972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 41336,
+      "offset": 41335,
       "length": 45,
       "value": "\"Networking.General.storageIdentifierAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 41412,
+      "offset": 41411,
       "length": 12,
       "value": "\"storage_id\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 53715,
+      "offset": 53714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "Dictionary",
-      "offset": 55405,
+      "offset": 55404,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 56401,
+      "offset": 56400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 57704,
+      "offset": 57703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 57896,
+      "offset": 57895,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 58032,
+      "offset": 58031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "IntegerLiteral",
-      "offset": 60338,
+      "offset": 60337,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "BooleanLiteral",
-      "offset": 61928,
+      "offset": 61927,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.General.swift",
       "kind": "StringLiteral",
-      "offset": 414,
+      "offset": 413,
       "length": 7,
       "value": "\"KochavaNetworking.General\""
     },
@@ -89531,70 +89849,70 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "BooleanLiteral",
-      "offset": 1914,
+      "offset": 1913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 22727,
+      "offset": 22725,
       "length": 9,
       "value": "\"privacy\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 22882,
+      "offset": 22880,
       "length": 38,
       "value": "\"KochavaNetworking.Networking.Privacy\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 39670,
+      "offset": 39667,
       "length": 21,
       "value": "\"intelligent_consent\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 41250,
+      "offset": 41247,
       "length": 15,
       "value": "\"privacy_sleep\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 41659,
+      "offset": 41656,
       "length": 19,
       "value": "\"Privacy.sleepTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "BooleanLiteral",
-      "offset": 47156,
+      "offset": 47153,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "BooleanLiteral",
-      "offset": 55230,
+      "offset": 55227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "BooleanLiteral",
-      "offset": 57966,
+      "offset": 57963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Networking.Privacy.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 339,
       "length": 7,
       "value": "\"KochavaNetworking.Privacy\""
     }
