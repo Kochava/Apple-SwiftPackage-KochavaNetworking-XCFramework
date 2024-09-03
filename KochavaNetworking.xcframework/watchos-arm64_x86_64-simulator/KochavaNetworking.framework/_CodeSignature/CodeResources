@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TT1vEduUlotTU3NLwxxymY0rHwc=
+		54E+J43WkxRJFLTOA3ixEQnbVjw=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		5o0Gz6yiWh+oZ8sxt10609KTbgY=
+		Hru+jNDrSrHwiXblVjzYx6xfDyY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		5o0Gz6yiWh+oZ8sxt10609KTbgY=
+		Hru+jNDrSrHwiXblVjzYx6xfDyY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nNgzzFFLO/VrujM8cJqlxkW09J/WVVjHHzU97C2JNqE=
+			PVW6X5vQ4v1iV4EiXK4yj5hCuiL9lB0pFU54pUZnLX4=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nNgzzFFLO/VrujM8cJqlxkW09J/WVVjHHzU97C2JNqE=
+			PVW6X5vQ4v1iV4EiXK4yj5hCuiL9lB0pFU54pUZnLX4=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>

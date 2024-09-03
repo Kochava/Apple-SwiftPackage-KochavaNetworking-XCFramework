@@ -87255,21 +87255,21 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 225906,
+      "offset": 226369,
       "length": 44,
       "value": "\"Transaction.attemptDidFinishButNotComplete\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 226104,
+      "offset": 226567,
       "length": 25,
       "value": "\"Transaction.didComplete\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 226591,
+      "offset": 227054,
       "length": 28,
       "value": "\"Transaction.requestBodyKey\""
     },
@@ -87647,14 +87647,14 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Message.swift",
       "kind": "BooleanLiteral",
-      "offset": 51182,
+      "offset": 51081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaNetworking\/Sources\/KochavaNetworking\/Log.Message.swift",
       "kind": "StringLiteral",
-      "offset": 53766,
+      "offset": 53665,
       "length": 22,
       "value": "\"Log.Message.didPrint\""
     },

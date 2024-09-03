@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iN24LN71CmuXMbfiOzNralPlju0=
+		ZVuBmjR8xbl0+glW14a/Nz9IuJs=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QuS2HCfS+jWIc5gNvbizEffwwNY=
+		pB9Z2YioGcjlEYUziR0Nle5zRvc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QuS2HCfS+jWIc5gNvbizEffwwNY=
+		pB9Z2YioGcjlEYUziR0Nle5zRvc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBgQGZaKBXqEXKC5WC7uH017b1kbxyqV7ss5anJts+U=
+			+NOT3dSbBALheAEqqbKXe2t4A9w1embskXbu2osWkQs=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBgQGZaKBXqEXKC5WC7uH017b1kbxyqV7ss5anJts+U=
+			+NOT3dSbBALheAEqqbKXe2t4A9w1embskXbu2osWkQs=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

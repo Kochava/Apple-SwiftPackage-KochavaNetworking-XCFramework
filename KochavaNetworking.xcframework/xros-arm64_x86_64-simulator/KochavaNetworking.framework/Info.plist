@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>8.4.0</string>
+	<string>8.4.1</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>XRSimulator</string>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>15E204a</string>
 	<key>KVABuildDateString</key>
-	<string>2024-08-16T09:47:56-0700</string>
+	<string>2024-08-30T08:38:14-0700</string>
 	<key>MinimumOSVersion</key>
 	<string>1.0</string>
 	<key>UIDeviceFamily</key>
