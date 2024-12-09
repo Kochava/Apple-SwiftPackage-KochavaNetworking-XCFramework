@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		g/mQ7OH0UYVO4zuWmjjdfRrLnlU=
+		9cDPBzhfzBkdLZuYLEKHfOyP4XA=
 		</data>
 		<key>Headers/KochavaNetworking.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Pij8izdRUfJfXBBiMvNQXfWRMdM=
+		DVngiqkcgkecyLg84+nX5iGskeI=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		1KWhIhcv7E4pgBXUhMi1KLEzUPU=
+		nAOheFMiFztUewFV7kJmpLMzNuY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		X7Q/IwwtkL69q8nuONBSSKmXT70=
+		5X4eBk2FJN8Grxou0oXhQaHn8rA=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		ZHEdCS7UuKT36v42US9Pbb7d0VA=
+		205/dQYrL+syndSCAY9b8T+LjuA=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		X7Q/IwwtkL69q8nuONBSSKmXT70=
+		5X4eBk2FJN8Grxou0oXhQaHn8rA=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		ZX/mfie48b7FNUFr7awMjyXDhuU=
+		3bnG18ZLBDd+SCP7azk2Dz1C+F4=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		1KWhIhcv7E4pgBXUhMi1KLEzUPU=
+		nAOheFMiFztUewFV7kJmpLMzNuY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		V09zY+zXD5gGL7yrfZXUJzmc5bQ=
+		xbH6ZPjMpPiR+unuqmkPqgtzs/w=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		zD3tpU6xlgvPOninadpR65ywrOs=
+		5hFRUjf1KWOngcBCDJBMzkjgQLQ=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		V09zY+zXD5gGL7yrfZXUJzmc5bQ=
+		xbH6ZPjMpPiR+unuqmkPqgtzs/w=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		oVU3+5dX8tukVI/3SSAA+66iZbQ=
+		zPHcKBUQSP8gK64sDkuZY912qsg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tA+OvLxuN9UG9ozbCjZaD3kH1p70i1FwHVponBY49m8=
+			ILQFnajwrBZqYJnMzTaGdtpwdxscGUDCaSvk9xNe6lQ=
 			</data>
 		</dict>
 		<key>Headers/KochavaNetworking.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FENGEDxhj8EvH5kJzx3TwIF+OPYqa2XMthXmuF790as=
+			go6cLWX047G19G/gDezQoQfVPy84xGGFOXhll17LQWg=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScJv8hTowcuvzcAqPgjqMJD7mf0+/FvjvngRC5xwW4M=
+			7ps7nbQgF98pEy0wH6jaFEuuKUvw7WMb7noygk5mkQI=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dREzyznrqXo+fdf5t2xDWEsSg6ghQFAsqChw98JYE8M=
+			JtypvbVHHrw9WSorX5MVuUXabHtP3+NtWZi93KbDm1g=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScJv8hTowcuvzcAqPgjqMJD7mf0+/FvjvngRC5xwW4M=
+			7ps7nbQgF98pEy0wH6jaFEuuKUvw7WMb7noygk5mkQI=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EnEqe4GNLDRupcdg3IFbP6hs3Hf6T61dW2RULSDb4r0=
+			1na0kfU9ix3nBWfVUV3uytnfUvr42wh5iH51godcmXI=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FENGEDxhj8EvH5kJzx3TwIF+OPYqa2XMthXmuF790as=
+			go6cLWX047G19G/gDezQoQfVPy84xGGFOXhll17LQWg=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SM8uz00MGumkCsmNYTdHAlySyhiPpi26CvC5kxf8Ybo=
+			WZQFIoWcC5FINDvizXP8WaJz0mAvS53nYRIBOGQ2aGw=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			513oP/37IM6pSWklmY+dQdbN7hT2ndB3WBs+K4vWjZI=
+			ent/as0MzvJn5tCa371H46z8sB0q+1GraN50Lr1JXXY=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SM8uz00MGumkCsmNYTdHAlySyhiPpi26CvC5kxf8Ybo=
+			WZQFIoWcC5FINDvizXP8WaJz0mAvS53nYRIBOGQ2aGw=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/UOwo6bcmFeYi6zUwV4M7kLfjXMIuCvyZMVOKANKOec=
+			vnfYyyANKth9Q8j9ST+SQAWkr3XbOaxxPf7I1u3kTqk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
