@@ -4,8 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "KochavaNetworking",
-    platforms: 
+    name: "KochavaNetworking", // the display name in the navigator
+    platforms:
     [
         .iOS(.v14),
         .macCatalyst(.v14),
