@@ -1,3 +1,14 @@
+
+#
+# .gitignore
+# Apple-SwiftPackage-KochavaNetworking-XCFramework
+#
+# Created by John Bushnell on 4/29/2025
+# Copyright © 2013 - 2025 Kochava, Inc.  All rights reserved.
+#
+
+
+
 .DS_Store
 /.build
 /Packages

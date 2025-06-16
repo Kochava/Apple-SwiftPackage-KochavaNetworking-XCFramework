@@ -681,7 +681,7 @@ SWIFT_CLASS_NAMED("Networking")
 ///
 /// \param prerequisiteTaskIdentifierArray An optional array of task identifiers to use as prerequisites.
 ///
-- (void)executeAdvancedInstructionWithUniversalIdentifier:(NSObject * _Nonnull)universalIdentifier parameter:(id _Nullable)parameter prerequisiteTaskIdentifierArray:(NSArray<NSString *> * _Nullable)prerequisiteTaskIdentifierArray;
+- (void)executeAdvancedInstructionWithUniversalIdentifier:(NSObject * _Nonnull)universalIdentifier parameter:(id _Nullable)parameter prerequisiteTaskIdentifierArray:(NSArray<NSString *> * _Nullable)prerequisiteTaskIdentifierArray closure_didComplete:(void (^ _Nullable)(NSString * _Nullable))closure_didComplete;
 /// A feature which is responsible for controlling and updating the configuration of the networking instance.  This includes any clients, parent or linked.
 /// <h1>See</h1>
 /// Class <code>Networking/Config-swift.class</code>.
@@ -727,29 +727,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL sharedLinkAutomaticallyBo
 @end
 
 
-@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
-@end
-
-
-/// A feature which is responsible for providing support for tasks.
-SWIFT_CLASS_NAMED("Tasks")
-@interface KVANetworking_Tasks : NSObject
+/// A feature which is responsible for providing support for value sources.
+SWIFT_CLASS_NAMED("ValueSources")
+@interface KVANetworking_ValueSources : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
-@end
-
-
-/// A feature which is responsible for providing support for network transactions.
-SWIFT_CLASS_NAMED("Transactions")
-@interface KVANetworking_Transactions : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -775,12 +756,64 @@ SWIFT_CLASS_NAMED("General")
 @end
 
 
-/// A feature which is responsible for linking networking instances together.  This extends to include their associated clients, parent or linked.
-SWIFT_CLASS_NAMED("Linking")
-@interface KVANetworking_Linking : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
 @end
 
+@class KVAPrivacyProfile;
+
+/// A protocol whereby a <code>PrivacyProfile</code> may be registered.
+SWIFT_PROTOCOL_NAMED("Registrar")
+@protocol KVAPrivacyProfile_Registrar
+- (void)registerProfile:(KVAPrivacyProfile * _Nonnull)profile;
+@end
+
+
+/// A feature which is responsible for privacy, including <code>Privacy/intelligentConsent</code>.
+SWIFT_CLASS_NAMED("Privacy")
+@interface KVANetworking_Privacy : NSObject <KVANetworking_Provider, KVAPrivacyProfile_Registrar, KVAPrivacyProfile_RegistrarProvider>
+/// Register a profile.
+/// \param profile The profile to register.
+///
+- (void)registerProfile:(KVAPrivacyProfile * _Nonnull)profile;
+@property (nonatomic, readonly, strong) id <KVAPrivacyProfile_Registrar> _Nonnull privacyProfile_registrar;
+/// Set a boolean indicating if the specified profile name is enabled.
+/// See func <code>register(profile:)</code>.
+/// \param profileName The name of a profile.
+///
+/// \param enabledBool A boolean indicating if enabled.
+///
+- (void)setEnabledBoolForProfileName:(NSString * _Nonnull)profileName enabledBool:(BOOL)enabledBool;
+/// A feature which serves as an authority related to consent for the sharing of personal data.
+/// Data sharing privacy laws such as GDPR require consent to be obtained before certain kinds of personal data may be collected, kept in memory, persisted or retained in persistent storage, and/or shared with partners.  During the natural lifecycle, there are times where partners may be added and cause the consent status to fall back to an unknown state.  Later the user may again be prompted and the consent status may (or may not) again come to be known.  All of this is predicated upon whether or not consent is required, which is governed by a variety of factors such as location.
+@property (nonatomic, readonly, strong) KVAConsent * _Nonnull intelligentConsent;
+/// An instance of networking.
+@property (nonatomic, weak) KVANetworking * _Nullable networking;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
+@end
+
+
+/// A feature which is responsible for providing support for network transactions.
+SWIFT_CLASS_NAMED("Transactions")
+@interface KVANetworking_Transactions : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
+@end
+
+
+/// A feature which is responsible for providing support for tasks.
+SWIFT_CLASS_NAMED("Tasks")
+@interface KVANetworking_Tasks : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 @interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
@@ -807,51 +840,19 @@ SWIFT_CLASS_NAMED("Config")
 @end
 
 
-@interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
-@end
 
-@class KVAPrivacyProfile;
-
-/// A protocol whereby a <code>PrivacyProfile</code> may be registered.
-SWIFT_PROTOCOL_NAMED("Registrar")
-@protocol KVAPrivacyProfile_Registrar
-- (void)registerProfile:(KVAPrivacyProfile * _Nonnull)profile;
-@end
-
-
-/// A feature which is responsible for privacy, including <code>Privacy/intelligentConsent</code>.
-SWIFT_CLASS_NAMED("Privacy")
-@interface KVANetworking_Privacy : NSObject <KVANetworking_Provider, KVAPrivacyProfile_Registrar>
-/// Register a profile.
-/// \param profile The profile to register.
-///
-- (void)registerProfile:(KVAPrivacyProfile * _Nonnull)profile;
-/// Set a boolean indicating if the specified profile name is enabled.
-/// See func <code>register(profile:)</code>.
-/// \param profileName The name of a profile.
-///
-/// \param enabledBool A boolean indicating if enabled.
-///
-- (void)setEnabledBoolForProfileName:(NSString * _Nonnull)profileName enabledBool:(BOOL)enabledBool;
-/// A feature which serves as an authority related to consent for the sharing of personal data.
-/// Data sharing privacy laws such as GDPR require consent to be obtained before certain kinds of personal data may be collected, kept in memory, persisted or retained in persistent storage, and/or shared with partners.  During the natural lifecycle, there are times where partners may be added and cause the consent status to fall back to an unknown state.  Later the user may again be prompted and the consent status may (or may not) again come to be known.  All of this is predicated upon whether or not consent is required, which is governed by a variety of factors such as location.
-@property (nonatomic, readonly, strong) KVAConsent * _Nonnull intelligentConsent;
-/// An instance of networking.
-@property (nonatomic, weak) KVANetworking * _Nullable networking;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 @interface KVANetworking (SWIFT_EXTENSION(KochavaNetworking))
 @end
 
 
-/// A feature which is responsible for providing support for value sources.
-SWIFT_CLASS_NAMED("ValueSources")
-@interface KVANetworking_ValueSources : NSObject
+/// A feature which is responsible for linking networking instances together.  This extends to include their associated clients, parent or linked.
+SWIFT_CLASS_NAMED("Linking")
+@interface KVANetworking_Linking : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 /// A privacy profile.
@@ -860,13 +861,13 @@ SWIFT_CLASS_NAMED("PrivacyProfile")
 /// Create a privacy profile and then register it.
 /// \param name The name of the privacy profile.
 ///
-/// \param datapointKeyArray An array of payload keys (datapoint identifiers).
+/// \param datapointKeyArray An array of datapoint keys (as in transaction payloads).
 ///
 + (void)registerWithName:(NSString * _Nonnull)name datapointKeyArray:(NSArray<NSObject *> * _Nullable)datapointKeyArray;
 /// Create a privacy profile and then register it.
 /// \param name The name of the privacy profile.
 ///
-/// \param datapointKeyArray An array of payload keys (datapoint identifiers).
+/// \param datapointKeyArray An array of datapoint keys (as in transaction payloads).
 ///
 /// \param registrarArray An array of PrivacyProfile_RegistrarProvider to which to register the privacy profile.
 ///
@@ -887,7 +888,7 @@ SWIFT_CLASS_NAMED("PrivacyProfile")
 /// An instance of networking.
 /// This exists here related to the conformance to Executable and then Networking.Provider.  When this instance is constructed and then executed as an executable from within the the networking class, the networking class will also when possible stamp itself here as an indication of where it originated, so that this instance can properly default where it should be sent to be executed.  This can be derived from the networking.execution.parentExecutor when cast to whatever it may be expected to be.  Because it’s weak it may disappear at some point, but if it’s there it’s a better default than a shared instance.
 @property (nonatomic, weak) KVANetworking * _Nullable networking;
-/// An array of payload keys (datapoint identifiers).
+/// An array of datapoint keys (as in transaction payloads).
 @property (nonatomic, readonly, copy) NSArray<NSObject *> * _Nullable datapointKeyArray;
 /// An array of payload identifiers (network transaction types).
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable transactionUniversalIdentifierArray;
@@ -955,6 +956,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KochavaNetwo
 /// Default true.  If toggled to false any existing links will be discarded.  If toggled back to true it will link automatically again any relationships which are not linked.
 /// The presumption is that if you use this feature to disable automatic linking that you would then go on to perform your own linking, making a call to Product func link(…) as the first/next interaction(s) you have with the shared instance.
 @property (nonatomic) BOOL linkAutomaticallyBool;
+/// The visible maximum log level for log messages.
+@property (nonatomic, strong) KVALog_Level * _Nullable logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1015,6 +1018,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KochavaNetwo
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class KVASystem_State;
 
 /// A class for working with system-level properties.
 SWIFT_CLASS_NAMED("System")
@@ -1032,26 +1036,60 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KVASystem * 
 @property (nonatomic) BOOL appClipBool;
 /// A method which can be called to report that the active state should become true.
 /// Calling this method is generally redundant when the host is an application, as this change is observed automatically.  But this method can and should be called in app extensions, such as iMessage apps, to notify when the state is reported to have become active.
-- (void)stateActiveDidBecome;
+- (void)stateActiveDidBecome SWIFT_DEPRECATED_MSG("Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:");
 /// A method which can be called to report that the active state should become true.
 /// Calling this method is generally redundant when the host is an application, as this change is observed automatically.  But this method can and should be called in app extensions, such as iMessage apps, to notify when the state is reported to have become active.
 /// \param sourceIdentifier An identifier which describes the source that is originating the state change.
 ///
-- (void)stateActiveDidBecomeWithSourceIdentifier:(NSString * _Nonnull)sourceIdentifier;
+- (void)stateActiveDidBecomeWithSourceIdentifier:(NSString * _Nonnull)sourceIdentifier SWIFT_DEPRECATED_MSG("Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:");
 /// A method which can be called to report that the active state should resign true.
 /// Calling this method is generally redundant when the host is an application, as this change is observed automatically.  But this method can and should be called in app extensions, such as iMessage apps, to notify when the state is reported to have resigned active.
-- (void)stateActiveWillResign;
+- (void)stateActiveWillResign SWIFT_DEPRECATED_MSG("Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:");
 /// A method which can be called to report that the active state should resign true.
 /// Calling this method is generally redundant when the host is an application, as this change is observed automatically.  But this method can and should be called in app extensions, such as iMessage apps, to notify when the state is reported to have resigned active.
 /// \param sourceIdentifier An identifier which describes the source that is originating the state change.
 ///
-- (void)stateActiveWillResignWithSourceIdentifier:(NSString * _Nonnull)sourceIdentifier;
+- (void)stateActiveWillResignWithSourceIdentifier:(NSString * _Nonnull)sourceIdentifier SWIFT_DEPRECATED_MSG("Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:");
+/// Set the state.
+/// \param sourceIdentifier An identifier which describes the source that is originating the state change.  Default “host”.
+///
+- (void)state_set:(KVASystem_State * _Nonnull)state sourceIdentifier:(NSString * _Nullable)sourceIdentifier;
 /// A constant to use as the source when reporting that a MessagesAppViewController did become active.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull messagesAppViewControllerDidBecomeActiveSourceIdentifier;)
 + (NSString * _Nonnull)messagesAppViewControllerDidBecomeActiveSourceIdentifier SWIFT_WARN_UNUSED_RESULT;
 /// A constant to use as the source when reporting that a MessagesAppViewController did resign active.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull messagesAppViewControllerDidResignActiveSourceIdentifier;)
 + (NSString * _Nonnull)messagesAppViewControllerDidResignActiveSourceIdentifier SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface KVASystem (SWIFT_EXTENSION(KochavaNetworking))
+@end
+
+
+/// A class which defines an os log level, with enumerated values.
+SWIFT_CLASS_NAMED("State")
+@interface KVASystem_State : NSObject
+/// An os log level which is used to write messages to the log about a critical event in your app’s execution.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KVASystem_State * _Nonnull active;)
++ (KVASystem_State * _Nonnull)active SWIFT_WARN_UNUSED_RESULT;
+/// An os log level which is used to write messages to the log about a bug that occurs when your app executes.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KVASystem_State * _Nonnull inactive;)
++ (KVASystem_State * _Nonnull)inactive SWIFT_WARN_UNUSED_RESULT;
+/// An os log level which is used to write information about errors to the log.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KVASystem_State * _Nonnull background;)
++ (KVASystem_State * _Nonnull)background SWIFT_WARN_UNUSED_RESULT;
++ (nullable instancetype)from:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+/// Return a description of the instance.
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// The identifier for the instance.
+/// Examples:  “System.state.active”, “System.state.inactive”, “System.state.background”.
+@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
+/// The universal identifier.
+/// Examples:  “active”, “inactive”, “background”.
+@property (nonatomic, readonly, copy) NSString * _Nonnull universalIdentifier;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

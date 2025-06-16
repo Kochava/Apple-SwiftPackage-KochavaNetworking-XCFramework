@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>23G93</string>
+	<string>24F74</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>9.0.0</string>
+	<string>9.1.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneSimulator</string>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>16B40</string>
 	<key>KVABuildDateString</key>
-	<string>2024-12-05T14:22:30-0800</string>
+	<string>2025-06-16T09:45:37-0700</string>
 	<key>MinimumOSVersion</key>
 	<string>14.0</string>
 	<key>UIDeviceFamily</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>23G93</string>
+	<string>24F74</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>9.0.0</string>
+	<string>9.1.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>WatchSimulator</string>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>16B40</string>
 	<key>KVABuildDateString</key>
-	<string>2024-12-05T14:34:50-0800</string>
+	<string>2025-06-16T09:54:12-0700</string>
 	<key>MinimumOSVersion</key>
 	<string>7.0</string>
 	<key>UIDeviceFamily</key>
