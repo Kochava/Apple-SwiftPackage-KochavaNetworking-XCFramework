@@ -1,0 +1,11 @@
+framework module KochavaNetworking {
+  umbrella header "KochavaNetworking.h"
+  export *
+
+  module * { export * }
+}
+
+module KochavaNetworking.Swift {
+  header "KochavaNetworking-Swift.h"
+  requires objc
+}

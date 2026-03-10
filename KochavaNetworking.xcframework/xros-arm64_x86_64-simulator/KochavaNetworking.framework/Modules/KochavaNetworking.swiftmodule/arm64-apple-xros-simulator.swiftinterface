@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KochavaNetworking
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-xros1.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KochavaNetworking
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Foundation
 @_exported import KochavaNetworking
 import OSLog
@@ -17,15 +17,21 @@ public protocol Printable {
 extension KochavaNetworking.Networking {
   @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVANetworking_Linking) final public class Linking : ObjectiveC.NSObject, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Typed {
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
     }
     final public func invalidate()
     final public func link_automatically()
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func link(externalClient: Swift.AnyObject? = nil, externalNetworking: KochavaNetworking.Networking? = nil, localClient: Swift.AnyObject? = nil, localNetworking: KochavaNetworking.Networking? = nil, localNetworkingRelationship: KochavaNetworking.Product.Relationship.NetworkingRelationship? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func disableConfigBool() -> Swift.Bool?
+    #endif
     @objc deinit
   }
 }
@@ -38,9 +44,15 @@ extension KochavaNetworking.Log {
     @objc public static let debug: KochavaNetworking.Log.Level
     @objc public static let trace: KochavaNetworking.Log.Level
     @objc public static let always: KochavaNetworking.Log.Level
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func visibleBool(_ level: KochavaNetworking.Log.Level?, visibleMaximumLevel: KochavaNetworking.Log.Level?) -> Swift.Bool
+    #endif
     @objc override final public var description: Swift.String {
       @objc get
     }
@@ -55,31 +67,78 @@ extension KochavaNetworking.Log {
   }
 }
 public protocol Keyable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class Keyable_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func key(entity: Any?, context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+  #endif
   @objc deinit
+}
+extension KochavaNetworking.Topic {
+  public typealias Closure_UI_BodyHeadingViewableCollection_CollectAsynchronously = (@escaping (_ closure_didComplete: KochavaNetworking.Collection?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_BodyHeadingViewableCollection_CollectSynchronously = () -> KochavaNetworking.Collection?
+  public typealias Closure_UI_BodyViewableCollection_CollectAsynchronously = (@escaping (_ closure_didComplete: KochavaNetworking.Collection?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_BodyViewableCollection_CollectSynchronously = () -> KochavaNetworking.Collection?
+  public typealias Closure_UI_BackgroundBool_CollectAsynchronously = (@escaping (_ closure_didComplete: Swift.Bool?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_BackgroundBool_CollectSynchronously = () -> Swift.Bool?
+  public typealias UI_IconImage = Any
+  public typealias Closure_UI_IconImage_CollectAsynchronously = (@escaping (_ closure_didComplete: Any?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_IconImage_CollectSynchronously = () -> Any?
+  public typealias UI_Subtitle = Swift.String
+  public typealias Closure_UI_Subtitle_CollectAsynchronously = (@escaping (_ closure_didComplete: KochavaNetworking.Topic.UI_Subtitle?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_Subtitle_CollectSynchronously = () -> KochavaNetworking.Topic.UI_Subtitle?
+  public typealias UI_Microtitle = Swift.String
+  public typealias Closure_UI_Microtitle_CollectAsynchronously = (@escaping (_ closure_didComplete: KochavaNetworking.Topic.UI_Microtitle?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_Microtitle_CollectSynchronously = () -> KochavaNetworking.Topic.UI_Microtitle?
+  public typealias UI_Info = Swift.String
+  public typealias Closure_UI_Info_CollectAsynchronously = (@escaping (_ closure_didComplete: KochavaNetworking.Topic.UI_Info?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_Info_CollectSynchronously = () -> KochavaNetworking.Topic.UI_Info?
+  public typealias Closure_UI_DividersBool_CollectAsynchronously = (@escaping (_ closure_didComplete: Swift.Bool?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_DividersBool_CollectSynchronously = () -> Swift.Bool?
+  public typealias Closure_UI_ReducedBool_CollectAsynchronously = (@escaping (_ closure_didComplete: Swift.Bool?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_ReducedBool_CollectSynchronously = () -> Swift.Bool?
+  public typealias UI_DidSelectNavigationDestinationViewable = Any
+  public typealias Closure_UI_DidSelectNavigationDestinationViewable_CollectAsynchronously = (@escaping (_ closure_didComplete: Any?) -> Swift.Void) -> Swift.Void
+  public typealias Closure_UI_DidSelectNavigationDestinationViewable_CollectSynchronously = () -> Any?
 }
 extension Foundation.UserDefaults : KochavaNetworking.Typed {
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func keySuffix(storageIdentifier: KochavaNetworking.Networking.StorageIdentifier?) -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_keyNameStringWithPrefixString:identifierString:storageIdentifier:) public static func keyNameString(prefixString: Swift.String?, identifierString: Swift.String?, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier?) -> Swift.String?
+  #endif
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers @objc(KVANetworking_Config) final public class Config : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(networking: KochavaNetworking.Networking, retrieveTransactionIdentifier: KochavaNetworking.Transaction.Identifier?, delegate: any KochavaNetworking.Executor, closure_appGUIDString: @escaping KochavaNetworking.Networking.Config.Closure_AppGUIDString, closure_consentGDPRAppliesBool: @escaping KochavaNetworking.Networking.Config.Closure_ConsentGDPRAppliesBool, closure_didSetDictionary: @escaping KochavaNetworking.Networking.Config.Closure_DidSetDictionary)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     final public func start()
     @objc(retrieveWithClosure_didComplete:) final public func retrieve(closure_didComplete: @escaping KochavaNetworking.Networking.Config.Closure_Retrieve_DidComplete)
     final public func retrieve(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool, closure_didComplete: @escaping KochavaNetworking.Networking.Config.Closure_Retrieve_DidComplete)
     public typealias Closure_Retrieve_DidComplete = (_ config: KochavaNetworking.Networking.Config) -> Swift.Void
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -95,10 +154,12 @@ extension KochavaNetworking.Networking {
     public typealias Closure_AppGUIDString = () -> Swift.String?
     public typealias Closure_ConsentGDPRAppliesBool = () -> Swift.Bool
     public typealias Closure_DidSetDictionary = (_ dictionary: [Swift.AnyHashable : Any]?) -> Swift.Void
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc final public var closure_didComplete: KochavaNetworking.Networking.Config.Closure_DidComplete? {
       @objc get
       @objc set(closure_didComplete)
     }
+    #endif
     public typealias Closure_DidComplete = (_ config: KochavaNetworking.Networking.Config) -> Swift.Void
     @objc final public var consentGDPRAppliesBool: Swift.Bool {
       @objc get
@@ -120,9 +181,15 @@ extension KochavaNetworking.Networking {
   @objc public static let sdk: KochavaNetworking.Context
   @objc public static let server: KochavaNetworking.Context
   @objc public static let serverUnrestricted: KochavaNetworking.Context
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func comparisonBools(_ context: KochavaNetworking.Context?) -> (isHostBool: Swift.Bool, isLogBool: Swift.Bool, isPersistentStorageBool: Swift.Bool, isSDKBool: Swift.Bool, isServerBool: Swift.Bool, isUnknownBool: Swift.Bool)
+  #endif
   @objc override final public var description: Swift.String {
     @objc get
   }
@@ -146,34 +213,56 @@ public protocol StoppableWithOptions {
   func stop(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers final public class Stoppable_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func stop(entity: Any?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
   @objc deinit
 }
 public protocol EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
 }
 public protocol ConfigurableWith {
+  #if compiler(>=5.3) && $NonescapableTypes
   func configure(with object: Any?, context: KochavaNetworking.Context?)
+  #endif
 }
 public protocol ConfigurableWithWithOptions {
+  #if compiler(>=5.3) && $NonescapableTypes
   func configure(with object: Any?, context: KochavaNetworking.Context?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class ConfigurableWith_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func configure(entity: Any?, with object: Any?, context: KochavaNetworking.Context?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
   @objc deinit
 }
 extension Foundation.NSString : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_stringFromJSONObject:prettyPrintBool:) public static func string(fromJSONObject jsonObject: Any?, prettyPrintBool: Swift.Bool) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:identifier:method:guardNotOmittedBool:guardNotEmptyBool:) public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_serializedJSONObjectWithPrintErrorsBool:) dynamic public func serializedJSONObject(printErrorsBool: Swift.Bool = false) -> Any?
+  #endif
 }
 extension KochavaNetworking.Log {
   @_inheritsConvenienceInitializers @objc(KVADiagnostic) final public class Diagnostic : ObjectiveC.NSObject, os.Logger.Provider, KochavaNetworking.Typed {
     public static func printHostAPICall(headlineString: Swift.String)
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func print(level: KochavaNetworking.Log.Level? = .debug, headlineString: Swift.String?)
+    #endif
     public static let logger: os.Logger
     public static let type_kochava: KochavaNetworking.Kochava_Type
     @objc override dynamic public init()
@@ -192,10 +281,12 @@ extension KochavaNetworking.Log {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var level: KochavaNetworking.Log.Level? {
     @objc get
     @objc set(level)
   }
+  #endif
   @objc final public var loggerEnabledBool: Swift.Bool
   @objc final public var osLogEnabledBool: Swift.Bool
   @objc final public var prettyPrintBool: Swift.Bool {
@@ -206,34 +297,58 @@ extension KochavaNetworking.Log {
     @objc get
     @objc set(printLinesIndividuallyBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var printPrefixString: Swift.String? {
     @objc get
     @objc set(printPrefixString)
   }
+  #endif
   final public var unitTestingModeBool: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func messageArray_copy() -> [KochavaNetworking.Log.Message]?
+  #endif
   @objc deinit
 }
 final public class Task : KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, Swift.Equatable, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, Swift.Identifiable, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable, KochavaNetworking.Startable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Task.Identifier? = nil, identifier: KochavaNetworking.Task.Identifier?, universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? = nil, logMessagesPrintBool: Swift.Bool? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, retryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, resetFollowedTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, closure_shouldAttemptBool: KochavaNetworking.Task.Closure_ShouldAttemptBool? = nil, closure_didComplete: KochavaNetworking.Task.Closure_DidComplete? = nil, closure_startAttempt: KochavaNetworking.Task.Closure_StartAttempt? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Task.Identifier? = nil, identifier: KochavaNetworking.Task.Identifier?, universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? = nil, extendedIdentifier: KochavaNetworking.Task.ExtendedIdentifier? = nil, parameter: Any? = nil, parameterMetaDictionary: KochavaNetworking.Task.ParameterMetaDictionary? = nil, logMessagesPrintBool: Swift.Bool? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, prerequisiteTaskArrayIncludeNetworkingStartedBool: Swift.Bool? = nil, attemptTimeoutTimeInterval: Foundation.TimeInterval? = nil, retryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, resetFollowedTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, resetFollowedTaskArray: [KochavaNetworking.Task]? = nil, resetPassiveTimeInterval: Foundation.TimeInterval? = nil, singleExecutionIdentifier: KochavaNetworking.Task.SingleExecutionIdentifier? = nil, evaluateFirstAsyncBool: Swift.Bool? = nil, completedBool: Swift.Bool = false, completedBoolLogMessagesPrintBool: Swift.Bool = false, closure_shouldAttemptBool: KochavaNetworking.Task.Closure_ShouldAttemptBool? = nil, closure_didExperienceDelay: KochavaNetworking.Task.Closure_DidExperienceDelay? = nil, closure_didInvalidate: KochavaNetworking.Task.Closure_DidInvalidate? = nil, closure_didComplete: KochavaNetworking.Task.Closure_DidComplete? = nil, closure_didReset: KochavaNetworking.Task.Closure_DidReset? = nil, closure_executeCustomMethod: KochavaNetworking.Kochava_Any.Closure_ExecuteCustomMethod? = nil, closure_startAttempt: KochavaNetworking.Task.Closure_StartAttempt? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Task.Identifier? = nil, identifier: KochavaNetworking.Task.Identifier?, universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? = nil, logMessagesPrintBool: Swift.Bool? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, retryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, resetFollowedTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, closure_shouldAttemptBool: KochavaNetworking.Task.Closure_ShouldAttemptBool? = nil, closure_didComplete: KochavaNetworking.Task.Closure_DidComplete? = nil, closure_startAttempt: KochavaNetworking.Task.Closure_StartAttempt? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Task.Identifier? = nil, identifier: KochavaNetworking.Task.Identifier?, universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? = nil, extendedIdentifier: KochavaNetworking.Task.ExtendedIdentifier? = nil, parameter: Any? = nil, parameterMetaDictionary: KochavaNetworking.Task.ParameterMetaDictionary? = nil, logMessagesPrintBool: Swift.Bool? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, prerequisiteTaskArrayIncludeNetworkingStartedBool: Swift.Bool? = nil, attemptTimeoutTimeInterval: Foundation.TimeInterval? = nil, retryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, resetFollowedTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, resetFollowedTaskArray: [KochavaNetworking.Task]? = nil, resetPassiveTimeInterval: Foundation.TimeInterval? = nil, singleExecutionIdentifier: KochavaNetworking.Task.SingleExecutionIdentifier? = nil, evaluateFirstAsyncBool: Swift.Bool? = nil, completedBool: Swift.Bool = false, completedBoolLogMessagesPrintBool: Swift.Bool = false, startBool: Swift.Bool = false, closure_shouldAttemptBool: KochavaNetworking.Task.Closure_ShouldAttemptBool? = nil, closure_didExperienceDelay: KochavaNetworking.Task.Closure_DidExperienceDelay? = nil, closure_didInvalidate: KochavaNetworking.Task.Closure_DidInvalidate? = nil, closure_didComplete: KochavaNetworking.Task.Closure_DidComplete? = nil, closure_didReset: KochavaNetworking.Task.Closure_DidReset? = nil, closure_executeCustomMethod: KochavaNetworking.Kochava_Any.Closure_ExecuteCustomMethod? = nil, closure_startAttempt: KochavaNetworking.Task.Closure_StartAttempt? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func toDebugDictionary() -> Any?
+  #endif
   public static func == (lhs: KochavaNetworking.Task, rhs: KochavaNetworking.Task) -> Swift.Bool
   public static func != (lhs: KochavaNetworking.Task, rhs: KochavaNetworking.Task) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   final public func execute()
   final public func start()
   final public func start(evaluateFirstPublicCompletedCheckBool: Swift.Bool = false)
   final public func reset()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didReset_addObserver(closure: ((_ notification: Foundation.Notification) -> Swift.Void)? = nil) -> (any ObjectiveC.NSObjectProtocol)?
+  #endif
   public static let didResetNotificationName: Foundation.Notification.Name
   final public func resetAttemptSeries()
   public static let logger: os.Logger
@@ -247,103 +362,145 @@ final public class Task : KochavaNetworking.DecodableFrom, KochavaNetworking.Dec
   }
   final public func invalidate()
   final public func evaluate(asyncBool: Swift.Bool = true)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func endAttempt(accomplishedBool: Swift.Bool, allowRetryBool: Swift.Bool = true, baseTaskNotAvailableBool: Swift.Bool = false, retryInsertTimeInterval: Foundation.TimeInterval? = nil, logMessagesPrintBool logMessagesPrintBool_parameter: Swift.Bool? = nil)
+  #endif
   final public func complete()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func complete(logMessagesPrintBool: Swift.Bool?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didComplete_addObserver(closure: ((_ notification: Foundation.Notification) -> Swift.Void)? = nil) -> (any ObjectiveC.NSObjectProtocol)?
+  #endif
   public static let didCompleteNotificationName: Foundation.Notification.Name
   final public func containsMoreRetriesBool() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func executeCustomMethod(name: KochavaNetworking.Kochava_Any.CustomMethodName, parametersDictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var networking: KochavaNetworking.Networking? {
     @objc get
     @objc set(networking)
   }
+  #endif
   final public var attemptTimeoutTimeInterval: Foundation.TimeInterval {
     get
     set(attemptTimeoutTimeInterval)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var attemptTimeoutTimeInterval_optional: Foundation.TimeInterval? {
     get
     set(attemptTimeoutTimeInterval_optional)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var extendedIdentifier: KochavaNetworking.Task.ExtendedIdentifier? {
     get
     set(extendedIdentifier)
   }
+  #endif
   public typealias ExtendedIdentifier = Swift.String
   final public var logMessagesPrintBool: Swift.Bool {
     get
     set(logMessagesPrintBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var logMessagesPrintBool_optional: Swift.Bool? {
     get
     set(logMessagesPrintBool_optional)
   }
+  #endif
   final public var identifier: KochavaNetworking.Task.Identifier {
     get
   }
   public typealias Identifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var parameter: Any? {
     get
   }
+  #endif
   public typealias Parameter = Any
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var parameterMetaDictionary: KochavaNetworking.Task.ParameterMetaDictionary? {
     get
   }
+  #endif
   public typealias ParameterMetaDictionary = [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func prerequisiteTaskArray_resolved_task(identifier: KochavaNetworking.Task.Identifier?) -> KochavaNetworking.Task?
+  #endif
   final public func prerequisiteTaskArray_resolved_preconfigure(fetchOnceTasksBool: Swift.Bool = false, prerequisiteTaskIdentifierArrayBool: Swift.Bool = false, prerequisiteTaskArrayBool: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var prerequisiteTaskArray: [KochavaNetworking.Task]? {
     get
     set(prerequisiteTaskArray)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? {
     get
     set(prerequisiteTaskIdentifierArray)
   }
+  #endif
   final public var prerequisiteTaskArrayIncludeNetworkingStartedBool: Swift.Bool {
     get
     set(prerequisiteTaskArrayIncludeNetworkingStartedBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var prerequisiteTaskArrayIncludeNetworkingStartedBool_optional: Swift.Bool? {
     get
     set(prerequisiteTaskArrayIncludeNetworkingStartedBool_optional)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var resetFollowedTaskArray: [KochavaNetworking.Task]? {
     get
     set(resetFollowedTaskArray)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var resetFollowedTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? {
     get
     set(resetFollowedTaskIdentifierArray)
   }
+  #endif
   final public var resetPassiveTimeInterval: Foundation.TimeInterval {
     get
     set(resetPassiveTimeInterval)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var resetPassiveTimeInterval_optional: Foundation.TimeInterval? {
     get
     set(resetPassiveTimeInterval_optional)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var retryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? {
     get
     set(retryTimeIntervalSeries)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var returnParameter: Any? {
     get
     set(returnParameter)
   }
+  #endif
   public typealias ReturnParameter = Any
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var returnParameterMetaDictionary: KochavaNetworking.Task.ReturnParameterMetaDictionary? {
     get
     set(returnParameterMetaDictionary)
   }
+  #endif
   public typealias ReturnParameterMetaDictionary = [Swift.String : Any]
   public typealias SingleExecutionIdentifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? {
     get
     set(universalIdentifier)
   }
+  #endif
   public typealias UniversalIdentifier = Swift.AnyHashable
   public typealias Closure_DidComplete = (_ task: KochavaNetworking.Task) -> Swift.Void
   public typealias Closure_DidExperienceDelay = (_ task: KochavaNetworking.Task) -> Swift.Void
@@ -371,103 +528,81 @@ final public class Task : KochavaNetworking.DecodableFrom, KochavaNetworking.Dec
   public typealias ID = Swift.String
 }
 extension Swift.Array : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> [Element]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, elementType: (any Any.Type)? = nil, decodingEnabledBool: Swift.Bool? = nil, networking: KochavaNetworking.Networking? = nil) -> [Element]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static var type_kochava: KochavaNetworking.Kochava_Type {
     get
   }
 }
 extension Swift.Array {
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func append(nullable newElement: Element?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func append<S>(contentsOf_nullable newElements: S?) where Element == S.Element, S : Swift.Sequence
+  #endif
 }
 extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func shared() -> UIKit.UIApplication?
+  #endif
 }
 @_inheritsConvenienceInitializers @objc(KVAAppGroups) final public class AppGroups : ObjectiveC.NSObject, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Typed {
   @objc public static var shared: KochavaNetworking.AppGroups {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var shared_optional: KochavaNetworking.AppGroups? {
     @objc get
   }
+  #endif
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(generalAppGroupIdentifier) final public var generalAppGroupIdentifier: KochavaNetworking.AppGroups.Identifier? {
     @objc get
     @objc set(generalAppGroupIdentifier)
   }
+  #endif
   public typealias Identifier = Swift.String
   public static let generalAppGroupIdentifierDidMutateNotificationName: Foundation.Notification.Name
   @objc override dynamic public init()
   @objc deinit
 }
-extension KochavaNetworking.Kochava {
-  final public class Timer : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Startable, KochavaNetworking.Stoppable {
-    public init(identifier: KochavaNetworking.Kochava.Timer.Identifier, extendedIdentifier: KochavaNetworking.Kochava.Timer.ExtendedIdentifier? = nil, timeInterval: Foundation.TimeInterval? = nil, timeIntervalZeroShouldNotRunBool: Swift.Bool = false, logMessagesPrintBool: Swift.Bool? = nil, logMessagesPrintWhenLongTimeInterval: Foundation.TimeInterval? = nil, logMessagesPrintTimeIntervalAdjustedWhileTimerActiveBool: Swift.Bool? = nil, logMessagesPrintDidFireBool: Swift.Bool? = nil, delegate: (any KochavaNetworking.Executor)? = nil, closure_timeInterval: KochavaNetworking.Kochava.Timer.Closure_TimeInterval? = nil, closure_shouldBeRunningBool: KochavaNetworking.Kochava.Timer.Closure_ShouldBeRunningBool? = nil, closure_willStart: KochavaNetworking.Kochava.Timer.Closure_WillStart? = nil, closure_didFire: KochavaNetworking.Kochava.Timer.Closure_DidFire? = nil)
-    public static func from(_ object: Any?) -> Self?
-    final public func to(context: KochavaNetworking.Context?) -> Any?
-    @discardableResult
-    final public func configure(allowToRunBool: Swift.Bool? = nil, shouldBeRunningBool: Swift.Bool? = nil) -> Swift.Bool
-    final public func start()
-    final public func stop()
-    final public func reset()
-    public static let logger: os.Logger
-    final public var description: Swift.String {
-      get
-    }
-    public static let type_kochava: KochavaNetworking.Kochava_Type
-    final public var execution: KochavaNetworking.Execution {
-      get
-    }
-    final public func invalidate()
-    final public var elapsedTimeInterval: Foundation.TimeInterval {
-      get
-    }
-    public typealias Closure_DidFire = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Void
-    public typealias Closure_ShouldBeRunningBool = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Bool
-    public typealias Closure_TimeInterval = (_ timer: KochavaNetworking.Kochava.Timer) -> Foundation.TimeInterval?
-    public typealias Closure_WillStart = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Void
-    final public var extendedIdentifier: KochavaNetworking.Kochava.Timer.ExtendedIdentifier? {
-      get
-      set(extendedIdentifier)
-    }
-    public typealias ExtendedIdentifier = Swift.String
-    public typealias Identifier = Swift.String
-    final public var timeInterval: Foundation.TimeInterval? {
-      get
-      set(timeInterval)
-    }
-    final public var startedBool: Swift.Bool {
-      get
-    }
-    final public var timerActiveBool: Swift.Bool {
-      get
-    }
-    @objc deinit
-  }
-}
-extension os.Logger {
-  public protocol Provider {
-    static var logger: os.Logger { get }
-  }
-}
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers @objc(KVANetworking_Transactions) final public class Transactions : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ transaction: KochavaNetworking.Transaction?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -483,14 +618,18 @@ extension KochavaNetworking.Networking {
     }
     public static let attemptInProgressConcurrentMaximumRegulationTaskIdentifier: KochavaNetworking.Task.Identifier
     public static let rateLimitingWindowRequestCountRegulationTaskIdentifier: KochavaNetworking.Task.Identifier
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var responseLocalBool: Swift.Bool? {
       get
       set(responseLocalBool)
     }
+    #endif
     final public func retryTimeIntervalSeries_copy() -> KochavaNetworking.TimeIntervalSeries
     public static let errorRetryGroupWaitTaskIdentifier: KochavaNetworking.Task.Identifier
     public static let processingOrderResequencingWaitTaskIdentifier: KochavaNetworking.Task.Identifier
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func processingWaitTask_establish(prerequisiteTask: KochavaNetworking.Task? = nil) -> KochavaNetworking.Task?
+    #endif
     public static let processingWaitTaskIdentifier: KochavaNetworking.Task.Identifier
     @objc deinit
   }
@@ -502,37 +641,85 @@ public protocol InvalidatableWithOptions {
   func invalidate(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers final public class Invalidatable_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func invalidate(entity: Any?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
   @objc deinit
 }
 final public class Execution : os.Logger.Provider, KochavaNetworking.Typed {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(executor: Swift.AnyObject, product: KochavaNetworking.Product?, actor: KochavaNetworking.Actor? = nil, closure_didMutate_performSideEffects_beforeDispatch_sf: KochavaNetworking.Execution.Closure_DidMutate_PerformSideEffects? = nil, closure_didMutate_performSideEffects: KochavaNetworking.Execution.Closure_DidMutate_PerformSideEffects? = nil)
+  #endif
   @objc deinit
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public func invalidate()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func synchronize_and_default<T>(preregisterAllKnownProductsBool: Swift.Bool? = nil, closure_pre: (() -> Swift.Void)? = nil, closure_default: () -> T, closure_get: () -> T?, closure_set: (_ new: T) -> Swift.Void, closure_did: ((_ new: T) -> Swift.Void)? = nil) -> T
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func async_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func async_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, timeInterval: Foundation.TimeInterval, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, timeInterval: Foundation.TimeInterval, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, timeInterval: Foundation.TimeInterval, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter(networking: KochavaNetworking.Networking?, sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, prerequisiteTaskIdentifierArray: [Swift.String]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, timeInterval: Foundation.TimeInterval, timeIntervalStartsAfterPrerequisiteTasksBool: Swift.Bool = false, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter_and_synchronize(networking: KochavaNetworking.Networking?, sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, prerequisiteTaskIdentifierArray: [Swift.String]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, timeInterval: Foundation.TimeInterval, timeIntervalStartsAfterPrerequisiteTasksBool: Swift.Bool = false, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter_and_synchronize_includingParentFirst(networking: KochavaNetworking.Networking?, sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, prerequisiteTaskIdentifierArray: [Swift.String]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, timeInterval: Foundation.TimeInterval, timeIntervalStartsAfterPrerequisiteTasksBool: Swift.Bool = false, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_async_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_async_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_asyncOptionally(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_asyncOptionally_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_asyncOptionally_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
-  final public func execute(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
-  final public func asyncOptionally_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
-  final public func asyncOptionally_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func execute(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = false, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func asyncOptionally_and_synchronize(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = false, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func asyncOptionally_and_synchronize_includingParentFirst(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, logMessagePrintBool: Swift.Bool = false, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
   final public func lock()
   final public func lock_guarding() -> Swift.Bool
   final public func unlock()
@@ -540,9 +727,15 @@ final public class Execution : os.Logger.Provider, KochavaNetworking.Typed {
   final public func unlock_includingParentLast()
   final public func didMutate()
   final public func didMutate_sf()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didMutate_sf(infoDictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didMutate_sf_df(childExecution: KochavaNetworking.Execution? = nil, infoDictionary: [Swift.AnyHashable : Any]?, performSideEffectsIntendedBeforeDispatchBool: Swift.Bool = true)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didMutate_addObserver(closure: ((_ notification: Foundation.Notification) -> Swift.Void)? = nil) -> (any ObjectiveC.NSObjectProtocol)?
+  #endif
   public typealias Closure_DidMutate_PerformSideEffects = (_ execution: KochavaNetworking.Execution, _ childExecution: KochavaNetworking.Execution?, _ infoDictionary: [Swift.AnyHashable : Any]?) -> Swift.Void
   final public var didMutatePassesToParentExecutorBool: Swift.Bool?
   weak final public var parentExecutor: (any KochavaNetworking.Executor)? {
@@ -550,12 +743,21 @@ final public class Execution : os.Logger.Provider, KochavaNetworking.Typed {
     set
   }
   public static var developerModeBool: Swift.Bool
-  final public var didMutateDispatchCondensingAfterBool: Swift.Bool
+  public static let didMutateNotificationName: Foundation.Notification.Name
   public static let priorityBoolKey: Swift.String
 }
+public enum Equatable_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func isEqual(_ lhs: Any?, _ rhs: Any?) -> Swift.Bool
+  #endif
+}
 extension Swift.Int : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 @_hasMissingDesignatedInitializers public class Kochava {
@@ -579,29 +781,6 @@ public var shared: KochavaNetworking.Product {
   final public func didEndBackgroundSustainingTask(identifier: KochavaNetworking.BackgroundTaskController.Identifier)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers final public class DictionaryFormat : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Networking.Provider {
-  public static func from(_ object: Any?) -> Self?
-  final public func to(context: KochavaNetworking.Context?) -> Any?
-  public static let logger: os.Logger
-  public static let type_kochava: KochavaNetworking.Kochava_Type
-  final public var execution: KochavaNetworking.Execution {
-    get
-  }
-  public static func appending(dictionaryFormat1: KochavaNetworking.DictionaryFormat?, dictionaryFormat2: KochavaNetworking.DictionaryFormat?) -> KochavaNetworking.DictionaryFormat?
-  final public var adapterArray: [KochavaNetworking.Adapter]? {
-    get
-  }
-  @objc weak final public var networking: KochavaNetworking.Networking? {
-    @objc get
-    @objc set
-  }
-  final public var valueSourceCollection: KochavaNetworking.Collection? {
-    get
-    set(valueSourceCollection)
-  }
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class Tag : os.Logger.Provider, KochavaNetworking.Typed {
   @objc deinit
   public static let logger: os.Logger
@@ -611,9 +790,15 @@ public var shared: KochavaNetworking.Product {
   public static let calloutString: Swift.String
 }
 extension Foundation.NSDictionary : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:identifier:method:guardNotOmittedBool:guardNotEmptyBool:) public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 @objc(KVAActor) final public class Actor : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, os.Logger.Provider {
@@ -621,22 +806,44 @@ extension Foundation.NSDictionary : KochavaNetworking.DecodableFrom, KochavaNetw
   @objc public static let globalSerial: KochavaNetworking.Actor
   @objc public static let main: KochavaNetworking.Actor
   public init(identifier: KochavaNetworking.Actor.Identifier, universalIdentifier: KochavaNetworking.Actor.UniversalIdentifier, osDispatchQueue: Dispatch.DispatchQueue)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let logger: os.Logger
   @objc override final public var description: Swift.String {
     @objc get
   }
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(asyncWithSourceIdentifier:closure:) final public func async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, sourceType: (any Any.Type)?, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(asyncAfterWithSourceIdentifier:timeInterval:closure:) final public func asyncAfter(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, timeInterval: Foundation.TimeInterval, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func asyncAfter(networking: KochavaNetworking.Networking?, sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, prerequisiteTaskIdentifierArray: [Swift.String]? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, timeInterval: Foundation.TimeInterval, timeIntervalStartsAfterPrerequisiteTasksBool: Swift.Bool = false, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(asyncAfterSteppedSettlingDispatchWithSourceIdentifier:count:closure:) public static func asyncAfterSteppedSettlingDispatch(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, count: Swift.Int = 24, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, sourceType: (any Any.Type)?, logMessagePrintBool: Swift.Bool = true, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_async(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String?, sourceType: (any Any.Type)?, logMessagePrintBool: Swift.Bool = true, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func didEnterPublicAPI_asyncOptionally(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, sourceType: (any Any.Type)?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
-  final public func execute(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier?, hostAPICallDiagnosticHeadlineString: Swift.String?, sourceType: (any Any.Type)?, logMessagePrintBool: Swift.Bool = true, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func execute(sourceIdentifier: KochavaNetworking.Actor.SourceIdentifier? = nil, hostAPICallDiagnosticHeadlineString: Swift.String? = nil, sourceType: (any Any.Type)? = nil, logMessagePrintBool: Swift.Bool = false, asyncBool: Swift.Bool, closure: (() -> Swift.Void)?)
+  #endif
   final public let identifier: KochavaNetworking.Actor.Identifier
   public typealias Identifier = Swift.String
   final public let universalIdentifier: KochavaNetworking.Actor.UniversalIdentifier
@@ -655,7 +862,9 @@ extension KochavaNetworking.Networking {
     }
     final public func append(key: KochavaNetworking.Networking.Timing.Key)
     final public func terminate()
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func string() -> Swift.String?
+    #endif
     weak final public var networking: KochavaNetworking.Networking?
     public typealias Element = (key: KochavaNetworking.Networking.Timing.Key, date: Foundation.Date)
     public typealias Key = Swift.String
@@ -664,13 +873,23 @@ extension KochavaNetworking.Networking {
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers final public class Datapoints : KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -734,30 +953,54 @@ extension KochavaNetworking.Networking.ValueSources {
   }
 }
 extension Swift.Bool : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false) -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func enabledDisabledString(_ bool: Swift.Bool?) -> Swift.String?
+  #endif
 }
 @_inheritsConvenienceInitializers @objc(KochavaNetworking_ProductController) final public class ProductController : ObjectiveC.NSObject, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Typed {
   @objc public static let shared: KochavaNetworking.ProductController
   public static var sharedInstance: Any {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func register(product: KochavaNetworking.Product?)
+  #endif
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func product(forType anyType: (any Any.Type)?) -> KochavaNetworking.Product?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func product(withName name: KochavaNetworking.Product.Name?) -> KochavaNetworking.Product?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func products_evaluationResultBool(forConditionString conditionString: Swift.String?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(products_resetWithDeleteLocalDataBool:closure_didComplete:) final public func products_reset(deleteLocalDataBool: Swift.Bool, closure_didComplete: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(products_resetWithDeleteLocalDataBool:includeExternalBool:includeGeneralAppGroupBool:logMessagePrintBool:includeHostBool:includeUIBool:includeNetworkingBool:nameArray:closure_didComplete:) final public func products_reset(deleteLocalDataBool: Swift.Bool, includeExternalBool: Swift.Bool, includeGeneralAppGroupBool: Swift.Bool = true, logMessagePrintBool: Swift.Bool = true, includeHostBool: Swift.Bool = false, includeUIBool: Swift.Bool = false, includeNetworkingBool: Swift.Bool = false, nameArray: [KochavaNetworking.Product.Name]? = nil, closure_didComplete: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(products_shutdownWithDeleteLocalDataBool:closure_didComplete:) final public func products_shutdown(deleteLocalDataBool: Swift.Bool, closure_didComplete: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(products_shutdownWithDeleteLocalDataBool:includeHostBool:includeUIBool:includeNetworkingBool:nameArray:closure_didComplete:) final public func products_shutdown(deleteLocalDataBool: Swift.Bool, includeHostBool: Swift.Bool, includeUIBool: Swift.Bool, includeNetworkingBool: Swift.Bool, nameArray: [KochavaNetworking.Product.Name]? = nil, closure_didComplete: (() -> Swift.Void)?)
+  #endif
   final public var productArray: [KochavaNetworking.Product] {
     get
   }
@@ -770,24 +1013,42 @@ extension Foundation.ProcessInfo {
   public func operatingSystemVersionString() -> Swift.String
 }
 extension Foundation.NSDate : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 extension KochavaNetworking.Networking {
   @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVANetworking_Tasks) final public class Tasks : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ task: KochavaNetworking.Task?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ task: KochavaNetworking.Task?, identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
     final public func start()
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -804,8 +1065,12 @@ extension KochavaNetworking.Networking {
   }
 }
 extension Foundation.NSError : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 public protocol Startable {
@@ -815,22 +1080,46 @@ public protocol StartableWithOptions {
   func start(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers final public class Startable_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(entity: Any?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
   @objc deinit
 }
 extension Foundation.Date : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
-  public static func from(applePrintDateString string: Swift.String?) -> Foundation.Date?
-  public static func from(iso8601DateString string: Swift.String?) -> Foundation.Date?
-  public static func from(iso8601PrecisionMicrosecondsDateString string: Swift.String?) -> Foundation.Date?
-  public static func from(iso8601ShortDateString string: Swift.String?) -> Foundation.Date?
-  public static func from(string: Swift.String?) -> Foundation.Date?
-  public static func from(yyyymmddDateString string: Swift.String?) -> Foundation.Date?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(applePrintDateString string: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(iso8601DateString string: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(iso8601PrecisionMicrosecondsDateString string: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(iso8601ShortDateString string: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(string: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(yyyymmddDateString string: Swift.String?)
+  #endif
   public static func testingNormalized() -> Foundation.Date
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?, wrapBool: Swift.Bool?, precisionMicrosecondsBool: Swift.Bool? = nil) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func earliest(_ date1: Foundation.Date?, _ date2: Foundation.Date?) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func latest(_ date1: Foundation.Date?, _ date2: Foundation.Date?) -> Foundation.Date?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
   public func logPrintString() -> Swift.String
   public func unixTime() -> Swift.Int64
@@ -848,12 +1137,22 @@ extension Foundation.Date : KochavaNetworking.DecodableFrom, KochavaNetworking.E
 }
 extension Foundation.UserDefaults {
   final public class Resource : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, os.Logger.Provider, KochavaNetworking.PersistAgent_Getter, KochavaNetworking.PersistAgent_Setter {
+    #if compiler(>=5.3) && $NonescapableTypes
     required public init(suite: Foundation.UserDefaults.Suite? = nil, suiteName: Foundation.UserDefaults.SuiteName? = nil, prefixString: Swift.String? = nil, identifier: Swift.String? = nil, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, key: Swift.String? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func get(networking: KochavaNetworking.Networking? = nil, product: KochavaNetworking.Product? = nil, identifier_default: Swift.String? = nil, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier? = nil) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func set(any: Any?, networking: KochavaNetworking.Networking? = nil, product: KochavaNetworking.Product? = nil, identifier_default: Swift.String? = nil, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier? = nil, aggressiveBool: Swift.Bool = false)
+    #endif
     public static let logger: os.Logger
     public static var interfaceStandardBool: Swift.Bool?
     public static var interfaceStandardDispatchBool: Swift.Bool
@@ -865,8 +1164,12 @@ extension Foundation.UserDefaults {
     case generalAppGroup
     case defaultSuite
     public static let type_kochava: KochavaNetworking.Kochava_Type
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Foundation.UserDefaults.Suite?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     public static func == (a: Foundation.UserDefaults.Suite, b: Foundation.UserDefaults.Suite) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -880,21 +1183,37 @@ extension Foundation.UserDefaults {
   public static var shared: KochavaNetworking.Networking {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var shared_optional: KochavaNetworking.Networking? {
     get
   }
+  #endif
   public static var sharedInstance: Any {
     get
   }
-  public init(fromObject object: Any? = nil, product: KochavaNetworking.Product = Product.shared, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, persistBool: Swift.Bool = true, sharedInstanceBool: Swift.Bool = false, parentSharedInstanceBool: Swift.Bool = false, config_enabledBool_default: Swift.Bool? = nil, config_retrieveTransactionIdentifier: KochavaNetworking.Transaction.Identifier? = nil, general_startSequenceDidCompleteTask_prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, transactions_collection_registerTransactionArray: [KochavaNetworking.Transaction]? = nil, delegate: (any KochavaNetworking.Executor)? = nil, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool? = nil, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool? = nil, closure_consent_didMutate: KochavaNetworking.Consent.Closure_DidMutate? = nil, closure_transactions_payloadTransformedObject: KochavaNetworking.Transaction.Closure_PayloadTransformedObject? = nil)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(fromObject object: Any? = nil, product: KochavaNetworking.Product = Product.shared, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, persistBool: Swift.Bool = true, sharedInstanceBool: Swift.Bool = false, parentSharedInstanceBool: Swift.Bool = false, config_enabledBool_default: Swift.Bool? = nil, config_retrieveTransactionIdentifier: KochavaNetworking.Transaction.Identifier? = nil, general_startSequenceDidCompleteTask_prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, transactions_collection_registerTransactionArray: [KochavaNetworking.Transaction]? = nil, delegate: (any KochavaNetworking.Executor)? = nil, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool? = nil, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool? = nil, closure_consent_didMutate: KochavaNetworking.Networking.Privacy.IntelligentConsent.Closure_DidMutate? = nil, closure_transactions_payloadTransformedObject: KochavaNetworking.Transaction.Closure_PayloadTransformedObject? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
-  final public func configure(parentSharedInstanceBool: Swift.Bool = false, delegate: (any KochavaNetworking.Executor)? = nil, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool? = nil, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool? = nil, closure_consent_didMutate: KochavaNetworking.Consent.Closure_DidMutate? = nil, closure_transactions_payloadTransformedObject: KochavaNetworking.Transaction.Closure_PayloadTransformedObject? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func configure(parentSharedInstanceBool: Swift.Bool = false, delegate: (any KochavaNetworking.Executor)? = nil, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool? = nil, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool? = nil, closure_consent_didMutate: KochavaNetworking.Networking.Privacy.IntelligentConsent.Closure_DidMutate? = nil, closure_transactions_payloadTransformedObject: KochavaNetworking.Transaction.Closure_PayloadTransformedObject? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configure(with object: Any?, context: KochavaNetworking.Context?, logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #endif
   final public func start()
   final public func start(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
   final public func stop()
@@ -903,7 +1222,9 @@ extension Foundation.UserDefaults {
   @objc override final public var description: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+  #endif
   public static let key: Swift.String
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
@@ -912,7 +1233,9 @@ extension Foundation.UserDefaults {
   final public func willInvalidate()
   final public func invalidate()
   final public func invalidate(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(executeAdvancedInstructionWithUniversalIdentifier:parameter:prerequisiteTaskIdentifierArray:closure_didComplete:) final public func executeAdvancedInstruction(universalIdentifier: KochavaNetworking.Task.UniversalIdentifier, parameter: Any? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, closure_didComplete: KochavaNetworking.Networking.Closure_Instruction_DidComplete? = nil)
+  #endif
   public typealias Closure_Instruction_DidComplete = (_ dictionaryString: Swift.String?) -> Swift.Void
   final public var authoritativeSources: KochavaNetworking.Networking.AuthoritativeSources {
     get
@@ -954,10 +1277,12 @@ extension Foundation.UserDefaults {
     @objc get
     @objc set(sharedLinkAutomaticallyBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var sharedStorageIdentifier: KochavaNetworking.Networking.StorageIdentifier? {
     get
     set(sharedStorageIdentifier)
   }
+  #endif
   final public let storageIdentifier: KochavaNetworking.Networking.StorageIdentifier?
   final public func storageIdentifier_keySuffix() -> Swift.String
   public typealias StorageIdentifier = Swift.String
@@ -970,21 +1295,29 @@ extension Foundation.UserDefaults {
   }
   public static let willDeallocNotificationName: Foundation.Notification.Name
   @objc(KVANetworking_Provider) public protocol Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc var networking: KochavaNetworking.Networking? { get set }
+    #endif
   }
   public protocol RequiredProvider {
     var networking: KochavaNetworking.Networking { get }
   }
   @_hasMissingDesignatedInitializers final public class Provider_Conforming {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func networking(entity: Any?) -> KochavaNetworking.Networking?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func set(entity: Any?, networking: KochavaNetworking.Networking?)
+    #endif
     @objc deinit
   }
 }
 final public class Kochava_Type {
-  public init(identifier: KochavaNetworking.Any_Type.Identifier, additionaldentifierArray: [KochavaNetworking.Any_Type.Identifier]? = nil, anyType: any Any.Type)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(identifier: KochavaNetworking.Any_Type.Identifier, additionalIdentifierArray: [KochavaNetworking.Any_Type.Identifier]? = nil, anyType: any Any.Type)
+  #endif
   final public let identifier: KochavaNetworking.Any_Type.Identifier
-  final public let additionaldentifierArray: [KochavaNetworking.Any_Type.Identifier]?
+  final public let additionalIdentifierArray: [KochavaNetworking.Any_Type.Identifier]?
   final public let anyType: any Any.Type
   @objc deinit
 }
@@ -992,27 +1325,54 @@ public protocol Typed {
   static var type_kochava: KochavaNetworking.Kochava_Type { get }
 }
 @_hasMissingDesignatedInitializers final public class Typed_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func type_kochava(anyType: (any Any.Type)?) -> KochavaNetworking.Kochava_Type?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func type_kochava(entity: Any?) -> KochavaNetworking.Kochava_Type?
+  #endif
   @objc deinit
 }
 extension Foundation.URL : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 @_hasMissingDesignatedInitializers @objc(KVAPrivacyProfile) final public class PrivacyProfile : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(registerWithName:datapointKeyArray:) public static func register(name: KochavaNetworking.PrivacyProfile.Name, datapointKeyArray: [Swift.AnyHashable]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(registerWithName:datapointKeyArray:registrarArray:) public static func register(name: KochavaNetworking.PrivacyProfile.Name, datapointKeyArray: [Swift.AnyHashable]?, registrarArray: [any KochavaNetworking.PrivacyProfile.RegistrarProvider]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(registerWithName:datapointKeyArray:transactionUniversalIdentifierArray:registrarArray:) public static func register(name: KochavaNetworking.PrivacyProfile.Name, datapointKeyArray: [Swift.AnyHashable]?, transactionUniversalIdentifierArray: [KochavaNetworking.Transaction.UniversalIdentifier]?, registrarArray: [any KochavaNetworking.PrivacyProfile.RegistrarProvider]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(name: KochavaNetworking.PrivacyProfile.Name, datapointKeyArray: [Swift.AnyHashable]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static func == (lhs: KochavaNetworking.PrivacyProfile, rhs: KochavaNetworking.PrivacyProfile) -> Swift.Bool
   public static func != (lhs: KochavaNetworking.PrivacyProfile, rhs: KochavaNetworking.PrivacyProfile) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   final public func execute()
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
@@ -1041,27 +1401,182 @@ public protocol Executable {
 public protocol ExecutableWithOptions {
   func execute(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
 }
+extension KochavaNetworking.System {
+  @_hasMissingDesignatedInitializers @objc(KVASystem_State) final public class State : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+    @objc public static let active: KochavaNetworking.System.State
+    @objc public static let inactive: KochavaNetworking.System.State
+    @objc public static let background: KochavaNetworking.System.State
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    @objc override final public var description: Swift.String {
+      @objc get
+    }
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    @objc final public let identifier: KochavaNetworking.System.State.Identifier
+    public typealias Identifier = Swift.String
+    @objc final public let universalIdentifier: KochavaNetworking.System.State.UniversalIdentifier
+    public typealias UniversalIdentifier = Swift.String
+    @objc deinit
+  }
+}
 @_hasMissingDesignatedInitializers final public class Any_Type {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> (any Any.Type)?
+  #endif
   public typealias Identifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func identifier(_ anyType: (any Any.Type)?) -> KochavaNetworking.Any_Type.Identifier?
+  #endif
   @objc deinit
+}
+public protocol Dismissible {
+  func dismiss()
+}
+@_hasMissingDesignatedInitializers public class Dismissible_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func dismiss(entity: Any?)
+  #endif
+  @objc deinit
+}
+final public class Topic : KochavaNetworking.DecodableFrom, KochavaNetworking.Executor, Swift.Identifiable, KochavaNetworking.Typed {
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(overrideTopic: KochavaNetworking.Topic? = nil, baseTopic: KochavaNetworking.Topic? = nil, supertitle: KochavaNetworking.Topic.Title? = nil, title: KochavaNetworking.Topic.Title? = nil, description: KochavaNetworking.Topic.Description? = nil, ui: (any KochavaNetworking.Topic.UIProto)? = nil, delegate: (any KochavaNetworking.Topic.Delegate)? = nil, closure_supertitle_collectSynchronously: KochavaNetworking.Topic.Closure_Supertitle_CollectSynchronously? = nil, closure_supertitle_collectAsynchronously: KochavaNetworking.Topic.Closure_Supertitle_CollectAsynchronously? = nil, closure_title_collectSynchronously: KochavaNetworking.Topic.Closure_Title_CollectSynchronously? = nil, closure_title_collectAsynchronously: KochavaNetworking.Topic.Closure_Title_CollectAsynchronously? = nil, closure_description_collectSynchronously: KochavaNetworking.Topic.Closure_Description_CollectSynchronously? = nil, closure_description_collectAsynchronously: KochavaNetworking.Topic.Closure_Description_CollectAsynchronously? = nil)
+  #endif
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func from(_ object: Any?) -> Self?
+  #endif
+  final public let id: Swift.String
+  public static let type_kochava: KochavaNetworking.Kochava_Type
+  final public var execution: KochavaNetworking.Execution {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var uiProto_main: (any KochavaNetworking.Topic.UIProto)? {
+    get
+    set(uiProto)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var uiProto: (any KochavaNetworking.Topic.UIProto)? {
+    get
+    set(uiProto)
+  }
+  #endif
+  @_Concurrency.MainActor final public var uiProto_mainAggressiveCache: (any KochavaNetworking.Topic.UIProto)?
+  final public var uiProto_sf_memory: (any KochavaNetworking.Topic.UIProto)?
+  public protocol UIProto : AnyObject {
+    func topic_didSetUIProto(topic: KochavaNetworking.Topic)
+    func topic_didConfigure(initialConfigurationCompleteBool: Swift.Bool)
+    #if compiler(>=5.3) && $NonescapableTypes
+    func topic_supertitle_didSet(supertitle: KochavaNetworking.Topic.Supertitle?, initialConfigurationCompleteBool: Swift.Bool)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    func topic_title_didSet(title: KochavaNetworking.Topic.Title?, initialConfigurationCompleteBool: Swift.Bool)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    func topic_description_didSet(description: KochavaNetworking.Topic.Description?, initialConfigurationCompleteBool: Swift.Bool)
+    #endif
+  }
+  final public let baseTopic: KochavaNetworking.Topic?
+  final public let overrideTopic: KochavaNetworking.Topic?
+  final public var supertitle: KochavaNetworking.Topic.Supertitle? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var supertitle_parameter: KochavaNetworking.Topic.Supertitle? {
+    get
+    set(supertitle_parameter)
+  }
+  #endif
+  public typealias Closure_Supertitle_CollectSynchronously = () -> KochavaNetworking.Topic.Supertitle?
+  public typealias Closure_Supertitle_CollectAsynchronously = (@escaping (KochavaNetworking.Topic.Supertitle?) -> Swift.Void) -> Swift.Void
+  public typealias Supertitle = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var title: KochavaNetworking.Topic.Title? {
+    get
+    set(title)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var title_parameter: KochavaNetworking.Topic.Title? {
+    get
+    set(title_parameter)
+  }
+  #endif
+  public typealias Closure_Title_CollectSynchronously = () -> KochavaNetworking.Topic.Title?
+  public typealias Closure_Title_CollectAsynchronously = (@escaping (KochavaNetworking.Topic.Title?) -> Swift.Void) -> Swift.Void
+  public typealias Title = Swift.String
+  final public var description: KochavaNetworking.Topic.Description? {
+    get
+  }
+  public typealias Closure_Description_CollectSynchronously = () -> KochavaNetworking.Topic.Description?
+  public typealias Closure_Description_CollectAsynchronously = (@escaping (KochavaNetworking.Topic.Description?) -> Swift.Void) -> Swift.Void
+  public typealias Description = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var delegate_resolved: (any KochavaNetworking.Topic.Delegate)? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var delegate: (any KochavaNetworking.Topic.Delegate)? {
+    get
+    set(delegate)
+  }
+  #endif
+  public protocol Composing {
+    var topic: KochavaNetworking.Topic { get }
+  }
+  @_hasMissingDesignatedInitializers final public class Composing_Conforming {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func topic(entity: Any?) -> KochavaNetworking.Topic?
+    #endif
+    @objc deinit
+  }
+  public protocol Delegate : KochavaNetworking.Executor {
+  }
+  public typealias ID = Swift.String
+}
+public protocol NSObjectEquatable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension KochavaNetworking.Networking {
   @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVANetworking_ValueSources) final public class ValueSources : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ adapter: KochavaNetworking.Adapter?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ adapter: KochavaNetworking.Adapter?, identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(valueSource: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -1079,17 +1594,31 @@ extension KochavaNetworking.Networking {
 }
 extension KochavaNetworking.Networking {
   @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AuthoritativeSources : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ object: (any KochavaNetworking.Typed)?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(object: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection.RegisterResult?
+    #endif
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -1103,16 +1632,30 @@ extension KochavaNetworking.Networking {
   }
 }
 final public class Transaction : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable, KochavaNetworking.Startable, KochavaNetworking.StartableWithOptions {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Transaction.Identifier?, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, jsonDictionary: [Swift.AnyHashable : Any], prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(networking: KochavaNetworking.Networking? = nil, jsonDictionary: [Swift.AnyHashable : Any]? = nil, baseIdentifier: KochavaNetworking.Transaction.Identifier? = nil, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startBool: Swift.Bool = false, startLogMessagePrintBool: Swift.Bool? = nil, closure_enabled: KochavaNetworking.Transaction.Closure_Enabled? = nil, closure_transformedURL: KochavaNetworking.Transaction.Closure_TransformedURL? = nil, closure_willStartRequest: KochavaNetworking.Transaction.Closure_WillStartRequest? = nil, closure_succeededBool: KochavaNetworking.Transaction.Closure_SucceededBool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   final public func execute()
   final public func start()
   final public func start(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
@@ -1130,53 +1673,75 @@ final public class Transaction : Swift.CustomStringConvertible, KochavaNetworkin
   final public var sendTask: KochavaNetworking.Task {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak final public var networking: KochavaNetworking.Networking? {
     @objc get
     @objc set(networking)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func baseTransaction(withIdentifier identifier: KochavaNetworking.Transaction.Identifier) -> KochavaNetworking.Transaction?
+  #endif
   public typealias Closure_DidComplete = (_ transaction: KochavaNetworking.Transaction, _ didSucceedBool: Swift.Bool, _ responseTypeObject: Any?, _ responseObject: Any?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var closure_enabled: KochavaNetworking.Transaction.Closure_Enabled? {
     get
     set(closure_enabled)
   }
+  #endif
   public typealias Closure_Enabled = (_ transaction: KochavaNetworking.Transaction) -> (bool: Swift.Bool, reasonString: Swift.String?)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var closure_succeededBool: KochavaNetworking.Transaction.Closure_SucceededBool? {
     get
     set(closure_succeededBool)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func isSuccessfulBool(responseObject: Any?) -> (Swift.Bool, Swift.Bool)
+  #endif
   public typealias Closure_SucceededBool = (_ transaction: KochavaNetworking.Transaction, _ responseObject: Any?) -> (succeededBool: Swift.Bool, urlRotationEnabledBool: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var closure_transformedURL: KochavaNetworking.Transaction.Closure_TransformedURL? {
     get
     set(closure_transformedURL)
   }
+  #endif
   public typealias Closure_TransformedURL = (_ transaction: KochavaNetworking.Transaction, _ startingURL: KochavaNetworking.Kochava.URL?) -> KochavaNetworking.Kochava.URL?
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var closure_willStartRequest: KochavaNetworking.Transaction.Closure_WillStartRequest? {
     get
     set(closure_willStartRequest)
   }
+  #endif
   public typealias Closure_WillStartRequest = (_ transaction: KochavaNetworking.Transaction) -> Swift.Void
   public typealias HTTPMethod = Swift.String
   final public var identifier: KochavaNetworking.Transaction.Identifier {
     get
   }
   public typealias Identifier = Swift.String
-  final public var requestBodyDictionaryFormat: KochavaNetworking.DictionaryFormat? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var requestBodyFormat: KochavaNetworking.Format? {
     get
   }
+  #endif
   public typealias SubIdentifier = Swift.String
   public typealias UniversalIdentifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var universalIdentifierArray: [KochavaNetworking.Transaction.UniversalIdentifier]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var url: KochavaNetworking.Kochava.URL? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueSourceCollection_injected: KochavaNetworking.Collection? {
     get
     set(valueSourceCollection_injected)
   }
+  #endif
   final public var attemptCount: Swift.Int {
     get
   }
@@ -1200,13 +1765,19 @@ final public class Transaction : Swift.CustomStringConvertible, KochavaNetworkin
     get
   }
   public typealias ErrorRetryGroupWaitIdentifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func rollupLogMessageArray_append(_ logMessage: KochavaNetworking.Log.Message?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueArrayDictionary: [Swift.AnyHashable : KochavaNetworking.Value]? {
     get
     set(valueArrayDictionary)
   }
+  #endif
   final public func valueArrayDictionary_configure(startingBool: Swift.Bool, startingFirstTimeBool: Swift.Bool, closure_didComplete: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func valueArrayDictionary_value(forKey key: Swift.AnyHashable?) -> KochavaNetworking.Value?
+  #endif
   public static let attemptDidFinishButNotCompleteNotificationName: Foundation.Notification.Name
   public static let didCompleteNotificationName: Foundation.Notification.Name
   public static let requestBodyIdentifier: KochavaNetworking.Collection.ElementIdentifier
@@ -1214,58 +1785,74 @@ final public class Transaction : Swift.CustomStringConvertible, KochavaNetworkin
     func transaction_serviceLocallyBool() -> Swift.Bool
   }
   public protocol SubIdentifierProvider {
+    #if compiler(>=5.3) && $NonescapableTypes
     func transaction_subIdentifier() -> KochavaNetworking.Transaction.SubIdentifier?
-  }
-}
-extension KochavaNetworking.System {
-  @_hasMissingDesignatedInitializers @objc(KVASystem_State) final public class State : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
-    @objc public static let active: KochavaNetworking.System.State
-    @objc public static let inactive: KochavaNetworking.System.State
-    @objc public static let background: KochavaNetworking.System.State
-    @objc public static func from(_ object: Any?) -> Self?
-    final public func to(context: KochavaNetworking.Context?) -> Any?
-    @objc override final public var description: Swift.String {
-      @objc get
-    }
-    public static let type_kochava: KochavaNetworking.Kochava_Type
-    @objc final public let identifier: KochavaNetworking.System.State.Identifier
-    public typealias Identifier = Swift.String
-    @objc final public let universalIdentifier: KochavaNetworking.System.State.UniversalIdentifier
-    public typealias UniversalIdentifier = Swift.String
-    @objc deinit
+    #endif
   }
 }
 extension Foundation.NSData : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 extension Foundation.NSException : KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
 }
 extension Foundation.NSNumber : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func number(fromString string: Swift.String?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_bool_from:identifier:method:guardNotOmittedBool:) public static func bool_from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_timeInterval_from:identifier:method:guardNotOmittedBool:) public static func timeInterval_from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
   public func isBoolBool() -> Swift.Bool
 }
 final public class File : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, os.Logger.Provider {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init?(resourceName: KochavaNetworking.File.ResourceName? = nil, bundle: Foundation.Bundle? = nil, searchPathDirectory: Foundation.FileManager.SearchPathDirectory? = nil, pathComponentArray: [Swift.String]? = nil, pathExtension: Swift.String? = nil, remoteURL: KochavaNetworking.Kochava.URL? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let logger: os.Logger
   final public var description: Swift.String {
     get
   }
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func object(type: (any Any.Type)? = nil, elementType: (any Any.Type)? = nil, appendObject: Any? = nil) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func jsonDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func jsonObject() -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func data() -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func url(excludeResourceNameBool: Swift.Bool! = false) -> Foundation.URL?
+  #endif
   final public func resolvedBundle() -> Foundation.Bundle
   final public var bundle: Foundation.Bundle? {
     get
@@ -1286,15 +1873,25 @@ final public class File : Swift.CustomStringConvertible, KochavaNetworking.Decod
   @objc deinit
 }
 public protocol File_SourceFileProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   var sourceFile: KochavaNetworking.File? { get set }
+  #endif
 }
-final public class Value : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, os.Logger.Provider {
+final public class Value : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Topic.Composing, KochavaNetworking.Topic.Delegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(uuidString: Swift.String?, rawObject: Any?, object: Any? = nil, serverObject: Any? = nil, valueSourceIdentifier: KochavaNetworking.Value.SourceIdentifier? = nil, adapter: KochavaNetworking.Adapter? = nil, metaValueArrayDictionary: [Swift.String : KochavaNetworking.Value]? = nil, startDate: Foundation.Date? = nil, placeholderForAsynchronousCollectionBool: Swift.Bool = false, staleBool: Swift.Bool? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, type: (any Any.Type)?, elementType: (any Any.Type)? = nil, initializedObject: Any? = nil) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let logger: os.Logger
   final public var description: Swift.String {
     get
@@ -1303,173 +1900,295 @@ final public class Value : Swift.CustomStringConvertible, KochavaNetworking.Deco
   final public var execution: KochavaNetworking.Execution {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func array() -> [Swift.AnyObject]?
+  #endif
   final public func bool() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func bool_optional() -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func data() -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func date() -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func dictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   final public func int() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func int_optional() -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func number() -> Foundation.NSNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func string() -> Swift.String?
+  #endif
   final public func timeInterval() -> Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func timeInterval_optional() -> Foundation.TimeInterval?
+  #endif
   final public func ageTimeInterval() -> Foundation.TimeInterval
   final public func markStale()
   final public func staleBool() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func value(context: KochavaNetworking.Context?) -> KochavaNetworking.Value?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func valueArrayDictionary(fromObjectArray objectArray: [Any]?, valueSourceCollection: KochavaNetworking.Collection?) -> [Swift.String : KochavaNetworking.Value]?
+  #endif
   final public func mayMutateBool() -> Swift.Bool
   public typealias Closure_MetaValueArrayDictionary = (_ value: KochavaNetworking.Value) -> [Swift.String : KochavaNetworking.Value]?
   public typealias Closure_StaleBool = (_ value: KochavaNetworking.Value) -> Swift.Bool
+  final public var topic: KochavaNetworking.Topic {
+    get
+    set
+  }
+  public static var closure_topic_ui_bodyHeadingViewableCollection_collectSynchronously: ((_ value: KochavaNetworking.Value) -> KochavaNetworking.Collection?)?
+  public static var closure_topic_ui_bodyViewableCollection_collectSynchronously: ((_ value: KochavaNetworking.Value) -> KochavaNetworking.Collection?)?
+  #if compiler(>=5.3) && $NonescapableTypes
   weak final public var adapter: KochavaNetworking.Adapter? {
     get
     set(adapter)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   weak final public var valueSourceCollection: KochavaNetworking.Collection? {
     get
     set(valueSourceCollection)
   }
+  #endif
   final public var uuidString: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var metaValueArrayDictionary: [Swift.String : KochavaNetworking.Value]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var object: Swift.AnyObject? {
     get
   }
+  #endif
   final public var placeholderForAsynchronousCollectionBool: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var rawObject: Swift.AnyObject? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func serverObject() -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func serverObject_string() -> Swift.String?
+  #endif
   final public var startDate: Foundation.Date {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueSourceIdentifier: KochavaNetworking.Value.SourceIdentifier? {
     get
   }
+  #endif
   public typealias SourceIdentifier = KochavaNetworking.Collection.ElementIdentifier
 }
 extension Foundation.Data : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(hexString: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   public func hexString() -> Swift.String?
+  #endif
 }
 extension Swift.String : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(fromJSONObject jsonObject: Any?, prettyPrintBool: Swift.Bool)
-  public static func from(bool: Swift.Bool?) -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(bool: Swift.Bool?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false, maximumCount: Swift.Int? = nil) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
   public func withMaximumLength(_ maximumLength: Swift.Int) -> Swift.String
   public func withEnforcedDecimalPoint() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func serializedJSONObject(printErrorsBool: Swift.Bool = false) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func emptyBecomesNil() -> Swift.String?
+  #endif
 }
 extension Foundation.NSDecimalNumber {
   convenience public init(fromDouble aDouble: Swift.Double)
   public static func bankersScaleFourRoundingModeDecimalNumber(fromDouble aDouble: Swift.Double) -> Foundation.NSDecimalNumber
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func bankersScaleFourRoundingModeDecimalNumber(fromNumber number: Foundation.NSNumber?) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func bankersScaleFourRoundingModeDecimalNumber(fromObject object: Any?) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func decimalNumber(fromDouble aDouble: Swift.Double, roundingBehaviorDecimalNumberHandler: Foundation.NSDecimalNumberHandler?) -> Foundation.NSDecimalNumber
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func decimalNumber(fromNumber number: Foundation.NSNumber?, roundingBehaviorDecimalNumberHandler: Foundation.NSDecimalNumberHandler?) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func timeIntervalRoundingModeDecimalNumber(fromNumber number: Foundation.NSNumber?) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func timeIntervalRoundingModeDecimalNumber(fromObject object: Any?) -> Foundation.NSDecimalNumber?
+  #endif
   public static func timeIntervalRoundingModeDecimalNumber(fromTimeInterval timeInterval: Foundation.TimeInterval) -> Foundation.NSDecimalNumber
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func timeIntervalRoundingModeDecimalNumber(fromTimeInterval_optional timeInterval: Foundation.TimeInterval?) -> Foundation.NSDecimalNumber?
+  #endif
   public static let bankersScaleFourRoundingModeDecimalNumberHandler: Foundation.NSDecimalNumberHandler
 }
 final public class Capabilities : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(array: [KochavaNetworking.Capabilities.Capability]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(capabilities: KochavaNetworking.Capabilities?, subCapabilitiesArray: [KochavaNetworking.Capabilities]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   final public var description: Swift.String {
     get
   }
   public static let type_kochava: KochavaNetworking.Kochava_Type
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func bitwiseIntegersArray() -> [Swift.UInt64]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func bitwiseIntegersString() -> Swift.String?
+  #endif
   public typealias Capability = Swift.Int
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAConsent) final public class Consent : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
-  convenience public init(fromObject object: Any?, networking: KochavaNetworking.Networking, creationLogMessagesPrintBool: Swift.Bool = true, delegate: any KochavaNetworking.Executor, closure_didMutate: KochavaNetworking.Consent.Closure_DidMutate?)
-  @objc(copyWithZone:) final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  public static func from(_ object: Any?) -> Self?
-  @discardableResult
-  public static func from(_ object: Any?, initializedObject: Any?) -> Self?
-  @objc(kva_toContext:) final public func to(context: KochavaNetworking.Context?) -> Any?
-  final public func configure(networking: KochavaNetworking.Networking, masterBool: Swift.Bool, delegate: any KochavaNetworking.Executor, closure_didMutate: KochavaNetworking.Consent.Closure_DidMutate?)
-  final public func configure(with object: Any?, context: KochavaNetworking.Context?)
-  public static let logger: os.Logger
-  public static let type_kochava: KochavaNetworking.Kochava_Type
-  final public var execution: KochavaNetworking.Execution {
-    get
+extension KochavaNetworking.Networking.Privacy {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVANetworking_Privacy_IntelligentConsent) final public class IntelligentConsent : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
+    convenience public init(fromObject object: Any?, networking: KochavaNetworking.Networking, creationLogMessagesPrintBool: Swift.Bool = true, delegate: any KochavaNetworking.Executor, closure_didMutate: KochavaNetworking.Networking.Privacy.IntelligentConsent.Closure_DidMutate?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc(copyWithZone:) final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc(kva_toContext:) final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func configure(networking: KochavaNetworking.Networking, masterBool: Swift.Bool, delegate: any KochavaNetworking.Executor, closure_didMutate: KochavaNetworking.Networking.Privacy.IntelligentConsent.Closure_DidMutate?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    public static let logger: os.Logger
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    final public var execution: KochavaNetworking.Execution {
+      get
+    }
+    final public func invalidate()
+    @objc final public func mayCollectBool() -> Swift.Bool
+    @objc final public func mayPersistBool() -> Swift.Bool
+    @objc final public func mayShareBool() -> Swift.Bool
+    @objc final public func mayKeepBool() -> Swift.Bool
+    final public var setGrantedTask: KochavaNetworking.Task {
+      get
+      set
+    }
+    @objc weak final public var networking: KochavaNetworking.Networking?
+    public typealias Closure_DidMutate = (_ newConsent: KochavaNetworking.Networking.Privacy.IntelligentConsent, _ oldConsent: KochavaNetworking.Networking.Privacy.IntelligentConsent) -> Swift.Void
+    @objc final public var gdprAppliesBool: Swift.Bool {
+      @objc get
+    }
+    @objc final public var gdprEnabledBool: Swift.Bool {
+      @objc get
+    }
+    final public var enabledBool: Swift.Bool {
+      get
+    }
+    final public var gdprRestrictiveBool: Swift.Bool {
+      get
+      set(gdprRestrictiveBool)
+    }
+    final public func gdprRestrictiveBool_configure()
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public var grantedBool: Swift.Bool? {
+      get
+      set(grantedBool)
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc final public var grantedBoolNumber: Foundation.NSNumber? {
+      @objc get
+      @objc set(grantedBoolNumber)
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc final public var grantedDate: Foundation.Date? {
+      @objc get
+    }
+    #endif
+    @objc final public var requiredBool: Swift.Bool {
+      @objc get
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc final public var responseDate: Foundation.Date? {
+      @objc get
+    }
+    #endif
+    @objc deinit
   }
-  final public func invalidate()
-  @objc final public func mayCollectBool() -> Swift.Bool
-  @objc final public func mayPersistBool() -> Swift.Bool
-  @objc final public func mayShareBool() -> Swift.Bool
-  @objc final public func mayKeepBool() -> Swift.Bool
-  final public var setGrantedTask: KochavaNetworking.Task {
-    get
-    set
-  }
-  @objc weak final public var networking: KochavaNetworking.Networking?
-  public typealias Closure_DidMutate = (_ newConsent: KochavaNetworking.Consent, _ oldConsent: KochavaNetworking.Consent) -> Swift.Void
-  @objc final public var gdprAppliesBool: Swift.Bool {
-    @objc get
-  }
-  @objc final public var gdprEnabledBool: Swift.Bool {
-    @objc get
-  }
-  final public var enabledBool: Swift.Bool {
-    get
-  }
-  final public var gdprRestrictiveBool: Swift.Bool {
-    get
-    set(gdprRestrictiveBool)
-  }
-  final public func gdprRestrictiveBool_configure()
-  final public var grantedBool: Swift.Bool? {
-    get
-    set(grantedBool)
-  }
-  @objc final public var grantedBoolNumber: Foundation.NSNumber? {
-    @objc get
-    @objc set(grantedBoolNumber)
-  }
-  @objc final public var grantedDate: Foundation.Date? {
-    @objc get
-  }
-  @objc final public var requiredBool: Swift.Bool {
-    @objc get
-  }
-  @objc final public var responseDate: Foundation.Date? {
-    @objc get
-  }
-  @objc deinit
 }
 public protocol DecodableFrom : KochavaNetworking.Typed {
+  #if compiler(>=5.3) && $NonescapableTypes
   static func from(_ object: Any?) -> Self?
+  #endif
 }
 public protocol DecodableFromWithInitializedObject : KochavaNetworking.Typed {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   static func from(_ object: Any?, initializedObject: Any?) -> Self?
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class DecodableFrom_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, type type_parameter_liberal: (any Any.Type)? = nil, elementType: (any Any.Type)? = nil, initializedObject: Any? = nil, networking: KochavaNetworking.Networking? = nil) -> Any?
+  #endif
   @objc deinit
 }
 extension KochavaNetworking.Log.Level {
@@ -1482,8 +2201,12 @@ extension KochavaNetworking.Log.Level {
     @objc public static let debug: KochavaNetworking.Log.Level.OSLevel
     @objc public static let trace: KochavaNetworking.Log.Level.OSLevel
     @objc public static let notice: KochavaNetworking.Log.Level.OSLevel
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     @objc override final public var description: Swift.String {
       @objc get
     }
@@ -1499,25 +2222,53 @@ public protocol SharedInstanceProvider {
   static var sharedInstance: Any { get }
 }
 @_hasMissingDesignatedInitializers final public class SharedInstanceProvider_Conforming {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func sharedInstance(typeIdentifier: Swift.String?) -> Any?
+  #endif
   @objc deinit
 }
 extension KochavaNetworking.Log {
   final public class Message : Swift.Identifiable, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Printable {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func print(_ headlineString: Swift.String?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func print(level: KochavaNetworking.Log.Level?, osLevel: KochavaNetworking.Log.Level.OSLevel? = nil, sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier? = nil, sourceType: (any Any.Type)?, headlineString: Swift.String?, dictionary: [Swift.AnyHashable : Any]? = nil, rollupMessageArray: [KochavaNetworking.Log.Message]? = nil, log: KochavaNetworking.Log?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func print(level: KochavaNetworking.Log.Level?, sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier?, sourceType: (any Any.Type)?, headlineString: Swift.String?, dictionary: [Swift.AnyHashable : Any]? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func print(level: KochavaNetworking.Log.Level?, sourceType: (any Any.Type)?, headlineString: Swift.String?, dictionary: [Swift.AnyHashable : Any]? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printError(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier?, sourceType: (any Any.Type)?, headlineString: Swift.String?, dictionary: [Swift.AnyHashable : Any]? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printInternalInconsistency(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier?, sourceType: (any Any.Type)?, dictionary: [Swift.AnyHashable : Any]? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printInternalError(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier, sourceType: (any Any.Type)?, dictionary: [Swift.AnyHashable : Any]? = nil, error: any Swift.Error)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printWarning(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier, sourceType: (any Any.Type)?, dictionary: [Swift.AnyHashable : Any]? = nil, exception: Foundation.NSException)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printWarning(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier? = nil, sourceType: (any Any.Type)?, headlineString: Swift.String?, dictionary: [Swift.AnyHashable : Any]? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func printWarning(sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier, sourceType: (any Any.Type)?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     required public init?(level: KochavaNetworking.Log.Level? = nil, osLevel: KochavaNetworking.Log.Level.OSLevel? = nil, sourceIdentifier: KochavaNetworking.Log.Message.SourceIdentifier? = nil, sourceType: (any Any.Type)? = nil, headlineString: Swift.String? = nil, dictionary: [Swift.AnyHashable : Any]? = nil, rollupMessageArray: [KochavaNetworking.Log.Message]? = nil, printBool: Swift.Bool = false, log: KochavaNetworking.Log? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     final public func execute()
     final public let id: Swift.String
     public static let type_kochava: KochavaNetworking.Kochava_Type
@@ -1525,19 +2276,25 @@ extension KochavaNetworking.Log {
       get
     }
     final public func print()
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var product: KochavaNetworking.Product? {
       get
     }
+    #endif
     final public var sourceType: (any Any.Type)? {
       get
     }
     public typealias SourceIdentifier = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var visibleMaximumLevel: KochavaNetworking.Log.Level? {
       get
     }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var bodyDictionary: [Swift.AnyHashable : Any]? {
       get
     }
+    #endif
     final public func headlineFinishedString() -> Swift.String
     final public var printDidDate: Foundation.Date? {
       get
@@ -1554,9 +2311,11 @@ extension KochavaNetworking.Log {
   @objc public static var shared: KochavaNetworking.System {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var shared_optional: KochavaNetworking.System? {
     @objc get
   }
+  #endif
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
@@ -1570,14 +2329,6 @@ extension KochavaNetworking.Log {
   final public var appExtensionBool: Swift.Bool {
     get
   }
-  @available(*, deprecated, message: "Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:")
-  @objc final public func stateActiveDidBecome()
-  @available(*, deprecated, message: "Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:")
-  @objc(stateActiveDidBecomeWithSourceIdentifier:) final public func stateActiveDidBecome(sourceIdentifier: KochavaNetworking.System.SourceIdentifier)
-  @available(*, deprecated, message: "Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:")
-  @objc final public func stateActiveWillResign()
-  @available(*, deprecated, message: "Two-state functions deprecated.  Use three-state func state_set(...) instead.  In Objective-C use -state_set:sourceIdentifier:")
-  @objc(stateActiveWillResignWithSourceIdentifier:) final public func stateActiveWillResign(sourceIdentifier: KochavaNetworking.System.SourceIdentifier)
   @discardableResult
   final public func state_didChangeObserver(closure: @escaping KochavaNetworking.System.Closure_State_DidChange) -> any ObjectiveC.NSObjectProtocol
   public typealias Closure_State_DidChange = (_ activeMaximalDidChangeBool: Swift.Bool, _ activeMaximalBool: Swift.Bool, _ activeDidChangeBool: Swift.Bool, _ activeBool: Swift.Bool, _ didResignState: KochavaNetworking.System.State, _ didBecomeState: KochavaNetworking.System.State, _ sourceIdentifier: KochavaNetworking.System.SourceIdentifier) -> Swift.Void
@@ -1586,7 +2337,9 @@ extension KochavaNetworking.Log {
     get
     set(pausedMaximalState)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(state_set:sourceIdentifier:) final public func state_set(_ state: KochavaNetworking.System.State, sourceIdentifier: KochavaNetworking.System.SourceIdentifier? = nil)
+  #endif
   final public var state: KochavaNetworking.System.State {
     get
   }
@@ -1605,13 +2358,23 @@ extension KochavaNetworking.Log {
 }
 extension KochavaNetworking.Networking.Transactions {
   @_hasMissingDesignatedInitializers public class URLs : KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     public var execution: KochavaNetworking.Execution {
       get
@@ -1621,32 +2384,54 @@ extension KochavaNetworking.Networking.Transactions {
   }
 }
 @_inheritsConvenienceInitializers @objc(KVATimeIntervalSeries) final public class TimeIntervalSeries : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, os.Logger.Provider {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(timeIntervalArray: [Foundation.TimeInterval]?, repeatFinalTimeIntervalBool: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configureState(statefulTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries?)
+  #endif
   public static func == (lhs: KochavaNetworking.TimeIntervalSeries, rhs: KochavaNetworking.TimeIntervalSeries) -> Swift.Bool
   public static func != (lhs: KochavaNetworking.TimeIntervalSeries, rhs: KochavaNetworking.TimeIntervalSeries) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func reset(currentIterationIncludedBool: Swift.Bool? = nil)
+  #endif
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
     get
   }
   final public func advance()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func currentTimeInterval() -> Foundation.TimeInterval?
+  #endif
   final public func previousIterationString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var insertTimeInterval: Foundation.TimeInterval? {
     get
     set(insertTimeInterval)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var timeIntervalArray: [Foundation.TimeInterval]? {
     get
     set(timeIntervalArray)
   }
+  #endif
   final public var currentIteration: Swift.Int {
     get
   }
@@ -1654,25 +2439,153 @@ extension KochavaNetworking.Networking.Transactions {
   @objc deinit
 }
 public protocol Registerable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
 }
 extension Foundation.NSURL {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:identifier:method:guardNotOmittedBool:guardNotEmptyBool:) public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false) -> Self?
+  #endif
 }
 extension Foundation.NSArray : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(kva_from:) public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, elementType: (any Any.Type)? = nil) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
+extension KochavaNetworking.Kochava {
+  @objc(Kochava_URL) final public class URL : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Networking.Provider {
+    #if compiler(>=5.3) && $NonescapableTypes
+    required public init(string: Swift.String?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    required public init(string: Swift.String?, transaction: KochavaNetworking.Transaction?, preserveURLsSelectionFromSourceURL: KochavaNetworking.Kochava.URL?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    required public init(array: [KochavaNetworking.Kochava.URL]?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    required public init(array: [KochavaNetworking.Kochava.URL]? = nil, string: Swift.String? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    final public var execution: KochavaNetworking.Execution {
+      get
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func f_url(failurePrintLogMessageBool: Swift.Bool? = nil) -> Foundation.URL?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public var absoluteString: Swift.String? {
+      get
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func components() -> Foundation.URLComponents?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func appended(url: KochavaNetworking.Kochava.URL?, appendURL: KochavaNetworking.Kochava.URL?) -> KochavaNetworking.Kochava.URL?
+    #endif
+    final public let string_parameter: Swift.String?
+    @objc weak final public var networking: KochavaNetworking.Networking?
+    @objc deinit
+  }
+}
+extension os.Logger {
+  public protocol Provider {
+    static var logger: os.Logger { get }
+  }
+}
+extension KochavaNetworking.Kochava {
+  final public class Timer : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Startable, KochavaNetworking.Stoppable {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(identifier: KochavaNetworking.Kochava.Timer.Identifier, extendedIdentifier: KochavaNetworking.Kochava.Timer.ExtendedIdentifier? = nil, timeInterval: Foundation.TimeInterval? = nil, timeIntervalZeroShouldNotRunBool: Swift.Bool = false, logMessagesPrintBool: Swift.Bool? = nil, logMessagesPrintWhenLongTimeInterval: Foundation.TimeInterval? = nil, logMessagesPrintTimeIntervalAdjustedWhileTimerActiveBool: Swift.Bool? = nil, logMessagesPrintDidFireBool: Swift.Bool? = nil, delegate: (any KochavaNetworking.Executor)? = nil, closure_timeInterval: KochavaNetworking.Kochava.Timer.Closure_TimeInterval? = nil, closure_shouldBeRunningBool: KochavaNetworking.Kochava.Timer.Closure_ShouldBeRunningBool? = nil, closure_willStart: KochavaNetworking.Kochava.Timer.Closure_WillStart? = nil, closure_didFire: KochavaNetworking.Kochava.Timer.Closure_DidFire? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    final public func configure(allowToRunBool: Swift.Bool? = nil, shouldBeRunningBool: Swift.Bool? = nil) -> Swift.Bool
+    #endif
+    final public func start()
+    final public func stop()
+    final public func reset()
+    public static let logger: os.Logger
+    final public var description: Swift.String {
+      get
+    }
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    final public var execution: KochavaNetworking.Execution {
+      get
+    }
+    final public func invalidate()
+    final public var elapsedTimeInterval: Foundation.TimeInterval {
+      get
+    }
+    public typealias Closure_DidFire = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Void
+    public typealias Closure_ShouldBeRunningBool = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Bool
+    public typealias Closure_TimeInterval = (_ timer: KochavaNetworking.Kochava.Timer) -> Foundation.TimeInterval?
+    public typealias Closure_WillStart = (_ timer: KochavaNetworking.Kochava.Timer) -> Swift.Void
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public var extendedIdentifier: KochavaNetworking.Kochava.Timer.ExtendedIdentifier? {
+      get
+      set(extendedIdentifier)
+    }
+    #endif
+    public typealias ExtendedIdentifier = Swift.String
+    public typealias Identifier = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
+    final public var timeInterval: Foundation.TimeInterval? {
+      get
+      set(timeInterval)
+    }
+    #endif
+    final public var startedBool: Swift.Bool {
+      get
+    }
+    final public var timerActiveBool: Swift.Bool {
+      get
+    }
+    @objc deinit
+  }
+}
 extension Swift.Dictionary : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Swift.Dictionary<Key, Value>?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, recursionDepth: Swift.Int) -> Swift.Dictionary<Key, Value>?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardNotEmptyBool: Swift.Bool = false) -> Swift.Dictionary<Key, Value>?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func toArray(context: KochavaNetworking.Context?) -> [Any]?
+  #endif
   public static var type_kochava: KochavaNetworking.Kochava_Type {
     get
   }
@@ -1680,14 +2593,24 @@ extension Swift.Dictionary : KochavaNetworking.DecodableFrom, KochavaNetworking.
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers final public class Sessions : KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     final public func configure(networking: KochavaNetworking.Networking, delegate: any KochavaNetworking.Executor)
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     final public func start()
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -1696,41 +2619,73 @@ extension KochavaNetworking.Networking {
     @objc deinit
   }
 }
-final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Keyable, Swift.Identifiable, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable {
-  required public init(networking: KochavaNetworking.Networking? = nil, baseIdentifier: KochavaNetworking.Adapter.Identifier? = nil, identifier: KochavaNetworking.Adapter.Identifier?, universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil, key: Swift.AnyHashable? = nil, pathKeyArray: [Swift.AnyHashable]? = nil, denyDatapointCheckBool: Swift.Bool = false, collectValueSourceUpdatingBool: Swift.Bool? = nil, persistBool: Swift.Bool = false, watchBool: Swift.Bool = false, allowValueArray: [Any]? = nil, interfaceInDictionary: [Swift.AnyHashable : Any]? = nil, maximumStalenessTimeInterval: Foundation.TimeInterval? = nil, valueDefaultObject: Any? = nil, valueObject: Any? = nil, closure_didInvalidate: KochavaNetworking.Adapter.Closure_DidInvalidate? = nil, closure_didMutate: KochavaNetworking.Adapter.Closure_DidMutate? = nil, closure_didReadFromPersistentStorage: KochavaNetworking.Adapter.Closure_DidReadFromPersistentStorage? = nil, closure_didSetCachedValueOnSameThread: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_didSetValue: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_valueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary? = nil, closure_valueStaleBool: KochavaNetworking.Value.Closure_StaleBool? = nil, closure_value_willSet: KochavaNetworking.Adapter.Closure_Value_WillSet? = nil, closure_serverObject: KochavaNetworking.Adapter.Closure_ServerObject? = nil, closure_collectSynchronously: KochavaNetworking.Adapter.Closure_CollectSynchronously? = nil, closure_collectAsynchronously: KochavaNetworking.Adapter.Closure_CollectAsynchronously? = nil)
-  required public init(networking: KochavaNetworking.Networking? = nil, baseIdentifier: KochavaNetworking.Adapter.Identifier? = nil, identifier: KochavaNetworking.Adapter.Identifier?, universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil, nameString: Swift.String? = nil, descriptionString: Swift.String? = nil, key: Swift.AnyHashable? = nil, pathKeyArray: [Swift.AnyHashable]? = nil, product: KochavaNetworking.Product? = nil, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, denyDatapointCheckBool: Swift.Bool = false, collectValueSourceIdentifier: KochavaNetworking.Value.SourceIdentifier? = nil, collectValueSourceExcludeIdentifierArray: [KochavaNetworking.Collection.ElementIdentifier]? = nil, collectValueSourceUpdatingBool: Swift.Bool? = nil, asynchronousCollectionPrerequisiteTaskIdentifierArray: [Swift.String]? = nil, asynchronousCollectionPrerequisiteTaskArray: [KochavaNetworking.Task]? = nil, asynchronousCollectionPrerequisiteTaskArrayIncludeNetworkingStartedBool: Swift.Bool? = nil, asynchronousCollectionRetryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, persistBool: Swift.Bool = false, persistAggressiveBool: Swift.Bool = false, persistAgentArray: [any KochavaNetworking.PersistAgent]? = nil, persistWritesLogMessagesPrintBool: Swift.Bool? = nil, persistWritesWaitTimeInterval: Foundation.TimeInterval? = nil, watchBool: Swift.Bool = false, allowValueArray: [Any]? = nil, interfaceInDictionary: [Swift.AnyHashable : Any]? = nil, maximumStalenessTimeInterval: Foundation.TimeInterval? = nil, executionMutationsPassToParentExecutorBool: Swift.Bool? = nil, executionParentExecutor: (any KochavaNetworking.Executor)? = nil, valueType: (any Any.Type)? = nil, valueElementType: (any Any.Type)? = nil, valueMinimumObject: Any? = nil, valueMaximumObject: Any? = nil, valueDefaultObject: Any? = nil, valueInitializedObject: Any? = nil, valueObject: Any? = nil, touchlessValue: KochavaNetworking.Value? = nil, closure_didInvalidate: KochavaNetworking.Adapter.Closure_DidInvalidate? = nil, closure_didMutate: KochavaNetworking.Adapter.Closure_DidMutate? = nil, closure_didReadFromPersistentStorage: KochavaNetworking.Adapter.Closure_DidReadFromPersistentStorage? = nil, closure_didSetCachedValueOnSameThread: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_didSetValue: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_validatedAny: KochavaNetworking.Adapter.Closure_ValidatedObject? = nil, closure_valueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary? = nil, closure_valueStaleBool: KochavaNetworking.Value.Closure_StaleBool? = nil, closure_value_willSet: KochavaNetworking.Adapter.Closure_Value_WillSet? = nil, closure_serverObject: KochavaNetworking.Adapter.Closure_ServerObject? = nil, closure_collectSynchronously: KochavaNetworking.Adapter.Closure_CollectSynchronously? = nil, closure_collectAsynchronously: KochavaNetworking.Adapter.Closure_CollectAsynchronously? = nil)
+final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Keyable, Swift.Identifiable, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable, KochavaNetworking.Topic.Composing, KochavaNetworking.Topic.Delegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(networking: KochavaNetworking.Networking? = nil, baseIdentifier: KochavaNetworking.Adapter.Identifier? = nil, identifier: KochavaNetworking.Adapter.Identifier?, universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil, key: Swift.AnyHashable? = nil, pathKeyArray: [Swift.AnyHashable]? = nil, denyDatapointCheckBool: Swift.Bool = false, collectValueSourceUpdatingBool: Swift.Bool? = nil, persistBool: Swift.Bool = false, watchBool: Swift.Bool = false, allowValueCollection: KochavaNetworking.Collection? = nil, interfaceInDictionary: [Swift.AnyHashable : Any]? = nil, maximumStalenessTimeInterval: Foundation.TimeInterval? = nil, valueDefaultObject: Any? = nil, valueObject: Any? = nil, closure_didInvalidate: KochavaNetworking.Adapter.Closure_DidInvalidate? = nil, closure_didMutate: KochavaNetworking.Adapter.Closure_DidMutate? = nil, closure_didReadFromPersistentStorage: KochavaNetworking.Adapter.Closure_DidReadFromPersistentStorage? = nil, closure_didSetCachedValueOnSameThread: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_didSetValue: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_valueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary? = nil, closure_valueStaleBool: KochavaNetworking.Value.Closure_StaleBool? = nil, closure_value_willSet: KochavaNetworking.Adapter.Closure_Value_WillSet? = nil, closure_serverObject: KochavaNetworking.Adapter.Closure_ServerObject? = nil, closure_collectSynchronously: KochavaNetworking.Adapter.Closure_CollectSynchronously? = nil, closure_collectAsynchronously: KochavaNetworking.Adapter.Closure_CollectAsynchronously? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(networking: KochavaNetworking.Networking? = nil, baseIdentifier: KochavaNetworking.Adapter.Identifier? = nil, identifier: KochavaNetworking.Adapter.Identifier?, universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil, nameString: Swift.String? = nil, descriptionString: Swift.String? = nil, topic: KochavaNetworking.Topic? = nil, key: Swift.AnyHashable? = nil, pathKeyArray: [Swift.AnyHashable]? = nil, product: KochavaNetworking.Product? = nil, storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? = nil, denyDatapointCheckBool: Swift.Bool = false, collectValueSourceIdentifier: KochavaNetworking.Value.SourceIdentifier? = nil, collectValueSourceExcludeIdentifierArray: [KochavaNetworking.Collection.ElementIdentifier]? = nil, collectValueSourceUpdatingBool: Swift.Bool? = nil, asynchronousCollectionPrerequisiteTaskIdentifierArray: [Swift.String]? = nil, asynchronousCollectionPrerequisiteTaskArray: [KochavaNetworking.Task]? = nil, asynchronousCollectionPrerequisiteTaskArrayIncludeNetworkingStartedBool: Swift.Bool? = nil, asynchronousCollectionRetryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? = nil, persistBool: Swift.Bool = false, persistAggressiveBool: Swift.Bool = false, persistAgentArray: [any KochavaNetworking.PersistAgent]? = nil, persistWritesLogMessagesPrintBool: Swift.Bool? = nil, persistWritesWaitTimeInterval: Foundation.TimeInterval? = nil, watchBool: Swift.Bool = false, allowValueCollection: KochavaNetworking.Collection? = nil, interfaceInDictionary: [Swift.AnyHashable : Any]? = nil, maximumStalenessTimeInterval: Foundation.TimeInterval? = nil, executionMutationsPassToParentExecutorBool: Swift.Bool? = nil, executionParentExecutor: (any KochavaNetworking.Executor)? = nil, valueType: (any Any.Type)? = nil, valueElementType: (any Any.Type)? = nil, valueMinimumObject: Any? = nil, valueMaximumObject: Any? = nil, valueDefaultObject: Any? = nil, valueInitializedObject: Any? = nil, valueObject: Any? = nil, touchlessValue: KochavaNetworking.Value? = nil, closure_didInvalidate: KochavaNetworking.Adapter.Closure_DidInvalidate? = nil, closure_didMutate: KochavaNetworking.Adapter.Closure_DidMutate? = nil, closure_didReadFromPersistentStorage: KochavaNetworking.Adapter.Closure_DidReadFromPersistentStorage? = nil, closure_didSetCachedValueOnSameThread: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_didSetValue: KochavaNetworking.Adapter.Closure_DidSetValue? = nil, closure_validatedAny: KochavaNetworking.Adapter.Closure_ValidatedObject? = nil, closure_valueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary? = nil, closure_valueStaleBool: KochavaNetworking.Value.Closure_StaleBool? = nil, closure_value_willSet: KochavaNetworking.Adapter.Closure_Value_WillSet? = nil, closure_serverObject: KochavaNetworking.Adapter.Closure_ServerObject? = nil, closure_collectSynchronously: KochavaNetworking.Adapter.Closure_CollectSynchronously? = nil, closure_collectAsynchronously: KochavaNetworking.Adapter.Closure_CollectAsynchronously? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   final public func execute()
   public static let logger: os.Logger
   final public var description: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+  #endif
   final public let id: Swift.String
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
     get
   }
   final public func invalidate()
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func value(context: KochavaNetworking.Context?, waitBool: Swift.Bool, closure_didComplete: KochavaNetworking.Adapter.Closure_Value_DidComplete? = nil) -> KochavaNetworking.Value?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func value(context: KochavaNetworking.Context?, touchlessBool: Swift.Bool, waitBool: Swift.Bool, closure_didComplete: KochavaNetworking.Adapter.Closure_Value_DidComplete? = nil) -> KochavaNetworking.Value?
+  #endif
   final public func value_freshen()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func valueWillBeCollectedBool(context: KochavaNetworking.Context?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func validatedAny(forUnvalidatedAny unvalidatedAny: Any?, reportingContextNameString: Swift.String) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func mayShareBool(toContext context: KochavaNetworking.Context?) -> Swift.Bool
+  #endif
   final public func persistentStorage_restore() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func persistentStorage_writeIfDidMutateBool(aggressiveBool: Swift.Bool? = nil)
+  #endif
   final public var asynchronousCollectionTask: KochavaNetworking.Task {
     get
+  }
+  final public var topic: KochavaNetworking.Topic {
+    get
+    set
   }
   final public var baseIdentifier_plus_collectValueSourceIdentifier: KochavaNetworking.Adapter.Identifier? {
     get
@@ -1744,14 +2699,18 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     get
     set(asynchronousCollectionPrerequisiteTaskArrayIncludeNetworkingStartedBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var asynchronousCollectionPrerequisiteTaskArrayIncludeNetworkingStartedBool_optional: Swift.Bool? {
     get
     set(asynchronousCollectionPrerequisiteTaskArrayIncludeNetworkingStartedBool_optional)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var asynchronousCollectionRetryTimeIntervalSeries: KochavaNetworking.TimeIntervalSeries? {
     get
     set(asynchronousCollectionRetryTimeIntervalSeries)
   }
+  #endif
   public typealias Closure_CollectSynchronously = (_ adapter: KochavaNetworking.Adapter) -> Any?
   public typealias Closure_DidInvalidate = (_ adapter: KochavaNetworking.Adapter) -> Swift.Void
   public typealias Closure_DidMutate = (_ adapter: KochavaNetworking.Adapter) -> Swift.Void
@@ -1761,105 +2720,147 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   public typealias Closure_ValidatedObject = (_ adapter: KochavaNetworking.Adapter, _ any: Any?, _ reportingContextNameString: Swift.String, _ valueMinimumObject: Any?, _ valueMaximumObject: Any?) -> Any?
   public typealias Closure_Value_WillSet = (_ adapter: KochavaNetworking.Adapter, _ value: KochavaNetworking.Value?, _ newValue: KochavaNetworking.Value?) -> Swift.Bool
   public typealias ValuePropertyIdentifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var descriptionString: Swift.String? {
     get
     set(descriptionString)
   }
+  #endif
   final public var identifier: KochavaNetworking.Adapter.Identifier {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var identifier_optional: KochavaNetworking.Adapter.Identifier? {
     get
   }
+  #endif
   public typealias Identifier = KochavaNetworking.Value.SourceIdentifier
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var key: Swift.AnyHashable? {
     get
     set(key)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var maximumStalenessTimeInterval: Foundation.TimeInterval? {
     get
     set(maximumStalenessTimeInterval)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var nameString: Swift.String? {
     get
     set(nameString)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak final public var networking: KochavaNetworking.Networking? {
     @objc get
     @objc set(networking)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var pathKeyArray: [Swift.AnyHashable]? {
     get
   }
+  #endif
   final public var pathKeyArray_parameter: [Swift.AnyHashable]? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var product: KochavaNetworking.Product? {
     get
     set(product)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var storageIdentifier: KochavaNetworking.Networking.StorageIdentifier? {
     get
     set(storageIdentifier)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? {
     get
     set(universalIdentifier)
   }
+  #endif
   public typealias UniversalIdentifier = Swift.AnyHashable
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueInitializedObject: Any? {
     get
     set(valueInitializedObject)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueObject: Swift.AnyObject? {
     get
     set(valueObject)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueSourceCollection: KochavaNetworking.Collection? {
     get
     set(valueSourceCollection)
   }
+  #endif
   final public var watchBool: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var watchValueObject: Swift.AnyObject? {
     get
     set(watchValueObject)
   }
+  #endif
   final public var asynchronousCollectionInProgressBool: Swift.Bool {
     get
   }
   public typealias Closure_Value_DidComplete = (_ adapter: KochavaNetworking.Adapter, _ value: KochavaNetworking.Value?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var maximallyAssociativeIdentifier: KochavaNetworking.Adapter.MaximallyAssociativeIdentifier? {
     get
   }
+  #endif
   public typealias MaximallyAssociativeIdentifier = KochavaNetworking.Adapter.Identifier
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var touchlessValue: KochavaNetworking.Value? {
     get
     set(touchlessValue)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var touchlessValueObject: Swift.AnyObject? {
     get
     set(touchlessValueObject)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var value: KochavaNetworking.Value? {
     get
     set(value)
   }
+  #endif
   public typealias Closure_Value_DidSet = (_ adapter: KochavaNetworking.Adapter) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var valueRawObject: Swift.AnyObject? {
     get
     set(valueRawObject)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var watchValue: KochavaNetworking.Value? {
     get
     set(watchValue)
   }
+  #endif
   final public func watchValueIndicatesChangeBool() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var watchValueRawObject: Swift.AnyObject? {
     get
     set(watchValueRawObject)
   }
+  #endif
   public static let closure_serverObject_boolNumber: (KochavaNetworking.Adapter, _ valueObject: Any?) -> Any?
   public static let closure_serverObject_default: (KochavaNetworking.Adapter, _ valueObject: Any?) -> Any?
   public static let closure_serverObject_dataHexString: (KochavaNetworking.Adapter, _ valueObject: Any?) -> Any?
@@ -1881,23 +2882,43 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   public static var sharedInstance: Any {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var shared_optional: KochavaNetworking.Product? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(name: KochavaNetworking.Product.Name, organizationName: KochavaNetworking.Product.OrganizationName, reverseDomainName: KochavaNetworking.Product.ReverseDomainName?, versionName: KochavaNetworking.Product.VersionName, versionString: Swift.String?, apiVersionString: Swift.String?, bundleIdentifier: KochavaNetworking.Product.BundleIdentifier?, bundleType: KochavaNetworking.Product.BundleType, capabilities: KochavaNetworking.Capabilities? = nil, actor: KochavaNetworking.Actor?, typeArray: [KochavaNetworking.Kochava_Type]? = nil, valueSourceCollection: KochavaNetworking.Collection?, relationshipArray: [KochavaNetworking.Product.Relationship]? = nil, buildDateString: Swift.String?, closure_resetTypes: KochavaNetworking.Product.Closure_ResetClasses? = nil, closure_resetVariables: KochavaNetworking.Product.Closure_ResetVariables? = nil, closure_didRegister: KochavaNetworking.Product.Closure_DidRegister? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public func didRegister_process()
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func register() -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   public func execute()
   public func link_automatically()
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func link(externalProduct: KochavaNetworking.Product, localProduct: KochavaNetworking.Product, localRelationship: KochavaNetworking.Product.Relationship? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resetTypes(deleteLocalDataBool: Swift.Bool, includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resetVariables(deleteLocalDataBool: Swift.Bool, includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
+  #endif
   @objc(resetWithDeleteLocalDataBool:) public func reset(deleteLocalDataBool: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(resetWithDeleteLocalDataBool:closure_didComplete:) public func reset(deleteLocalDataBool: Swift.Bool = false, closure_didComplete: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(resetWithDeleteLocalDataBool:includeExternalBool:includeGeneralAppGroupBool:logMessagePrintBool:closure_didComplete:) public func reset(deleteLocalDataBool: Swift.Bool, includeExternalBool: Swift.Bool, includeGeneralAppGroupBool: Swift.Bool = true, logMessagePrintBool: Swift.Bool = true, closure_didComplete: (() -> Swift.Void)? = nil)
+  #endif
   public static let logger: os.Logger
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -1907,14 +2928,18 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     get
   }
   @objc(shutdownWithDeleteLocalDataBool:) public func shutdown(deleteLocalDataBool: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(shutdownWithDeleteLocalDataBool:closure_didComplete:) public func shutdown(deleteLocalDataBool: Swift.Bool = false, closure_didComplete: (() -> Swift.Void)?)
+  #endif
   public var standardVersionInfoString: Swift.String {
     get
   }
   public var versionNameWithVersionString: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func buildDateString(forBundle bundle: Foundation.Bundle) -> Swift.String?
+  #endif
   public func client_willBeCreated()
   public var logger: os.Logger {
     get
@@ -1925,6 +2950,9 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   }
   public static let defaultActor: KochavaNetworking.Actor
   final public let apiVersionString: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func buildDate() -> Foundation.Date?
+  #endif
   final public let buildDateString: Swift.String?
   final public let bundleIdentifier: KochavaNetworking.Product.BundleIdentifier?
   public typealias BundleIdentifier = Swift.String
@@ -1934,8 +2962,12 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     case source
     case xcframework
     case unknown
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> KochavaNetworking.Product.BundleType?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     public static func == (a: KochavaNetworking.Product.BundleType, b: KochavaNetworking.Product.BundleType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -1949,29 +2981,53 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
   public typealias Closure_ResetVariables = (_ product: KochavaNetworking.Product, _ deleteLocalDataBool: Swift.Bool, _ includeExternalBool: Swift.Bool) -> [Swift.AnyHashable : Any]?
   final public let relationshipArray: [KochavaNetworking.Product.Relationship]?
   final public class Relationship : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+    #if compiler(>=5.3) && $NonescapableTypes
     required public init(external: KochavaNetworking.Product.Relationship.External? = nil, local: KochavaNetworking.Product.Relationship.Local? = nil, networkingRelationshipArray: [KochavaNetworking.Product.Relationship.NetworkingRelationship]? = nil)
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     final public class OneDirection : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+      #if compiler(>=5.3) && $NonescapableTypes
       required public init(name: KochavaNetworking.Product.Name? = nil, passAlongCallsToResetBool: Swift.Bool? = nil, inheritCapabilitiesBool: Swift.Bool? = nil)
+      #endif
       public static let type_kochava: KochavaNetworking.Kochava_Type
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func from(_ object: Any?) -> Self?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       final public func to(context: KochavaNetworking.Context?) -> Any?
+      #endif
       @objc deinit
     }
     public typealias External = KochavaNetworking.Product.Relationship.OneDirection
     public typealias Local = KochavaNetworking.Product.Relationship.OneDirection
     final public class NetworkingRelationship : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+      #if compiler(>=5.3) && $NonescapableTypes
       required public init(external: KochavaNetworking.Product.Relationship.NetworkingRelationship.External? = nil, local: KochavaNetworking.Product.Relationship.NetworkingRelationship.Local? = nil)
+      #endif
       public static let type_kochava: KochavaNetworking.Kochava_Type
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func from(_ object: Any?) -> Self?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       final public func to(context: KochavaNetworking.Context?) -> Any?
+      #endif
       final public class OneDirection : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+        #if compiler(>=5.3) && $NonescapableTypes
         required public init(clientTypeIdentifier: KochavaNetworking.Any_Type.Identifier? = nil, passAlongCallsToSetHostAppGUIDStringBool: Swift.Bool? = nil, passAlongCallsToTimingAppendBool: Swift.Bool? = nil, passAlongCallsToConfigureWithBool: Swift.Bool? = nil, passAlongCallsToStartBool: Swift.Bool? = nil, passAlongCallsToStopBool: Swift.Bool? = nil, passAlongCallsToInvalidateBool: Swift.Bool? = nil, disableConfigBool: Swift.Bool? = nil)
+        #endif
         public static let type_kochava: KochavaNetworking.Kochava_Type
+        #if compiler(>=5.3) && $NonescapableTypes
         public static func from(_ object: Any?) -> Self?
+        #endif
+        #if compiler(>=5.3) && $NonescapableTypes
         final public func to(context: KochavaNetworking.Context?) -> Any?
+        #endif
         @objc deinit
       }
       public typealias External = KochavaNetworking.Product.Relationship.NetworkingRelationship.OneDirection
@@ -1995,35 +3051,57 @@ final public class Adapter : KochavaNetworking.ConfigurableWith, Swift.CustomStr
     @objc get
     @objc set(linkAutomaticallyBool)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationSupportDirectoryURL() -> Foundation.URL?
+  #endif
   public func applicationSupportDirectoryURL_ensureCreated()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var logLevel: KochavaNetworking.Log.Level? {
     @objc get
     @objc set(level)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var userDefaults: Foundation.UserDefaults? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func userDefaults(suite: Foundation.UserDefaults.Suite?, appGroupsGeneralAppGroupIdentifier: KochavaNetworking.AppGroups.Identifier? = nil) -> Foundation.UserDefaults?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func userDefaultsSuiteName(suite: Foundation.UserDefaults.Suite?, appGroupsGeneralAppGroupIdentifier: KochavaNetworking.AppGroups.Identifier? = nil) -> Foundation.UserDefaults.SuiteName?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var wrapperProduct: KochavaNetworking.Product? {
     get
     set(wrapperProduct)
   }
+  #endif
   @objc deinit
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers @objc(KVANetworking_General) final public class General : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
     @objc deinit
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     final public func start_requirementsSatisfiedBool() -> Swift.Bool
     final public func start()
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -2053,22 +3131,28 @@ extension KochavaNetworking.Networking {
     final public var disabledBool: Swift.Bool {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var hostAppGUIDString: Swift.String? {
       get
       set(hostAppGUIDString)
     }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc final public var partnerNameString: Swift.String? {
       @objc get
       @objc set(partnerNameString)
     }
+    #endif
     final public var sleepBool: Swift.Bool {
       get
       set(sleepBool)
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc final public var appGUIDString: Swift.String? {
       @objc get
       @objc set(appGUIDString)
     }
+    #endif
     final public var closure_instanceIdValueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary {
       get
     }
@@ -2077,35 +3161,15 @@ extension KochavaNetworking.Networking {
     }
     final public let firstLaunchBool: Swift.Bool
     final public let instanceCreatedDate: Foundation.Date
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func startedDate_agoTimeIntervalDecimalNumber() -> Foundation.NSDecimalNumber?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public var startedDate: Foundation.Date? {
       get
       set(startedDate)
     }
-  }
-}
-extension KochavaNetworking.Kochava {
-  @objc(Kochava_URL) final public class URL : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Networking.Provider {
-    required public init(string: Swift.String?)
-    required public init(string: Swift.String?, transaction: KochavaNetworking.Transaction?, preserveURLsSelectionFromSourceURL: KochavaNetworking.Kochava.URL?)
-    required public init(array: [KochavaNetworking.Kochava.URL]?)
-    required public init(array: [KochavaNetworking.Kochava.URL]? = nil, string: Swift.String? = nil)
-    @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-    public static func from(_ object: Any?) -> Self?
-    final public func to(context: KochavaNetworking.Context?) -> Any?
-    public static let type_kochava: KochavaNetworking.Kochava_Type
-    final public var execution: KochavaNetworking.Execution {
-      get
-    }
-    final public func f_url(failurePrintLogMessageBool: Swift.Bool? = nil) -> Foundation.URL?
-    final public var absoluteString: Swift.String? {
-      get
-    }
-    final public func components() -> Foundation.URLComponents?
-    public static func appended(url: KochavaNetworking.Kochava.URL?, appendURL: KochavaNetworking.Kochava.URL?) -> KochavaNetworking.Kochava.URL?
-    final public let string_parameter: Swift.String?
-    @objc weak final public var networking: KochavaNetworking.Networking?
-    @objc deinit
+    #endif
   }
 }
 extension KochavaNetworking.Networking.Transactions {
@@ -2127,34 +3191,104 @@ extension KochavaNetworking.Networking.Transactions {
 public protocol Executor : AnyObject {
   var execution: KochavaNetworking.Execution { get }
 }
+@objc @_inheritsConvenienceInitializers final public class Format : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, os.Logger.Provider, KochavaNetworking.Networking.Provider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  public static let logger: os.Logger
+  public static let type_kochava: KochavaNetworking.Kochava_Type
+  final public var execution: KochavaNetworking.Execution {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func appending(format1: KochavaNetworking.Format?, format2: KochavaNetworking.Format?) -> KochavaNetworking.Format?
+  #endif
+  final public var adapterArray: [KochavaNetworking.Adapter]? {
+    get
+  }
+  @objc weak final public var networking: KochavaNetworking.Networking? {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var valueSourceCollection: KochavaNetworking.Collection? {
+    get
+    set(valueSourceCollection)
+  }
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension Swift.Double : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false) -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
   public static let type_kochava: KochavaNetworking.Kochava_Type
 }
 @_hasMissingDesignatedInitializers final public class Kochava_Any : os.Logger.Provider, KochavaNetworking.Typed {
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
-  public static func appending(any1: Any?, any2: Any?, newContainersMutableBool: Swift.Bool? = nil) -> Any?
-  public static func appending1(any1: Any?, any2: Any?, newContainersMutableBool: Swift.Bool? = nil) -> Any?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func appending(any1: Any?, any2: Any?, newContainersMutableBool: Swift.Bool? = nil, nondestructiveBool: Swift.Bool? = nil) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func isEqual(_ lhs: Any?, _ rhs: Any?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func redactedCopy(_ any: Any?, key: Swift.AnyHashable?, keyRedactedBoolDictionary: [Swift.AnyHashable : Swift.Bool]? = nil, valueNonPropertyListItemsRedactedBool: Swift.Bool = false, redactionKeySuffixString: Swift.String? = nil, redactionMaximumDepth: Swift.Int? = nil, redactionIncludesStandardContainersBool: Swift.Bool = false, maximumDepth: Swift.Int? = nil) -> (redactedCopy: Any?, redactedKeyArray: Foundation.NSMutableArray?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func encodedTypeIdentifier(_ any: Any?, resolveTokensBool: Swift.Bool = true) -> KochavaNetworking.Any_Type.Identifier?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func tokenResolvedObject(_ any: Any?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func nonnull(_ any: Any?) -> Any
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func to(_ any: Any, context: KochavaNetworking.Context?) -> [Swift.AnyHashable : Any]?
+  #endif
   public static func mayMutateBool(_ any: Any) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func emptyStringBool(_ any: Any?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func emptyStringBecomesNil(_ any: Any?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func inheritanceResolvedElement(_ inheritanceElementsArray: [(Any?, Swift.String?, Swift.String?, Swift.Bool)]) -> (Any?, Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func validBool(_ any: Any?, identifier: Swift.String?, method: Swift.String? = nil, guardNotOmittedBool: Swift.Bool = false, guardTypeArray: Swift.Array<any Any.Type>? = nil, logMessagePrintNotValidBool: Swift.Bool = false) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func identifiers(_ any: Any?) -> (identifier: Swift.String?, universalIdentifier: Swift.String?)
-  public static let useSetBool: Swift.Bool
-  public static let useSetValidationBool: Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func get(_ any: Any?, pathKeyArray pathKeyArray_parameter: [Swift.AnyHashable]? = nil, key key_parameter: Swift.AnyHashable? = nil) -> Any?
-  public static func set(_ any: inout Any?, fromAny: Any?, pathKeyArray: [Swift.AnyHashable]?, newContainersMutableBool: Swift.Bool? = nil)
-  public static func set(_ any: inout Any?, fromAny: Any?, pathKeyArrayArray: [[Swift.AnyHashable]]?, newContainersMutableBool: Swift.Bool? = nil)
-  public static func set(_ any: inout Any?, withAny: Any?, pathKeyArray pathKeyArray_parameter: [Swift.AnyHashable]? = nil, key key_parameter: Swift.AnyHashable? = nil, mergeBool: Swift.Bool? = nil, mergeContainersNewBool: Swift.Bool? = true, newContainerType newContainerType_parameter: KochavaNetworking.Kochava_Any.ContainerType? = nil, newContainersMutableBool: Swift.Bool? = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func set(_ any: inout Any?, pathKeyArray: [Swift.AnyHashable]?, fromPathKeyArray: [Swift.AnyHashable]? = nil, fromRemoveBool: Swift.Bool = false, mergeBool: Swift.Bool? = nil, mergeContainersNewBool: Swift.Bool? = nil, newContainerType: KochavaNetworking.Kochava_Any.ContainerType? = nil, newContainersMutableBool: Swift.Bool? = nil, nondestructiveBool: Swift.Bool? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func set(_ any: inout Any?, pathKeyArray: [Swift.AnyHashable]?, fromAny: Any?, fromPathKeyArray: [Swift.AnyHashable]? = nil, mergeBool: Swift.Bool? = nil, mergeContainersNewBool: Swift.Bool? = nil, newContainerType: KochavaNetworking.Kochava_Any.ContainerType? = nil, newContainersMutableBool: Swift.Bool? = nil, nondestructiveBool: Swift.Bool? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func set(_ any: inout Any?, fromAny: Any?, pathKeyArrayArray: [[Swift.AnyHashable]]?, mergeBool: Swift.Bool? = nil, mergeContainersNewBool: Swift.Bool? = nil, newContainerType: KochavaNetworking.Kochava_Any.ContainerType? = nil, newContainersMutableBool: Swift.Bool? = nil, nondestructiveBool: Swift.Bool? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func set(_ any: inout Any?, withAny: Any?, pathKeyArray pathKeyArray_parameter: [Swift.AnyHashable]? = nil, key key_parameter: Swift.AnyHashable? = nil, mergeBool: Swift.Bool? = nil, mergeContainersNewBool: Swift.Bool? = nil, newContainerType: KochavaNetworking.Kochava_Any.ContainerType? = nil, newContainersMutableBool: Swift.Bool? = nil, nondestructiveBool: Swift.Bool? = nil)
+  #endif
   public enum ContainerType {
     case array
     case dictionary
@@ -2164,7 +3298,9 @@ extension Swift.Double : KochavaNetworking.DecodableFrom, KochavaNetworking.Enco
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func instancePointerString(_ any: Any?) -> Swift.String
+  #endif
   public typealias Closure_ExecuteCustomMethod = (_ object: Any, _ methodNameString: KochavaNetworking.Kochava_Any.CustomMethodName, _ parametersDictionary: [Swift.AnyHashable : Any]?) -> Swift.Void
   public typealias CustomMethodName = Swift.String
   @objc deinit
@@ -2229,98 +3365,224 @@ extension KochavaNetworking.Networking.Tasks {
     @objc deinit
   }
 }
-final public class Collection : Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
-  required public init(networking: KochavaNetworking.Networking? = nil, identifier: KochavaNetworking.Collection.Identifier? = nil, maximumCount: Swift.Int? = nil, maximumCountStrategy: KochavaNetworking.Collection.MaximumCountStrategy? = nil, closure_willRegisterObject: KochavaNetworking.Collection.Closure_WillRegisterObject? = nil)
+final public class Collection : Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, Swift.Identifiable, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Topic.Composing, KochavaNetworking.Topic.Delegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(networking: KochavaNetworking.Networking? = nil, identifier: KochavaNetworking.Collection.Identifier? = nil, topic: KochavaNetworking.Topic? = nil, maximumCount: Swift.Int? = nil, maximumCountStrategy: KochavaNetworking.Collection.MaximumCountStrategy? = nil, elementObjectPrototypeArray: [Any]? = nil, elementObjectArray: [Any]? = nil, executionParentExecutor: (any KochavaNetworking.Executor)? = nil, ui: (any KochavaNetworking.Collection.UIProto)? = nil, closure_willRegisterObject: KochavaNetworking.Collection.Closure_WillRegisterObject? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(adapter: KochavaNetworking.Adapter?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(object: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(value: KochavaNetworking.Value?, identifier: KochavaNetworking.Collection.ElementIdentifier)
+  #endif
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ object: Any?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func from(_ object: Any?, elementType: (any Any.Type)?) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func to(context: KochavaNetworking.Context?, emptyBecomesNilBool: Swift.Bool) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func append(collection: KochavaNetworking.Collection?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(adapter: KochavaNetworking.Adapter?) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(collection: KochavaNetworking.Collection?, identifier: KochavaNetworking.Collection.ElementIdentifier? = nil) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(transaction: KochavaNetworking.Transaction?) -> KochavaNetworking.Collection.RegisterResult?
-  @discardableResult
-  final public func register(object: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(task: KochavaNetworking.Task?) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(value: KochavaNetworking.Value?, identifier: KochavaNetworking.Collection.ElementIdentifier) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func register(valueSource: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   public typealias RegisterResult = (elementAppendedBool: Swift.Bool, elementUpdatedBool: Swift.Bool, elementRemovedBool: Swift.Bool, existingElement: KochavaNetworking.Collection.Element?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  final public func register(object: Any?, identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection.RegisterResult?
+  #endif
   public static let logger: os.Logger
+  final public let id: Swift.String
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
     get
   }
   final public func invalidate()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func replace(index: Swift.Int, object: Any, identifier: KochavaNetworking.Collection.ElementIdentifier? = nil)
+  #endif
   final public func unregisterAll()
+  final public func unregister(index: Swift.Int)
   final public func unregister(identifier: KochavaNetworking.Collection.ElementIdentifier)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func enumerate(closure: KochavaNetworking.Collection.Closure_Enumerate_Element?)
+  #endif
   public typealias Closure_Enumerate_Element = (_ element: KochavaNetworking.Collection.Element, _ stopBool: Swift.UnsafeMutablePointer<Swift.Bool>?) -> Swift.Void?
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func adapter(withIdentifier identifier: KochavaNetworking.Adapter.Identifier? = nil, withUniversalIdentifier universalIdentifier: KochavaNetworking.Adapter.UniversalIdentifier? = nil) -> KochavaNetworking.Adapter?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func collection(withIdentifier identifier: KochavaNetworking.Collection.ElementIdentifier?) -> KochavaNetworking.Collection?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func contains(_ any: Any?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func first(where predicate: (KochavaNetworking.Collection.Element) throws -> Swift.Bool) rethrows -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func transaction(withIdentifier identifier: KochavaNetworking.Transaction.Identifier? = nil, withUniversalIdentifier universalIdentifier: KochavaNetworking.Transaction.UniversalIdentifier? = nil) -> KochavaNetworking.Transaction?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func object(index: Swift.Int) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func object(withIdentifier identifier: KochavaNetworking.Collection.ElementIdentifier?, excludeIdentifierArray: [KochavaNetworking.Collection.ElementIdentifier]? = nil) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func objectArray(withIdentifierArray identifierArray: [KochavaNetworking.Collection.ElementIdentifier]?) -> [Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func task(withIdentifier identifier: KochavaNetworking.Task.Identifier? = nil, withUniversalIdentifier universalIdentifier: KochavaNetworking.Task.UniversalIdentifier? = nil) -> KochavaNetworking.Task?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func valueSource(withIdentifier identifier: KochavaNetworking.Collection.ElementIdentifier?, excludeIdentifierArray: [KochavaNetworking.Collection.ElementIdentifier]? = nil) -> Any?
+  #endif
+  final public var emptyBool: Swift.Bool {
+    get
+  }
   final public var count: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func valueArrayDictionary(fromValueSourceCollectionArray valueSourceCollectionArray: [KochavaNetworking.Collection]?, optionalAppendToValueArrayDictionary: [Swift.AnyHashable : KochavaNetworking.Value]? = nil, context: KochavaNetworking.Context?, closure_didComplete: KochavaNetworking.Collection.Closure_ValueArrayDictionary_DidComplete?)
+  #endif
   public typealias Closure_ValueArrayDictionary_DidComplete = (_ valueSourceCollectionArray: [KochavaNetworking.Collection]?, _ valueArrayDictionary: [Swift.AnyHashable : KochavaNetworking.Value]?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func printDirectory(level: KochavaNetworking.Log.Level? = .info)
+  #endif
+  final public var topic: KochavaNetworking.Topic {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var uiProto_main: (any KochavaNetworking.Collection.UIProto)? {
+    get
+    set(uiProto)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var uiProto: (any KochavaNetworking.Collection.UIProto)? {
+    get
+    set(uiProto)
+  }
+  #endif
+  @_Concurrency.MainActor final public var uiProto_mainAggressiveCache: (any KochavaNetworking.Collection.UIProto)?
+  final public var uiProto_sf_memory: (any KochavaNetworking.Collection.UIProto)?
+  public protocol UIProto : Foundation.NSCopying {
+    func collection_didSetUIProto(collection: KochavaNetworking.Collection)
+    func collection_didInsertElement(element: Any, index: Swift.Int)
+    func collection_didRemoveElement(index: Swift.Int)
+    func collection_didUpdateElement(element: Any, index: Swift.Int)
+    func collection_didBulkReplace(elementObjectArray: [Any])
+    func collection_elementDidMutate()
+  }
   @objc weak final public var networking: KochavaNetworking.Networking?
+  final public let identifier: KochavaNetworking.Collection.Identifier?
   public typealias Identifier = Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func elementObjectPrototypeArray_defaultElement() -> (any Foundation.NSCopying)?
+  #endif
+  final public let elementObjectPrototypeArray: [Any]?
   public typealias Closure_WillRegisterObject = (_ collection: KochavaNetworking.Collection, _ object: Any) -> Swift.Void
-  public typealias Element = (object: Any, identifier: KochavaNetworking.Collection.ElementIdentifier, arrayIndex: Swift.Int)
+  public typealias Element = (object: Any, identifier: KochavaNetworking.Collection.ElementIdentifier, arrayIndex: Swift.Int, didMutateObserver: (any ObjectiveC.NSObjectProtocol)?)
   public typealias ElementObject = Any
   public typealias ElementIdentifier = Swift.String
+  final public func elementObjectArray_calculated_sf() -> [Any]
   public enum MaximumCountStrategy : KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo {
     case block
     case removeOldest
     public static let type_kochava: KochavaNetworking.Kochava_Type
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> KochavaNetworking.Collection.MaximumCountStrategy?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
     public static func == (a: KochavaNetworking.Collection.MaximumCountStrategy, b: KochavaNetworking.Collection.MaximumCountStrategy) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
-  @objc deinit
+  public typealias ID = Swift.String
 }
 public protocol PersistAgent {
 }
 public protocol PersistAgent_Getter : KochavaNetworking.PersistAgent {
+  #if compiler(>=5.3) && $NonescapableTypes
   func get(networking: KochavaNetworking.Networking?, product: KochavaNetworking.Product?, identifier_default: Swift.String?, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier?) -> Any?
+  #endif
 }
 public protocol PersistAgent_Setter : KochavaNetworking.PersistAgent {
+  #if compiler(>=5.3) && $NonescapableTypes
   func set(any: Any?, networking: KochavaNetworking.Networking?, product: KochavaNetworking.Product?, identifier_default: Swift.String?, storageIdentifier_default: KochavaNetworking.Networking.StorageIdentifier?, aggressiveBool: Swift.Bool)
+  #endif
 }
 extension KochavaNetworking.Networking {
   @_hasMissingDesignatedInitializers @objc(KVANetworking_Privacy) final public class Privacy : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.PrivacyProfile.Registrar, KochavaNetworking.PrivacyProfile.RegistrarProvider {
-    convenience public init(fromObject object: Any?, networking: KochavaNetworking.Networking, delegate: any KochavaNetworking.Executor, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool?, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool?, closure_consent_didMutate: KochavaNetworking.Consent.Closure_DidMutate?)
+    #if compiler(>=5.3) && $NonescapableTypes
+    convenience public init(fromObject object: Any?, networking: KochavaNetworking.Networking, delegate: any KochavaNetworking.Executor, closure_appLimitAdTrackingBool: KochavaNetworking.Networking.Privacy.Closure_AppLimitAdTrackingBool?, closure_appTrackingTransparency_authorizedBool: KochavaNetworking.Networking.Privacy.Closure_AppTrackingTransparency_AuthorizedBool?, closure_consent_didMutate: KochavaNetworking.Networking.Privacy.IntelligentConsent.Closure_DidMutate?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
     @objc(registerProfile:) final public func register(profile: KochavaNetworking.PrivacyProfile)
     @objc final public var privacyProfile_registrar: any KochavaNetworking.PrivacyProfile.Registrar {
       @objc get
     }
     public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
@@ -2329,18 +3591,28 @@ extension KochavaNetworking.Networking {
     @objc(setEnabledBoolForProfileName:enabledBool:) final public func setEnabledBool(forProfileName profileName: KochavaNetworking.PrivacyProfile.Name, enabledBool: Swift.Bool)
     final public func appLimitAdTracking_bool_didMutate()
     final public func appTrackingTransparency_authorizationDidComplete()
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func customIdentifiers_allowNameString(_ nameString: Swift.String?) -> Swift.Bool
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func events_eventEnabled(eventNameString: Swift.String?) -> (bool: Swift.Bool, reasonString: Swift.String?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func identityLinks_identityLinkEnabled(identityLinkName: Swift.String?) -> (bool: Swift.Bool, reasonString: Swift.String?)
-    @objc final public var intelligentConsent: KochavaNetworking.Consent {
+    #endif
+    @objc final public var intelligentConsent: KochavaNetworking.Networking.Privacy.IntelligentConsent {
       @objc get
     }
     public static let sleepTaskIdentifier: KochavaNetworking.Task.Identifier
     @objc weak final public var networking: KochavaNetworking.Networking?
     public typealias Closure_AppLimitAdTrackingBool = () -> Swift.Bool
     public typealias Closure_AppTrackingTransparency_AuthorizedBool = () -> Swift.Bool?
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func denyDatapointIdentifierArray_containsString(_ string: Swift.String?) -> Swift.Bool
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func denyIdentityLinkNameArray_containsString(_ string: Swift.String?) -> Swift.Bool
+    #endif
     @objc deinit
   }
 }
