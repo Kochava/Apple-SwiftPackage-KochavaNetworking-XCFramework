@@ -606,7 +606,7 @@ SWIFT_CLASS_NAMED("Networking")
 @interface KVANetworking : NSObject <KVAPrivacyProfile_RegistrarProvider>
 /// Return a description of the instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-/// Execute an advanced instruction.
+/// Execute an advanced instruction (with completion closure).
 /// \param universalIdentifier A universal identifier for the advanced instruction.
 ///
 /// \param parameter A parameter object for the advanced instruction.  This parameter is optional depending on the universalIdentifier specified.
@@ -1661,7 +1661,7 @@ SWIFT_CLASS_NAMED("Networking")
 @interface KVANetworking : NSObject <KVAPrivacyProfile_RegistrarProvider>
 /// Return a description of the instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-/// Execute an advanced instruction.
+/// Execute an advanced instruction (with completion closure).
 /// \param universalIdentifier A universal identifier for the advanced instruction.
 ///
 /// \param parameter A parameter object for the advanced instruction.  This parameter is optional depending on the universalIdentifier specified.

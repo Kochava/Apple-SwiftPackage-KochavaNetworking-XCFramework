@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		+KD/xZ/gijdAjHviA0R9K09/wZo=
+		6D/qvQj4X7w2PscmvXYsiwZsEdY=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		1u7Mbz3nCRxqU7uzV1Msh3TXoiY=
+		df5rnmtZOeRaf+0rBXAnOTJJNK8=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		/tgNRogOdZAmA056MklqL0ugHuo=
+		b16V+W2FKotOF9TZzlEXRwREklo=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		p4GWaLnj0j4XmTfSO8+00J5SO9M=
+		2YN+Wpm3hqOFcfDW6o8KIK0W8YU=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+j360UhVXaqrq0iB8i6oR1ie/rs=
+		tihHi6nXpVhUJ2FaVj+oVld6hwg=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		9cfYxc+DM662nLfPFF6H6sX16qc=
+		GjI0024IYJFrnEWd1JWzza/XytA=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+j360UhVXaqrq0iB8i6oR1ie/rs=
+		tihHi6nXpVhUJ2FaVj+oVld6hwg=
 		</data>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>ios-arm64/dSYMs/KochavaNetworking.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		Z/2G+Ing8Kr4PKO80/8cWHpTVcU=
+		dGNGBart+gJ3HFvuh8QqIEBdzWQ=
 		</data>
 		<key>ios-arm64/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/DWARF/KochavaNetworking</key>
 		<data>
-		wP+GL7VWXLRl/NvcsZDDPTFrQoE=
+		AEkY+2KdZGG6Pb4cDRk49hWlxSs=
 		</data>
 		<key>ios-arm64/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/aarch64/KochavaNetworking.yml</key>
 		<data>
-		dRtpzOLzWmfZTxmzpuA/QdOB8+U=
+		n0imJ+PIy+iJsWrADwM+YLweODw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking.h</key>
 		<data>
@@ -66,39 +66,39 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/KochavaNetworking</key>
 		<data>
-		yFl+a0FfTzOPUNwqmo7ZQgqnPQI=
+		77uGc3EIsTlUP8yPnWf/zRkY44k=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		1jz1Q1pEvVd/YA1dZr0Zn/O23aQ=
+		czqr7yR2mkLe9qkQyDKE5PSaRcE=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		6do7M6dbTKbAdUQeYGW1oypyT08=
+		kEdH0WfEENIFvIaOhY7maKj9Te4=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		ymBjFoffxZX7YURkIEDTctOdbLM=
+		AGA8JJi3PCzwo9PORyAP7N86cXc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		6do7M6dbTKbAdUQeYGW1oypyT08=
+		kEdH0WfEENIFvIaOhY7maKj9Te4=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		1jz1Q1pEvVd/YA1dZr0Zn/O23aQ=
+		czqr7yR2mkLe9qkQyDKE5PSaRcE=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		SwM7hjVBjWlnGvRWHRskSG96hfU=
+		7BO40Oa7i8UjmNnovazFRA7EqBc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		JWTaWzLF57RZUlTLkB1W+hAiorI=
+		b9Ofy8XDMX/XAJmSBdU+9FfPf4k=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		SwM7hjVBjWlnGvRWHRskSG96hfU=
+		7BO40Oa7i8UjmNnovazFRA7EqBc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		woJGQZqRi/I//E0YQLYsjk7JM8M=
+		VCwHLsZOvRQM1pAt0qSALKBjKI8=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -122,43 +122,43 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		PDYupvuueWPY7hVLsxncQQhMGqs=
+		qPc9qbj9F6Ciy0h8XWmdgJMhrB4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		mGNcElf6+U0+WcLDg+dy2mnbiEw=
+		umftaD66desrGAa5H0O25Swf/Vc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		27mCCeji0JKTVWegdzF4nhxaEi4=
+		7VCDbaN0/btR9JDTUnQ4fu1lbEE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1xr/5zbv93y8cJ20Q8GJWOv6D8M=
+		Sz7+X0qJdF8mbC176CHLlS0rtgk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4etwPzaaEJn5F8cEvJRLZZ19kP0=
+		uuoPJGVrJ6GJ8Latvs1+tV7f8Is=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1xr/5zbv93y8cJ20Q8GJWOv6D8M=
+		Sz7+X0qJdF8mbC176CHLlS0rtgk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		27mCCeji0JKTVWegdzF4nhxaEi4=
+		7VCDbaN0/btR9JDTUnQ4fu1lbEE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TPneoFKn/6YG3eXmqiXd8nIkjSE=
+		9d+OZj7m4exDWNo2mEQ4T/Ooa4A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		boe4XCGd+7+At5693H/X8XZsCZo=
+		qrtJ8esfNWOGQXeVTswqNhJEa1U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TPneoFKn/6YG3eXmqiXd8nIkjSE=
+		9d+OZj7m4exDWNo2mEQ4T/Ooa4A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -170,27 +170,27 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/_CodeSignature/CodeResources</key>
 		<data>
-		MlsQfupihCyPeiY5f5lhKERTfoI=
+		ymZpfPX533K5Zak+6JqXeJVaRqo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		Z/2G+Ing8Kr4PKO80/8cWHpTVcU=
+		dGNGBart+gJ3HFvuh8QqIEBdzWQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/DWARF/KochavaNetworking</key>
 		<data>
-		ZNpw2XCzHksFEVgpcgvsROddGUQ=
+		op2SnIzD5XJpEUDXsTKyMckjjOE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/aarch64/KochavaNetworking.yml</key>
 		<data>
-		R+dlSiewQSxtNyWE9POmYucqSZc=
+		ns0VJNv3WIVl+cKuVyg9v2Xp008=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/x86_64/KochavaNetworking.yml</key>
 		<data>
-		M0qmAvcDh+7oKN2SLm0ZWwJE2Co=
+		9pZvipxlrATDADn8i1rLUoh9cic=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking.h</key>
 		<data>
@@ -198,39 +198,39 @@
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/KochavaNetworking</key>
 		<data>
-		Lc7BuiP5DXhVAujxfGA9MdCpxnc=
+		NnVqP3qAdg/fBZ9GRpYuifnqS9M=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.abi.json</key>
 		<data>
-		tYW6iKwC6K7gJUJ27TgAkWApfP8=
+		KXuvbdPJmKMttuTrpeLAEjgAjd0=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<data>
-		0XxAy/F2WjU019Opjv34PElKnqk=
+		Azvab7VuuVFLC7eucxV6p4PlDVA=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<data>
-		HZuJLI388a5tGBlxYBS79eU8ebY=
+		DGTPzX+gkzWk7Uj3B7LdSeu4g4g=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<data>
-		0XxAy/F2WjU019Opjv34PElKnqk=
+		Azvab7VuuVFLC7eucxV6p4PlDVA=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<data>
-		tYW6iKwC6K7gJUJ27TgAkWApfP8=
+		KXuvbdPJmKMttuTrpeLAEjgAjd0=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<data>
-		1argj4qwKMZJ/YuBQQDj1lKt/j0=
+		nPRE9qgviGBYBZEBl/+Vf5j9Qbw=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<data>
-		3rndYU9nkq1zDwWr7J1vlOeRWjo=
+		NaGegdSSgOvzjIOBhMVM+vYpDNg=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<data>
-		1argj4qwKMZJ/YuBQQDj1lKt/j0=
+		nPRE9qgviGBYBZEBl/+Vf5j9Qbw=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		SFuwO7EXDWbPIVWdyokDvRbu0jw=
+		lLwIbvhZIsTtn8PVubzKt2llInM=
 		</data>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		+KD/xZ/gijdAjHviA0R9K09/wZo=
+		6D/qvQj4X7w2PscmvXYsiwZsEdY=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -254,27 +254,27 @@
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		Qi1/y/gAjS04d4YEdYG8DDWJPWg=
+		VkRPsEOzAdJULoeJFgDe9lhVVh0=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		RBg0NaxG94PmwiCDjoq3qGHohoM=
+		2cFKPLksHgCG8zHHR0d301p7LRE=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		Ucs3HuvXQUb/44uU/N8xynV4mxo=
+		VHn8NfdTFlfIk0KgdSnwZr5hdkM=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		mwLTvj5PjyVLGEMq0XfMAp7ihis=
+		BG/DAg/MRAMRpJ98vKLbCmqvi60=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		7SBHZ6SpphouF6dAo2oyi0IMv2c=
+		oqIGl/0iDU9jHPncpXj9WWfYxdI=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		mwLTvj5PjyVLGEMq0XfMAp7ihis=
+		BG/DAg/MRAMRpJ98vKLbCmqvi60=
 		</data>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -286,7 +286,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -294,43 +294,43 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		rO3jyIzil/iqr0A2hX1ZF3tupvM=
+		WWLIYiqfV86/yZ40bqrym39YJgk=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		2KtZ4JSUlqlFeWh5myU6vbQ3Fh8=
+		eMV884aU2SM0FTMAGU066ycFTjY=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CPTUOlz2O9HLLXax1XdkJ8R5OeM=
+		JiTV/NV9RVkjrkbS6mBXdA0MsnU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		zi8jKLuZxd+PT5ADnFy7FFIt8bc=
+		BKU1RCnJFuoLWsiPmNTwZIhThgI=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		VrmjQe0VQvfG2KHoIS5OhE8v+sI=
+		9dhZSmnL7P4WA8n9su/jWxFUajI=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		zi8jKLuZxd+PT5ADnFy7FFIt8bc=
+		BKU1RCnJFuoLWsiPmNTwZIhThgI=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CPTUOlz2O9HLLXax1XdkJ8R5OeM=
+		JiTV/NV9RVkjrkbS6mBXdA0MsnU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		kZGxl3kjGn78DeOXByAGBFWrMZ4=
+		XEUgGkjkDaKE/TQyNuCd0qsexQo=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		9Lasqi/2JNHIKl/cMV7dcoMVe9M=
+		WR+A5IZnsIZilJ6LN3otgGPvAuY=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		kZGxl3kjGn78DeOXByAGBFWrMZ4=
+		XEUgGkjkDaKE/TQyNuCd0qsexQo=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -342,11 +342,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/_CodeSignature/CodeResources</key>
 		<data>
-		b5wvci3ang/nIkEHQ8KeIihu7Ng=
+		UO67Z/PP5v5Wk1yGBwXEp8Gzgyc=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		xGSL9AeT9U4PE4VZZSyK6C+AenY=
+		/da1bP0reVUjiSDiqMcQQ8SFUMU=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -354,43 +354,43 @@
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		MHspJL3Q0Zyk0kItvTZf+8K++hU=
+		HkG/dc9Rlaw/VjKJc2++9cCUcco=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		ncEome44pLV7vzwnDkj9jtOraug=
+		DpbbFd72ZOSeelTnqxtEp1sXTpA=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		eXU2P9qgSKqdcfezfgiZ4rSUhTs=
+		kvijYHppQBFHCNlb+VbFunbvsNk=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		9j/jGrwx+SjLb6sXmbePO51/XmY=
+		9HTfPP6bPlm14lJNUej8wQ7voQg=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		A1LqOi7AqciUnKWZF2K6j37hPkM=
+		DB3VIwQf00BZhoHaX8QYId+748c=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		9j/jGrwx+SjLb6sXmbePO51/XmY=
+		9HTfPP6bPlm14lJNUej8wQ7voQg=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		eXU2P9qgSKqdcfezfgiZ4rSUhTs=
+		kvijYHppQBFHCNlb+VbFunbvsNk=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		RxYRYv1mswcEvWQM4iyCzfR4Dfg=
+		fsVmv/hnpIhKQiIuSPLZqPUlgTA=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		GLxrRBcRue39mdGDTJjk+xftvr4=
+		HLZX3w8kDrpuXvlKRqx/EezZsZk=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		RxYRYv1mswcEvWQM4iyCzfR4Dfg=
+		fsVmv/hnpIhKQiIuSPLZqPUlgTA=
 		</data>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -402,7 +402,7 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -410,43 +410,43 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		jLlFfsXmsXonHB7a6/8nd0AKSCs=
+		MQAHWiYDruJ2PAT0WVfN0NB8g2s=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		be78IzB3bmbQ9+SaT6Zti7vEsg0=
+		edbvSKJit8Xw9QCNqdivIP2g+AM=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		l4AMHzQ+5iB56RBE3kEcWFTGFV4=
+		Y8ZTftSZ4Jd3FmmzMWx/8f94tXk=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		x7NhmGwvJpSoi37TjSw3Lt9y9No=
+		Mf+0VqlQ5eJ/VEe1LiQ35Lf2Q90=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		16yEtetv6+CaCgqTmIMyKgJ7IdA=
+		3cr+GIhcEM4sF0O7LI5WNizS2cM=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		x7NhmGwvJpSoi37TjSw3Lt9y9No=
+		Mf+0VqlQ5eJ/VEe1LiQ35Lf2Q90=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		l4AMHzQ+5iB56RBE3kEcWFTGFV4=
+		Y8ZTftSZ4Jd3FmmzMWx/8f94tXk=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		JRoeaks4V1OTpSOcDWa/19JvBcg=
+		svoucPilSddXHAi7ZvX3KFchA0Q=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		nO4sukDwUgSL8rltn3oJk2nMoAI=
+		NydK6vbG/1MtR8Zb7H3w1dfEk1I=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		JRoeaks4V1OTpSOcDWa/19JvBcg=
+		svoucPilSddXHAi7ZvX3KFchA0Q=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -458,11 +458,11 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kMGOjIKqsDLyX9cnu83ewIVy1Z4=
+		zDI0sM9V5MQAMW3wx7kA2QBU6uM=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		+KD/xZ/gijdAjHviA0R9K09/wZo=
+		6D/qvQj4X7w2PscmvXYsiwZsEdY=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -470,27 +470,27 @@
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		QF6/D2tts5a2h7WsY8icB+HYRGw=
+		IiZG6u+7W1tFy8STMrEeQNCq0TY=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		ia3SGjjpPg+G31QSFeEmMgZERAE=
+		evJotkqRFk7opDG0DL+QbQquqjM=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
-		Ucs3HuvXQUb/44uU/N8xynV4mxo=
+		VHn8NfdTFlfIk0KgdSnwZr5hdkM=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
-		o356ukDTKmA2DWWzsh+lrbLpaWc=
+		BHOHORanV2LIJBOBcRIpycfBTqM=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<data>
-		wdOux0wZu63PJf2OTbKoLbOxl10=
+		dA1qGocMkYrWPv4OjgPdCEWnajk=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<data>
-		o356ukDTKmA2DWWzsh+lrbLpaWc=
+		BHOHORanV2LIJBOBcRIpycfBTqM=
 		</data>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -502,7 +502,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<data>
-		MtgYCQ/nddlLrlaoXJdcNYPKlMg=
+		Q256QrxtJJkCwmWiUeNT1g0rge4=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
 		<data>
@@ -510,43 +510,43 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Info.plist</key>
 		<data>
-		CbENzXDbxqXZ6dtQu3mWdoCTc8k=
+		jxICbm++3kfH5ZJbCGSlgpQK2EE=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<data>
-		am+CfcY1BJHTIQONW5hEepvx7NE=
+		/TY2C1bo3mtyhHWQqA9nuVAmdPE=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		CPTUOlz2O9HLLXax1XdkJ8R5OeM=
+		JiTV/NV9RVkjrkbS6mBXdA0MsnU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		n9Q8B14ZNbx1HfTq6cZv6O1GojE=
+		9r+BwIMAZBKBs1xgRNyjbKqK+WY=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		i0gmyZXYiOPUTCnLasKwK/bJTdk=
+		g0Sijh0FRhZ2p1bS0aXEoOfCiOU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		n9Q8B14ZNbx1HfTq6cZv6O1GojE=
+		9r+BwIMAZBKBs1xgRNyjbKqK+WY=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		CPTUOlz2O9HLLXax1XdkJ8R5OeM=
+		JiTV/NV9RVkjrkbS6mBXdA0MsnU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		OyVBJOHfqK9RwFpEHX1GGJrPOoI=
+		vfHHfxrZYxSL7agD/NaTOIleeKQ=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		wvMzFRufhwKdXNTS0sqBzV7CkGw=
+		vEeiZz75YljARhaa5NLd8XOpyTs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		OyVBJOHfqK9RwFpEHX1GGJrPOoI=
+		vfHHfxrZYxSL7agD/NaTOIleeKQ=
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
 		<data>
@@ -558,7 +558,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/_CodeSignature/CodeResources</key>
 		<data>
-		dvD8KyLaai6SjxZ1WuqIyhTLu8E=
+		mLZC/ed2ACiprI4miht4YaWViQU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -567,7 +567,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9JaIpwSsCX0yX1gzeX9YfF4tEAustVzaWGvnHQHpqSU=
+			NRU4XK86CJRrft3TFjb4xD2jLb+ofahq3VL+pM9wWkU=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -581,42 +581,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iw4TpwMIUyuj9h0InLEfaCD+VP+K2NBRmG1LDoxFfGw=
+			UeBx/gUBsD5lWpiVoVQof9FlqLOYCi7durvQ7MXrnB0=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDmaMkaQz2mtDF/d/qcRQGXfRyH7AEMlrA3tk/Swhm0=
+			SrwM7HNDQz6CaqDAJSEZqFxQyouxL7ezlgQwQhlr5X8=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vYUrCXqHS5XwNRvdrkIcw2dcI1C3H0dYjOonSXk+Kk4=
+			j1xw9iOeXRnksrTb1loovaCz6AoKwhPXzyS8VgPPXto=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wypg2D/YuZeywHy66P4DCIfaJZnad+9pVel68ezg1sY=
+			f/kchY9tWFtpti9RUyctu/ojIQGunx1Uz0OOTX/d2wg=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aa7wJ9+qd7Aq98HOtL1OQrjKXHTbTmUuJq7/tCO3UI=
+			fUCdWEOfLPkxlQspfTICm/1FFdBUNBeX7pjaTleDBFI=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wypg2D/YuZeywHy66P4DCIfaJZnad+9pVel68ezg1sY=
+			f/kchY9tWFtpti9RUyctu/ojIQGunx1Uz0OOTX/d2wg=
 			</data>
 		</dict>
 		<key>ios-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -637,21 +637,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sxuBVutglgynnjqC2bOSA3jp1UdROTdU2Jr6Yzgm/pQ=
+			5KNmkB+RZYenaQzPxMJ0OypcTJQVIPHVDzmoC99ThRQ=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/DWARF/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hUei/asmZJwuh1i9oHuqvb6AALr50NDQZaQaOfukKTo=
+			34aBHm+rgZijZG74YVQ4eAd08+Y7MQCcWcsiPxgWtq0=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/aarch64/KochavaNetworking.yml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lgCjJaS9wclKO5YVQKDpASMkk7XjR2t5c+gfZ9y3rgY=
+			NIa3Jty1RnAaQzuaR3BoMYvntI034inWKmBO2gGtm10=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Headers</key>
@@ -678,7 +678,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking.h</key>
@@ -692,63 +692,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XkxPC/tbeGFhbL8KMrHmkiNqWSHSLGLy9J2nCytDZ8Y=
+			c8NR8iw6/1JI9BRaclYTYCLZ6aMFwRFE2peewl0Akqo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			faK81V1AAs2nF2VdeDMJ+Swdr0+TnNwLEPjRcpLgYUQ=
+			imMYgeMEstY0b7yQqKxIgzDjm0pr2wbroE3omIL29aw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			augJ/DOo0JbzVAcBv3W6wnsrPCE25LIGp4Goi3cVsp8=
+			sgc8CC4MeOGuT5X0qao0NVUl2s74Y0gqfHvpfzk0GEM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Wpz9uMVvv6JwoHvR5slX5ClxF0v1qGQgjnerzwC75g=
+			QWbxeUUkZcxVg78ZJ501d95iPJMmYongC85z1Yu0wuc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			augJ/DOo0JbzVAcBv3W6wnsrPCE25LIGp4Goi3cVsp8=
+			sgc8CC4MeOGuT5X0qao0NVUl2s74Y0gqfHvpfzk0GEM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			faK81V1AAs2nF2VdeDMJ+Swdr0+TnNwLEPjRcpLgYUQ=
+			imMYgeMEstY0b7yQqKxIgzDjm0pr2wbroE3omIL29aw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxkIUoYQmvbLPti9xuD+FqH6l88ZAJHLPbLIlJTNwk4=
+			ot3WGgJqJcHIk37n+vg0dvvZceTbtU4IfIedGyWRFpA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YKerJw1zoB0uu5xkM19KmMgsdFTMB6kM6w+QyIzqxUA=
+			s2/0rNdGfuhjmTlzKXdyP8AD/ZAu3XvoGmEaGZIWEJc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxkIUoYQmvbLPti9xuD+FqH6l88ZAJHLPbLIlJTNwk4=
+			ot3WGgJqJcHIk37n+vg0dvvZceTbtU4IfIedGyWRFpA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Modules/module.modulemap</key>
@@ -762,7 +762,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WKyXCHc5NeApzMP9NS6h9gsnjSVJfAcnyEo7krnHLtg=
+			3lvTGdOYu5lDz6xLvQuXwtawlHXmm+Vk/8Iei0iqHHI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/KochavaNetworking.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -781,7 +781,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -795,70 +795,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q/gobHEghjWzgANUAaAlaRCzTCGRbU6vubWLx6tGd7k=
+			QbpQOXHpYcVJa4bXsqH24oLUgEid/9mf2Pen59EjEqI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3x3iyS2anQEDuiVNhu3BDSTLZp6Pu6hXAgHmyNMqh5Q=
+			5CHgQYJu0xPuX7HCsxY06kF9csBXIpQT53jIig5WyVI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9t4b/GsHualIpXfY1LazVfl+bo0W00IVuHu2+MQK5Bo=
+			abQMO6O18dkQ/dHN+3UccdY9ZvTf7V01L55qiUqUyNs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A6FFubYeMvtlOn1f/2Q96+5cFU6EwAXitq1u7HcXUDo=
+			9hb+gUunFQaYfxAZ82g6Tiee8RrmZfrl2JHiYa+v5Lc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvItUffaFvW/QCuEfTSoOFIgKUhWXcM0NmhwfwKrqJ8=
+			yhuqYcnszKNiXNFvd/9RaZwfocQjqeaas9T+AVwfT/E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A6FFubYeMvtlOn1f/2Q96+5cFU6EwAXitq1u7HcXUDo=
+			9hb+gUunFQaYfxAZ82g6Tiee8RrmZfrl2JHiYa+v5Lc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9t4b/GsHualIpXfY1LazVfl+bo0W00IVuHu2+MQK5Bo=
+			abQMO6O18dkQ/dHN+3UccdY9ZvTf7V01L55qiUqUyNs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nbDD7F/57o1pphhl2tUI3+WniLHn6/t7nRCemrw/JhM=
+			kEM8wqqTWRMU00nkWBd3zxUgrzNvcsBCQLWZW981RJ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6/BTxW6kIOSz4Xv8/HABQdk3tRTG1KW41M+kufboexw=
+			gR2d0Bl9r83QGFHVvAp3v52nPFqzC4Y/rwFggda8FP0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nbDD7F/57o1pphhl2tUI3+WniLHn6/t7nRCemrw/JhM=
+			kEM8wqqTWRMU00nkWBd3zxUgrzNvcsBCQLWZW981RJ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -879,35 +879,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F/7Iq04NiHdu2opj32QHjm10D9gchk5++4Dc5CtcOes=
+			WORkVs2TurWiYVAOI76LnMYzKzXQPb0cppwJQA4JfYE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sxuBVutglgynnjqC2bOSA3jp1UdROTdU2Jr6Yzgm/pQ=
+			5KNmkB+RZYenaQzPxMJ0OypcTJQVIPHVDzmoC99ThRQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/DWARF/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uDYgmcx/fFKnS7JwLltb1oGTm40GLWi1Jfjg/tRPnbs=
+			zlGkK9Z9nJEOU2MEpE5nXjqSIz0j1DmgjdGIBMl2DDw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/aarch64/KochavaNetworking.yml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPudN5jpVaaC97jwkszMNKBX0iYoHNY0QJqdJPwB62U=
+			gfKaDtBxqg0mUOw4gjiijDjMIDAbWw4rJZVwwKfjAfI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/KochavaNetworking.framework.dSYM/Contents/Resources/Relocations/x86_64/KochavaNetworking.yml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hELIcMcHU7mQRbpp2OHbto8LLzL3FNCYFK6JE21fK+E=
+			OtaQvZGOZ4ev+vUJyQfRQHVB6wd8sr+Q4sUgjyzKY9I=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Headers</key>
@@ -934,7 +934,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Headers/KochavaNetworking.h</key>
@@ -948,63 +948,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Q1SgBu6xzN74RE17r7OP8OU8BaonxgjO07Jic0iRhM=
+			ywnI4kCv+Hhm4T5Wn2AjyRLReqINkb8+xzu0wtgvWbQ=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z1ROLQvQ7eDVI31SbA9cg1+1ioF8hm1q4Vpy41+NOIA=
+			902IozjF5lmRjXvzZJKycyTaBtBuF5rtkRanD0wv+s4=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rojK31x5w1x3RI+y7N4sDGPqlUcsI6BXelC5fhq0/S0=
+			/HT4XxXtaxwYxTRC/P3RDP3bFQ9fbpdvpir73ZtSC1U=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			59sJgPQJkCuH+/iOkUXEMpNHNKmfatNLOzGuI5C7LIs=
+			Ul+sxeKaCwnTwt/xijubOfndZU/hKmzgfdTk+dEVVjY=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rojK31x5w1x3RI+y7N4sDGPqlUcsI6BXelC5fhq0/S0=
+			/HT4XxXtaxwYxTRC/P3RDP3bFQ9fbpdvpir73ZtSC1U=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z1ROLQvQ7eDVI31SbA9cg1+1ioF8hm1q4Vpy41+NOIA=
+			902IozjF5lmRjXvzZJKycyTaBtBuF5rtkRanD0wv+s4=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ECVyoctESbgeLE4LdpmpblmAIvdMcXPpsVceYLdKQTs=
+			ElpvZxSKnlFnau/fc1QdsVDtXvbTqbwcP6TJjbPqkzw=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aua4MmdjebE1CZ46vz6JtFZWX5PvDaI4J/iL0ERv+js=
+			S6G14zwZCVCN3XwhEXGZL6Lqq+tYrM0G4MTnlYv56mk=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ECVyoctESbgeLE4LdpmpblmAIvdMcXPpsVceYLdKQTs=
+			ElpvZxSKnlFnau/fc1QdsVDtXvbTqbwcP6TJjbPqkzw=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Modules/module.modulemap</key>
@@ -1018,7 +1018,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JT/pJrqU6DTpE86wT3aGHTceLnnKdfPO1LIDQv2rlBo=
+			NmVdz3W210aGxCTbhOo3Fk51yzecdc7qpaypJ9wkD0I=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/KochavaNetworking.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -1037,7 +1037,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9JaIpwSsCX0yX1gzeX9YfF4tEAustVzaWGvnHQHpqSU=
+			NRU4XK86CJRrft3TFjb4xD2jLb+ofahq3VL+pM9wWkU=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1051,42 +1051,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jzruu6vJCx1K5X2scRyteNkOi+IGZLTPEFkweQppR6Y=
+			ydBU0gAXOiQyO6b6uxiWrDyY2/vsNsHUDK/ZjvyS88Y=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZQkHrvYoPMsIsXaXhlWVvOzYgn0e9Rsf3wpJzo1rlI=
+			Lms294kBqptdX6VQ9M3HpJsimMs+l8ky5CUjqosbKF0=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nELbcqGTwoz+rpZQXH9nYEx3kKuXMaNMk491AcZYMw4=
+			QFOqlg9cTjPszIkDFf0TpKEP1jrAovhMe3QCzMLFAUk=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1NzODjXEMXyNVRKsxx/pchKW7ew5cSfUDHhFFCfayZw=
+			o2XyqwIJLHrSeFYYNYGN6uT3DCazz/8B2HvmypYxraY=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bNgLDNE39JUcFOGDeAXpgQDRBRa4VHRcHxpIrvWS3U8=
+			PsMBKa2epG/dfOATNXdMjo5onztysG9utgozjtMQ7Ww=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1NzODjXEMXyNVRKsxx/pchKW7ew5cSfUDHhFFCfayZw=
+			o2XyqwIJLHrSeFYYNYGN6uT3DCazz/8B2HvmypYxraY=
 			</data>
 		</dict>
 		<key>tvos-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1107,7 +1107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1121,70 +1121,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5OmRYEhEXbML8FZtiX/5nozGeg4o8SbtYYxA2MnEW9E=
+			Q4ttjvU05X3r4CMDTWEwyinozkPsyM26HGWB0RZat8k=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Dgo3JWrbS2WpUWdtJrFLB8uIRR2sssa6N1531aMy0M=
+			faAPLlL5MN2zhXZWigjM5t/ILHI2dyrVM2kMxfgD9Ww=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qZRoltbZH3AtsLiUgKTan/dl/ZJf+JSEB4IMkmDvvDw=
+			YYO5BaK7XOjPpnx4/MzRShb6AAawwxBNusEOUDa0HoM=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vXGNqPSeCGR/+nexk4gbfsq2Aitba00i0xi60FHlvJs=
+			kpSviGdjD/74dz9kZtm7+oK/dXZdPHpthCXXN77pmgc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hky60TpxM3I+3XK8YuJ/cu0G+3Ah5mG8L/TFnUP3iW8=
+			/gKRn9fkuialp1OJ3u/HonFqXzrKNQkNRRpKBhLdWV4=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vXGNqPSeCGR/+nexk4gbfsq2Aitba00i0xi60FHlvJs=
+			kpSviGdjD/74dz9kZtm7+oK/dXZdPHpthCXXN77pmgc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qZRoltbZH3AtsLiUgKTan/dl/ZJf+JSEB4IMkmDvvDw=
+			YYO5BaK7XOjPpnx4/MzRShb6AAawwxBNusEOUDa0HoM=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PDUH8MlkHzhgp0VGXwJURFPE1JXPJ/WX37yNTqjTNlk=
+			wFGMJkfRh8ZYPxe2HZsB1tGv2zYbK6yR9NLmCdgBkPU=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMfeRpcVtNozipdYf70j7PJy3ISBsLchDZRLoeX0ftQ=
+			q5dOi0iCR8e3tCuKEIXI2Gy+eL+jR0KB6+UDJurINjQ=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PDUH8MlkHzhgp0VGXwJURFPE1JXPJ/WX37yNTqjTNlk=
+			wFGMJkfRh8ZYPxe2HZsB1tGv2zYbK6yR9NLmCdgBkPU=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1205,14 +1205,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5H7lbfFH930erOr1Tr3GYDl2eoPcE+KH3H56jfld2M=
+			X4Ffl1ci3EkAjMZTs6rwePevz4wvyTWkSYRJAnauT2Y=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			geTcWTdC+dgw0eJXfUDFWnM47DrpB+MLtvTJhfBeHVQ=
+			wppzqfEz1zc3/pEGmkNYpiYDN1aEGt2GwNMlXBexIUc=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1226,70 +1226,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1hUjXfeWmfM4tRIQXK7/9m0xUPH3nyNdGuMcMloeZtY=
+			vyF00i04CxnGoCedjwFJw7MDIXaMxzhCb0dLoCwta3k=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZJM/jShxgig15kfKhIkWn1iQ6+x5/09PuCvCCqHrhd0=
+			1hZZEe3hu8qYEC3e018XAuIomojkdyrntEhJi1p1pGM=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hQSfeSYHdkZZJegC2dAvE1fDD5RReMtuMViWBOEa+HU=
+			fVa96/38baBZx/sCjoGi4xmNCfiHhLz+dzDDe06veBE=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0WaHF5arhbs/2aNK5Me56hk7SWCZwzMBo/AOpDXGfq8=
+			ZGJZiNQnE31S55IYMCUPnucDZLb516qBq92gd8ZBGqw=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sQw3+pl65tw9ZHcnunnoW10ZxdQe5lhEpTQbJwUfEbY=
+			8RgzxHiMem8Yz5QJHnE0DW34JzniBxWlBPZ8W6GK4rM=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0WaHF5arhbs/2aNK5Me56hk7SWCZwzMBo/AOpDXGfq8=
+			ZGJZiNQnE31S55IYMCUPnucDZLb516qBq92gd8ZBGqw=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hQSfeSYHdkZZJegC2dAvE1fDD5RReMtuMViWBOEa+HU=
+			fVa96/38baBZx/sCjoGi4xmNCfiHhLz+dzDDe06veBE=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ew39laYGZqwtDG6425XgTH6dydheLYqis2MIxG35TIs=
+			A9ruHpTUOyM5eenYk1X1IU82Vnl0qcC/74y/unk8QLI=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SCYhxVQe4V2uRY7uuVCovAUCHqsnJlPV+pOBmj1Y2rw=
+			D33LyCf1oVt7B8bnT0vdgRzMRlqoyoOR/1UAq316yww=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ew39laYGZqwtDG6425XgTH6dydheLYqis2MIxG35TIs=
+			A9ruHpTUOyM5eenYk1X1IU82Vnl0qcC/74y/unk8QLI=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1310,7 +1310,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1324,70 +1324,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xDWTUuuK0XTSJ1lSRdHik6d603Bsg0JkKxlQnFe++iQ=
+			vm8OI5tk2HiqZTBz1d/EjJokXMEOBll/tDM3jrq9BJA=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uthTUhL29yfQdg4IzE2KRpLRfyqrT6TKAGszj3FF+18=
+			cMEhIMGrlODGwihWK2USpmyqe4vdI/9BoNQphbDcJ2w=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RWbsA2SmvB7zZXnnCQmuYsyE2n4cfs6c/S7uaFShX8k=
+			Q1zUdND58vJ9X1zyxe56Y44SVEp7t1FFA/e2+m1cQdo=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mVvBnmQtA0bnF32WHzPM9VxR+3NJk/3n9iAnHIZyvNs=
+			SKQom49GJRWtAPCHaQ5cPXirBQKUgPWcqChxkS+5ZZg=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OGIWshVaBIHGNN5IkOfORWmtu201+DL743P6EE+4Y/M=
+			b7qgiQMOTJVTr56mUUlN9DotjlbsGKFdzpJPdUVTJsE=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mVvBnmQtA0bnF32WHzPM9VxR+3NJk/3n9iAnHIZyvNs=
+			SKQom49GJRWtAPCHaQ5cPXirBQKUgPWcqChxkS+5ZZg=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RWbsA2SmvB7zZXnnCQmuYsyE2n4cfs6c/S7uaFShX8k=
+			Q1zUdND58vJ9X1zyxe56Y44SVEp7t1FFA/e2+m1cQdo=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVPC6ulTh8RvuM6OJ59xcpac3hTn6NXO4xdBofM1Vls=
+			JTurzFearyr0g3H5uZkxcpaFx0diPw5JE4spthDzIFg=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JUb6KD91X30AxDZJphRIXU+wmsw04g+IH+VeqSFwWXE=
+			1TfbzcdNSvp4zxtHHDsQxkmRwCoPovU/4A9D61IYFII=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVPC6ulTh8RvuM6OJ59xcpac3hTn6NXO4xdBofM1Vls=
+			JTurzFearyr0g3H5uZkxcpaFx0diPw5JE4spthDzIFg=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1408,14 +1408,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1MPLKAojo7fKeqc9RCmMdG2Jpyy+wHOh4sHhOpQVUo=
+			uQoxphqYd3bamhl4+aWJwU66Cu2uTyGyNyqFoTKj1tI=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Headers/KochavaNetworking-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9JaIpwSsCX0yX1gzeX9YfF4tEAustVzaWGvnHQHpqSU=
+			NRU4XK86CJRrft3TFjb4xD2jLb+ofahq3VL+pM9wWkU=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1429,42 +1429,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			202c5XU7s4bJFkWPkRL9ONkF9Rsix0a21Yi345sNrck=
+			oOb66/c1A3n1XZaw311zMP78xyjaiUVETEsMcDMDzuw=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7UhbhufQyVvDBB/VcyxCyH1sQz5vobdT+KxMWSJ4yk=
+			/K/CRhGmDynhElSdwTjKMg2hCWoKr12dTCM5d1rE6Po=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nELbcqGTwoz+rpZQXH9nYEx3kKuXMaNMk491AcZYMw4=
+			QFOqlg9cTjPszIkDFf0TpKEP1jrAovhMe3QCzMLFAUk=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9iE1yFmPOxbGm4NOIO7d1RjKC4HPnOa+VVm5WAEKDs=
+			gJvV+7pJ7cUhW/g8mdzCwa9IxBaax2RVWCSGM0juel8=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iFX3hIp67l2W+98u2LHeNkUkpldz6liybQD7zou/+zU=
+			jgW8mSkL3yjz6KL+WhMTelDqtbyuywJYoT4c1whwiJg=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9iE1yFmPOxbGm4NOIO7d1RjKC4HPnOa+VVm5WAEKDs=
+			gJvV+7pJ7cUhW/g8mdzCwa9IxBaax2RVWCSGM0juel8=
 			</data>
 		</dict>
 		<key>xros-arm64/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1485,7 +1485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HlDdT0/oMc3C82oEQc5RjjAF86F99X14UkaatD8J1Y=
+			VW62sVMNbBwOnuo7qzIRE10nvJbDn/jQSIe6kwIn3Us=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Headers/KochavaNetworking.h</key>
@@ -1499,70 +1499,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HtJ2533CLNbG1MzRFAGwG67l/EbRajsLx7e4SoxNXg8=
+			jQYVAtiMkU86PpmmX1CBXkeHoY1sQwOcGuU9bTNGu6c=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/KochavaNetworking</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/NcUT9LaDteHdTQoAjRv3U1GXgDGY8sOm4Qnxq2+pZo=
+			vR27ZhmmsFhXSAg6eHxuubvGTpF7oQe0qmY2L6aW6tc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qZRoltbZH3AtsLiUgKTan/dl/ZJf+JSEB4IMkmDvvDw=
+			YYO5BaK7XOjPpnx4/MzRShb6AAawwxBNusEOUDa0HoM=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gCiQyirumsTX8m5UFvD3jdML+zUh+jvUR0Y7JYssjQ=
+			5TM73EJCMbBzGJx9fXZ1aBzovbXNbR7yjHNDB5MUoJk=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AtK4fYimB4w5U6kXcUhM+GcWsVWW8ajoy0fGCMnwTsI=
+			llYAGCtbjPuvwja/S2U7b7ynveSUGQ9cj19dm06vK08=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gCiQyirumsTX8m5UFvD3jdML+zUh+jvUR0Y7JYssjQ=
+			5TM73EJCMbBzGJx9fXZ1aBzovbXNbR7yjHNDB5MUoJk=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qZRoltbZH3AtsLiUgKTan/dl/ZJf+JSEB4IMkmDvvDw=
+			YYO5BaK7XOjPpnx4/MzRShb6AAawwxBNusEOUDa0HoM=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N57d56IkjQo85OHKW9QdOhJpzCcSF67fWfA3lD+Ekyk=
+			1plNqraTSjfE2/P9sFWVQQpo+9BPMEUPZQwEJWKEeAE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XJvxeEwyPwQ7HwZpVaAYYTnN8dWGqQeuT8YAQUQW8SQ=
+			uwgf6ph/sMKiBCxFdBdcEiEKaaIlxulAzR9sx+cvBSI=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/KochavaNetworking.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N57d56IkjQo85OHKW9QdOhJpzCcSF67fWfA3lD+Ekyk=
+			1plNqraTSjfE2/P9sFWVQQpo+9BPMEUPZQwEJWKEeAE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/KochavaNetworking.framework/Modules/module.modulemap</key>
@@ -1583,7 +1583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tvoMQBIpznaBOvf1Sn04zvcOMiUswMlRbIbX7YiBk6o=
+			5Wr1D6tde3Xqi+1EHiq7c0haIx3dTiF6jVUphY/6aNg=
 			</data>
 		</dict>
 	</dict>

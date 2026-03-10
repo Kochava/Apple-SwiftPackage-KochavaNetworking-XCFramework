@@ -1234,7 +1234,11 @@ extension Foundation.UserDefaults {
   final public func invalidate()
   final public func invalidate(logMessagePrintBool: Swift.Bool, asyncBool: Swift.Bool)
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc(executeAdvancedInstructionWithUniversalIdentifier:parameter:prerequisiteTaskIdentifierArray:closure_didComplete:) final public func executeAdvancedInstruction(universalIdentifier: KochavaNetworking.Task.UniversalIdentifier, parameter: Any? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, closure_didComplete: KochavaNetworking.Networking.Closure_Instruction_DidComplete? = nil)
+  @discardableResult
+  final public func executeAdvancedInstruction(universalIdentifier: KochavaNetworking.Task.UniversalIdentifier, parameter: Any? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil) async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(executeAdvancedInstructionWithUniversalIdentifier:parameter:prerequisiteTaskIdentifierArray:closure_didComplete:) final public func executeAdvancedInstruction(universalIdentifier: KochavaNetworking.Task.UniversalIdentifier, parameter: Any? = nil, prerequisiteTaskIdentifierArray: [KochavaNetworking.Task.Identifier]? = nil, closure_didComplete: KochavaNetworking.Networking.Closure_Instruction_DidComplete?)
   #endif
   public typealias Closure_Instruction_DidComplete = (_ dictionaryString: Swift.String?) -> Swift.Void
   final public var authoritativeSources: KochavaNetworking.Networking.AuthoritativeSources {
@@ -1425,7 +1429,7 @@ extension KochavaNetworking.System {
 }
 @_hasMissingDesignatedInitializers final public class Any_Type {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func from(_ object: Any?) -> (any Any.Type)?
+  public static func from(_ object: Any?, notFoundWarnBool: Swift.Bool? = nil) -> (any Any.Type)?
   #endif
   public typealias Identifier = Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1633,7 +1637,15 @@ extension KochavaNetworking.Networking {
 }
 final public class Transaction : Swift.CustomStringConvertible, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Networking.Provider, KochavaNetworking.Registerable, KochavaNetworking.Startable, KochavaNetworking.StartableWithOptions {
   #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func start(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Transaction.Identifier?, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil) async -> (transaction: KochavaNetworking.Transaction, didSucceedBool: Swift.Bool, responseTypeObject: Any?, responseObject: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, baseIdentifier: KochavaNetworking.Transaction.Identifier?, prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func start(networking: KochavaNetworking.Networking?, jsonDictionary: [Swift.AnyHashable : Any], prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil) async -> (transaction: KochavaNetworking.Transaction, didSucceedBool: Swift.Bool, responseTypeObject: Any?, responseObject: Any?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func start(networking: KochavaNetworking.Networking?, jsonDictionary: [Swift.AnyHashable : Any], prerequisiteTaskArray: [KochavaNetworking.Task]? = nil, valueSourceCollection_injected: KochavaNetworking.Collection? = nil, startLogMessagePrintBool: Swift.Bool? = nil, closure_didComplete: KochavaNetworking.Transaction.Closure_DidComplete? = nil)
@@ -2187,7 +2199,7 @@ public protocol DecodableFromWithInitializedObject : KochavaNetworking.Typed {
 @_hasMissingDesignatedInitializers final public class DecodableFrom_Conforming {
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
-  public static func from(_ object: Any?, type type_parameter_liberal: (any Any.Type)? = nil, elementType: (any Any.Type)? = nil, initializedObject: Any? = nil, networking: KochavaNetworking.Networking? = nil) -> Any?
+  public static func from(_ object: Any?, type type_parameter_liberal: (any Any.Type)? = nil, elementType: (any Any.Type)? = nil, initializedObject: Any? = nil, typeNotFoundWarnBool: Swift.Bool? = nil, networking: KochavaNetworking.Networking? = nil) -> Any?
   #endif
   @objc deinit
 }
@@ -2316,6 +2328,7 @@ extension KochavaNetworking.Log {
     @objc get
   }
   #endif
+  @objc deinit
   public static let logger: os.Logger
   public static let type_kochava: KochavaNetworking.Kochava_Type
   final public var execution: KochavaNetworking.Execution {
@@ -2354,7 +2367,6 @@ extension KochavaNetworking.Log {
   final public var stateActiveMaximalBool_sf: Swift.Bool
   @objc public static let messagesAppViewControllerDidBecomeActiveSourceIdentifier: KochavaNetworking.System.SourceIdentifier
   @objc public static let messagesAppViewControllerDidResignActiveSourceIdentifier: KochavaNetworking.System.SourceIdentifier
-  @objc deinit
 }
 extension KochavaNetworking.Networking.Transactions {
   @_hasMissingDesignatedInitializers public class URLs : KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {

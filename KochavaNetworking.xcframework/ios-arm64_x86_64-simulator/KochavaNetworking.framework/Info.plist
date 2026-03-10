@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>10.0.0</string>
+	<string>10.0.1</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneSimulator</string>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>17B100</string>
 	<key>KVABuildDateString</key>
-	<string>2025-12-16T11:14:54-0800</string>
+	<string>2026-02-11T12:23:35-0800</string>
 	<key>MinimumOSVersion</key>
 	<string>15.5</string>
 	<key>UIDeviceFamily</key>
