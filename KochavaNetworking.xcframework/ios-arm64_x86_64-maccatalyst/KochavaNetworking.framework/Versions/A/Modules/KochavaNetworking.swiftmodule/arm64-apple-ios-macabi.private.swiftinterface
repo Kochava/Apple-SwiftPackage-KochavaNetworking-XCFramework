@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Foundation
 @_exported import KochavaNetworking
+import Network
 import OSLog
 import Swift
 import UIKit
@@ -146,6 +147,15 @@ extension KochavaNetworking.Networking {
     final public func invalidate()
     final public var retrieveTask: KochavaNetworking.Task {
       get
+    }
+    public static let tokenStringAdapterIdentifier: KochavaNetworking.Adapter.Identifier
+    final public var tokenStringAdapter_closure_valueMetaValueArrayDictionary: KochavaNetworking.Value.Closure_MetaValueArrayDictionary {
+      get
+      set
+    }
+    final public var tokenStringAdapter_closure_staleBool: KochavaNetworking.Value.Closure_StaleBool {
+      get
+      set
     }
     final public var setClosureDidCompleteTask: KochavaNetworking.Task {
       get
@@ -550,6 +560,51 @@ extension Swift.Array {
   public mutating func append<S>(contentsOf_nullable newElements: S?) where Element == S.Element, S : Swift.Sequence
   #endif
 }
+extension KochavaNetworking.Networking.Transactions {
+  @_hasMissingDesignatedInitializers public class IP : KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public static func from(_ object: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public static func from(_ object: Any?, initializedObject: Any?) -> Self?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func to(context: KochavaNetworking.Context?) -> Any?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func configure(with object: Any?, context: KochavaNetworking.Context?)
+    #endif
+    public func start()
+    public static let logger: os.Logger
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
+    #endif
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    public var execution: KochavaNetworking.Execution {
+      get
+    }
+    public func invalidate()
+    public var alternateNetworkPathStatusStringAdapter: KochavaNetworking.Adapter {
+      get
+    }
+    public static let alternateNetworkPathStatusStringAdapterIdentifier: KochavaNetworking.Adapter.Identifier
+    public var alternateStringAdapter: KochavaNetworking.Adapter {
+      get
+    }
+    public static let alternateStringAdapterIdentifier: KochavaNetworking.Adapter.Identifier
+    public var alternateEnabledBool: Swift.Bool {
+      get
+    }
+    public var alternateStalenessTimeInterval: Foundation.TimeInterval {
+      get
+    }
+    public var alternateNetworkChangeMinimumTimeInterval: Foundation.TimeInterval {
+      get
+    }
+    @objc deinit
+  }
+}
 extension UIKit.UIApplication {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func shared() -> UIKit.UIApplication?
@@ -581,7 +636,7 @@ extension UIKit.UIApplication {
   @objc deinit
 }
 extension KochavaNetworking.Networking {
-  @_hasMissingDesignatedInitializers @objc(KVANetworking_Transactions) final public class Transactions : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+  @_hasMissingDesignatedInitializers @objc(KVANetworking_Transactions) final public class Transactions : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
     #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
     #endif
@@ -595,6 +650,7 @@ extension KochavaNetworking.Networking {
     #if compiler(>=5.3) && $NonescapableTypes
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
     #endif
+    final public func start()
     #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     final public func register(_ transaction: KochavaNetworking.Transaction?) -> KochavaNetworking.Collection.RegisterResult?
@@ -617,6 +673,9 @@ extension KochavaNetworking.Networking {
       set
     }
     public static let attemptInProgressConcurrentMaximumRegulationTaskIdentifier: KochavaNetworking.Task.Identifier
+    final public var ip: KochavaNetworking.Networking.Transactions.IP {
+      get
+    }
     public static let rateLimitingWindowRequestCountRegulationTaskIdentifier: KochavaNetworking.Task.Identifier
     #if compiler(>=5.3) && $NonescapableTypes
     final public var responseLocalBool: Swift.Bool? {
