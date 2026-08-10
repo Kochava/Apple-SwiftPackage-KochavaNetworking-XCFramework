@@ -14,5 +14,4 @@
 /Packages
 /*.xcodeproj
 xcuserdata/
-Release Notes.md
 semgrep.sarif
