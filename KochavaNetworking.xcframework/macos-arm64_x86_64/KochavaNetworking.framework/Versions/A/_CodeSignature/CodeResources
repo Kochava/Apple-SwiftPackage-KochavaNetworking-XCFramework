@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		1RxJ0Uvs1CWcg2qn8XlIwTMoJu0=
+		IAu6ieM/dZpDue1BkdhhL2lgsP8=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -33,56 +33,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDGFcCD2CoEDUUBlmbs1OzPlgu/p9WzbMgztXJTzJW4=
+			r8pjns2NMVX7wvd9Gdakp4bAu/mT2DgFhaJuvjcM4Zs=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MrzULdmdQYP4BMdGJgr2bIzRYIB37N6c+u4+YENT2yc=
+			b2a0cRx3/3C2r/+MoVgCFbYlHdEx6yqc4yq+FzlTaII=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FiGhSCjlKCPzFN3HYKtaUgk/RvRaiyOcErN6tDJeJgo=
+			JZ5doXcHGTK2CJXBokpGcQlEDoG9NEPWEeg80uREPWE=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MrzULdmdQYP4BMdGJgr2bIzRYIB37N6c+u4+YENT2yc=
+			b2a0cRx3/3C2r/+MoVgCFbYlHdEx6yqc4yq+FzlTaII=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDGFcCD2CoEDUUBlmbs1OzPlgu/p9WzbMgztXJTzJW4=
+			r8pjns2NMVX7wvd9Gdakp4bAu/mT2DgFhaJuvjcM4Zs=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqZRHphBJCE0T8FqL55FLKrrI3ELAYqotSNOMXfGOGo=
+			Ov3j8pa9v9H7Omi39yoEt5qUhPPbQAabp0EsQ7BDy0E=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VnEAy0pa0nKhVlGuudopGufMZI0R1s1D1nRS2s+OlQ8=
+			HQYLr4ioFnR8pJgOXgO9bSfhNHyu+0iEP46nS5kLg2s=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqZRHphBJCE0T8FqL55FLKrrI3ELAYqotSNOMXfGOGo=
+			Ov3j8pa9v9H7Omi39yoEt5qUhPPbQAabp0EsQ7BDy0E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ohJkE0XkiAlpHc1OIH8BPK2NpvnHTS/LyPu8JHKASG8=
+			5tlcTT+P4d0nDgN5fnCs73yfrNqNGiANiVDIdiFqfk8=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

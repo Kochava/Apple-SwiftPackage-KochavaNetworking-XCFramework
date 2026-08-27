@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xqt5M4F9/4CwrUwtXPbiTVWVQ5M=
+		uXIYbUJQqdUMW/QV0VaftCwgprM=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		pA667tFJy+GenDriJcJgAW2qJ/k=
+		IpC9pTJkpIQ7TSQ0M4z1WDXtmeg=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		rherBfJ25y+yYgmPGM1fWnsY6TQ=
+		ux5GYTmYXCQNb7TRd62X7H/0Hcc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bfSPSF2Un8oFQuWIvUwce9Ypfvs=
+		Texkz1u6ZtAWASENbkf+JFhtgH0=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		rherBfJ25y+yYgmPGM1fWnsY6TQ=
+		ux5GYTmYXCQNb7TRd62X7H/0Hcc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hO95KUevP/BDrHKYbrGFAgtTPmY+nMLbSoqehWry+os=
+			1yyTINvIBzy9sxhs//+ARy8v3Hg2rfJBkGNtAiDWnF0=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R4XJkZU+uFC3rok7dYohveWOifHWNwND9ao2MsJ1gcg=
+			k9x+eaHblvkrNJD8DXtaj4K38baH5CcpHk5RdwGFBEM=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ffi0CVfxASjpWarODo4D6rF9B5TllXC7XQE8Rj+yVww=
+			soEF8ppaSdMHFI6UeowiXKHRpECtAcCtgsSlh6joQdk=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R4XJkZU+uFC3rok7dYohveWOifHWNwND9ao2MsJ1gcg=
+			k9x+eaHblvkrNJD8DXtaj4K38baH5CcpHk5RdwGFBEM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

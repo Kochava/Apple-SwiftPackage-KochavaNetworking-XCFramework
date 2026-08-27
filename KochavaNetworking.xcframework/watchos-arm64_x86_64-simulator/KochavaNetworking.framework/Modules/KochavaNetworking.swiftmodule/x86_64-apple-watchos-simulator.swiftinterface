@@ -2679,6 +2679,7 @@ extension KochavaNetworking.Kochava {
       get
     }
     final public func invalidate()
+    final public func extend(toAtLeastTimeInterval timeInterval: Foundation.TimeInterval)
     final public var elapsedTimeInterval: Foundation.TimeInterval {
       get
     }

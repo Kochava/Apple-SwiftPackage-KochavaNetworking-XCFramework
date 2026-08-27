@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iv2QBM2Ehhx8WlXp6H4/9bGA1Eg=
+		oPrdTdfFRz+cz9/kHIEDRBPIvAY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		RwgM70Nm9U7S64kH5/y0GAHRSlc=
+		uZKYijKBitxFLxhd+jnQg8Kp7Pc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		6DWTnFJbyBxWTzgTpmUpa/+Yg8c=
+		Z02DnCJfg5KWJsveWZRPMyaobzY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		z/24ryuBMmHTwt9LXkGFtGfsiJU=
+		R6XKDxPOEng9ZPmu1c98IbkU/Mo=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		6DWTnFJbyBxWTzgTpmUpa/+Yg8c=
+		Z02DnCJfg5KWJsveWZRPMyaobzY=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		RwgM70Nm9U7S64kH5/y0GAHRSlc=
+		uZKYijKBitxFLxhd+jnQg8Kp7Pc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		BtNLSyknbLBEYPEFr5JJbc8HLdA=
+		pJOb38Qol/4JH1korNpRNBqZksI=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		+ovlQjRmEn9VWHmXAVSlVHvX0u8=
+		6Qsqu73PX+hAn0sRBm9RGY+sKDc=
 		</data>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		BtNLSyknbLBEYPEFr5JJbc8HLdA=
+		pJOb38Qol/4JH1korNpRNBqZksI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,88 +85,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RwgM70Nm9U7S64kH5/y0GAHRSlc=
+			uZKYijKBitxFLxhd+jnQg8Kp7Pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DXKmVJnM5limwERKdXJwPVd2ju7MWt3gD6EEwgyrlpA=
+			OupV8gTPWVLIWsANWr0KMVFwJ8w1sCMXyZaa6fQcbuM=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6DWTnFJbyBxWTzgTpmUpa/+Yg8c=
+			Z02DnCJfg5KWJsveWZRPMyaobzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			c0uP9d4wCyP+01UqVXKtaJTzM7AXUAX4WS7SC/UgYuo=
+			nHmMl1eC91mFROpqk7hKNpLQvWOFibMlmMYXrfn6umA=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z/24ryuBMmHTwt9LXkGFtGfsiJU=
+			R6XKDxPOEng9ZPmu1c98IbkU/Mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			aTsfDf5nDxfuDXaMcQH1F9fVCAzuHn4r0iHqBxRnfhE=
+			9bX8kdFcxJuryjpX9c+LiEmRfo1qrZt6IMJ/aFNy8v8=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6DWTnFJbyBxWTzgTpmUpa/+Yg8c=
+			Z02DnCJfg5KWJsveWZRPMyaobzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			c0uP9d4wCyP+01UqVXKtaJTzM7AXUAX4WS7SC/UgYuo=
+			nHmMl1eC91mFROpqk7hKNpLQvWOFibMlmMYXrfn6umA=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RwgM70Nm9U7S64kH5/y0GAHRSlc=
+			uZKYijKBitxFLxhd+jnQg8Kp7Pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DXKmVJnM5limwERKdXJwPVd2ju7MWt3gD6EEwgyrlpA=
+			OupV8gTPWVLIWsANWr0KMVFwJ8w1sCMXyZaa6fQcbuM=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BtNLSyknbLBEYPEFr5JJbc8HLdA=
+			pJOb38Qol/4JH1korNpRNBqZksI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5E9esW7WsbzWwUbMr9KuV2MI2/AtnHWvcYPFQU06t+E=
+			GkwKKrJ0nt2jwBgyiyhALZ1XUUB/WSkKfBcQRjE3RC0=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ovlQjRmEn9VWHmXAVSlVHvX0u8=
+			6Qsqu73PX+hAn0sRBm9RGY+sKDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4nv/GlJxB49l11Hb0DXHhnQmXLomfUrsBtjkRpk19uI=
+			sXJExYI2ZsOUdMBaQx+3/1ynl64RAIO7rwoJKXF+mF4=
 			</data>
 		</dict>
 		<key>Modules/KochavaNetworking.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BtNLSyknbLBEYPEFr5JJbc8HLdA=
+			pJOb38Qol/4JH1korNpRNBqZksI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5E9esW7WsbzWwUbMr9KuV2MI2/AtnHWvcYPFQU06t+E=
+			GkwKKrJ0nt2jwBgyiyhALZ1XUUB/WSkKfBcQRjE3RC0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
